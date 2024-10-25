@@ -31,7 +31,7 @@ Das Projekt wird nicht online gestellt.
 
 ## Projektinhalte / Project Contents  
 ### Deutsch:
-Es wird auf dem Bildschirm eine Frage mit 4 Antworten angezeigt und der Spieler muss einer der Fragen auswählen, wenn Die Antwort richtig ist, kann er zur nächsten Frage. Somit kann er bis zu 1 Millionen Euro gewinnen. 
+Es wird auf dem Bildschirm eine Frage mit 4 Antworten angezeigt und der Spieler muss einer dieser Fragen auswählen, wenn Die Antwort richtig ist, kann er zur nächsten Frage. Somit kann er bis zu 1 Millionen Euro gewinnen. 
 
 ---
 
