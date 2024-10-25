@@ -50,12 +50,12 @@ Es wird auf dem Bildschirm eine Frage mit 4 Antworten angezeigt und der Spieler 
 ## Termine / Milestones  
 ### Deutsch:
 **Projektstart:**  
-- Ereignis: Was den Projektbeginn markiert (z.B. Kick-off Meeting)  
+- Ereignis: Abstimmungen sind ein wichtiger Teil im Projekt. Jedes Teammitglied muss zustimmen bei jeder Aussage.
 - Termin: 18.10.2024
 
 **Projektende:**  
-- Ereignis: Was das Projektende definiert (z.B. Abnahme durch Kunden)  
-- Termin: Abschlussdatum
+- Ereignis: Wir erwarten die Zufriedenheit jedem Kunden. Wir probieren erstaml weit zu kommen ohne JavaScript.
+- Termin: noch nicht festgestellt
 
 **Meilensteine:**  
 Wichtige Zwischenereignisse und ihre Termine.
