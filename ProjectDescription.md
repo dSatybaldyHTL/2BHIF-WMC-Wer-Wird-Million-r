@@ -31,13 +31,18 @@ Das Projekt wird nicht online gestellt.
 
 ## Projektinhalte / Project Contents  
 ### Deutsch:
-Es wird auf dem Bildschirm eine Frage mit 4 Antworten angezeigt und der Spieler muss einer dieser Fragen auswählen, wenn Die Antwort richtig ist, kann er zur nächsten Frage. Somit kann er bis zu 1 Millionen Euro gewinnen. 
+Es wird auf dem Bildschirm eine Frage mit 4 Antworten angezeigt und der Spieler muss einer dieser Fragen auswählen, wenn die Antwort richtig ist, kann er zur nächsten Frage. Somit kann er bis zu 1 Millionen Euro gewinnen. 
 
 ---
 
 ## Kritische Erfolgsfaktoren 
 ### Deutsch:
-Liste der Faktoren, die für den Erfolg des Projekts entscheidend sind.
+- Recherche
+- Teamarbeit
+- Flexibilität
+- Kommunikation
+- Wissen vom Thema
+- HTML & CSS Wissen
 
 
 ---
@@ -46,7 +51,7 @@ Liste der Faktoren, die für den Erfolg des Projekts entscheidend sind.
 ### Deutsch:
 **Projektstart:**  
 - Ereignis: Was den Projektbeginn markiert (z.B. Kick-off Meeting)  
-- Termin: Datum des Starts
+- Termin: 18.10.2024
 
 **Projektende:**  
 - Ereignis: Was das Projektende definiert (z.B. Abnahme durch Kunden)  
