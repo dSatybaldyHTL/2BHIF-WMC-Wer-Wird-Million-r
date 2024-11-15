@@ -1,10 +1,10 @@
 # Projektname / Project Name
 
 **Teammitglieder**
-Ali Hassem, Danijar Satybaldy-Ulu, Samed Elgit, Deniz Becer, Dvin Ibrahimagic
+Ali Hasem, Danijar Satybaldy-Ulu, Samed Elgit, Deniz Becer, Dvin Ibrahimagic
 
 **Teammembers**
-Ali Hassem, Danijar Satybaldy-Ulu, Samed Elgit, Deniz Becer, Dvin Ibrahimagic
+Ali Hasem, Danijar Satybaldy-Ulu, Samed Elgit, Deniz Becer, Dvin Ibrahimagic
 
 **Deutsch:**  
 Hier wird der Name des Projekts eingetragen.
