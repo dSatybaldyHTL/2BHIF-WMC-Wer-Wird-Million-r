@@ -7,13 +7,9 @@ Ali Hasem, Danijar Satybaldy-Ulu, Samed Elgit, Deniz Becer, Dvin Ibrahimagic
 Ali Hasem, Danijar Satybaldy-Ulu, Samed Elgit, Deniz Becer, Dvin Ibrahimagic
 
 **Deutsch:**  
-Hier wird der Name des Projekts eingetragen.
-
 Wer wird Millionär? – Web Edition
 
 **Englisch:**  
-This section contains the name of the project.
-
 Who Wants to Be a Millionaire? – Web Edition
 
 ---
@@ -31,7 +27,7 @@ Who Wants to Be a Millionaire? – Web Edition
 ### Deutsch:
 **Projektziele:**  
 - Steigerung der Zuschauerzahlen durch eine ansprechende und benutzerfreundliche Web-Plattform.
-- Interaktive Teilnahme über die Website mit Funktionen wie Punktevergabe und Ranglisten.
+- Interaktive Teilnahme über die Website.
 
 **Nicht-Ziele:**  
 - Verbesserte Zuschauerbindung durch interaktive Elemente und ein modernisiertes Format.
@@ -41,7 +37,7 @@ Who Wants to Be a Millionaire? – Web Edition
 ### Englisch:
 **Project Goals:**  
 - Increase viewership through an engaging and user-friendly web platform.
-- Interactive participation via the website, including point scoring and leaderboards.
+- Interactive participation via the website.
 
 **Non-Goals:**  
 - Enhanced viewer engagement through interactive elements and a refreshed format.
