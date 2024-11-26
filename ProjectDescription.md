@@ -15,7 +15,7 @@ Wir haben uns als Gruppe zusammengesetzt und zusammen überlegt, was für eine c
 - Eine coole und übersichtliche Website über "Wer wird Millionär?" machen.
 - Ein ansprechendes Design finden, das einfach zu lesen und nicht zu überladen ist.
 - Ein schlichtes Layout (nicht zu kompliziert).
-- Mit HTML und CSS arbeiten, ohne fancy Sachen wie JavaScript.
+- Mit HTML und CSS arbeiten.
 - Die wichtigsten Infos zur Show so rüberbringen, dass es jeder versteht, aber ohne viel Schnickschnack.
 
 ---
