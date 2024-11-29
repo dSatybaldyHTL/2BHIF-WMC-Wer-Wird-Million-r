@@ -9,97 +9,137 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #1d1d5a;
+            background: linear-gradient(to left, #050a5e, #040c43);
             color: #fff;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
-        }
-
-        a {
-            background: linear-gradient(90deg, #bf00ff, #ff8000);
-            padding: 15px 25px;
-            border-radius: 5px;
-            font-size: 18px;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            overflow: hidden;
         }
 
         h1 {
             text-align: center;
-            background: linear-gradient(90deg, #ffffff, #ffffff);
+            background: linear-gradient(to right, #00ff7e, #f333ff);
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: Arial, Helvetica, sans-serif;
+            display: inline;
+            font-family: montserrat, sans-serif;
             font-size: 70px;
-            margin-top: 30px;
+            margin-left: 600px;
+            margin-top: 105px;
         }
 
-        h2 {
-            align-self: flex-start;
-            background: linear-gradient(90deg, #bf00ff, #ff8000);
+        a {
+            background: linear-gradient(90deg, #00ff7e, #f06aff);
+            padding: 15px 25px;
+            border-radius: 15px;
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            margin-bottom: 100px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #history {
+            margin-left: 90px;
+            margin-right: 1395px;
+        }
+
+        #rules {
+            margin-top: -171px;
+            margin-left: 700px;
+            margin-right: 890px;
+        }
+
+        #winStructure {
+            margin-left: 90px;
+            margin-right: 1250px;
+        }
+
+        #introduction-paragraph {
+            margin-top: 50px;
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-bottom: 70px;
+            font-size: 35px;
+        }
+
+        #history-title {
+            text-align: left;
+            background: linear-gradient(to right, #00ff7e, #f333ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 40px;
-            text-shadow: 0 0 10px rgba(255, 165, 0, 0.4),
-            0 0 10px rgba(255, 0, 255, 0.4);
-            margin-left: 40px;
-            margin-top: 1px;
-        }
-
-        h3 {
-            color: #ffffff;
-            margin-left: 40px;
-            margin-top: 1px;
-            font-size: 20px;
-        }
-
-        #unique-paragraph {
-            margin-top: -10px;
+            display: inline;
+            font-family: montserrat, sans-serif;
+            margin-top: -30px;
+            margin-bottom: 10px;
             margin-left: 90px;
-            margin-bottom: 50px;
-            font-size: 25px;
+            font-size: 50px;
+        }
+
+        #rules-title {
+            text-align: left;
+            background: linear-gradient(to right, #00ff7e, #f333ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+            font-family: montserrat, sans-serif;
+            margin-top: -90px;
+            margin-bottom: 10px;
+            margin-left: 210px;
+            font-size: 50px;
+        }
+
+        #winStructure-title {
+            text-align: left;
+            background: linear-gradient(to right, #00ff7e, #f333ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+            font-family: montserrat, sans-serif;
+            margin-top: -30px;
+            margin-bottom: 10px;
+            margin-left: 90px;
+            font-size: 50px;
         }
 
         p {
             margin-left: 40px;
+            font-family: Montserrat, sans-serif;
         }
 
-        ul, ol {
-            margin-left: 40px;
+        #imageOne {
+            position: relative;
+            left: 1100px;
+            top: -520px;
+            width: 700px;
+            height: 400px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #333;
-        }
     </style>
 </head>
 <body>
 
 <article>
-    <h1><a href="index.html"></a>Wer wird Millionär?</h1>
-    <p id="unique-paragraph">„Wer wird Millionär?“ ist eine beliebte Quizshow, bei der Kandidaten die Chance haben, bis
+    <h1>Wer wird Millionär?</h1>
+    <p id="introduction-paragraph">„Wer wird Millionär?“ ist eine beliebte Quizshow, bei der Kandidaten die Chance
+        haben, bis
         zu 1 Million Euro zu gewinnen, indem sie 15 zunehmend schwierige Wissensfragen beantworten...</p>
+    <h1 id="history-title">Die Geschichte</h1>
+    <h1 id="rules-title">Die Regeln</h1>
+    <a id="history" href="Geschichte.html">Geschichte</a>
+    <a id="rules" href="Regeln.html">Regeln</a>
+    <br>
+    <h1 id="winStructure-title">Die Gewinnstruktur</h1>
+    <a id="winStructure" href="GewinnStruktur.html">Gewinnstruktur</a>
+    <br>
+    <img id="imageOne" src="werwirdmillionär.png">
 
-    <a href="Regeln.html">Regeln von Wer Wird Millionär</a>
-    <br>
-    <a href="GewinnStruktur.html">Gewinnstruktur</a>
-    <br>
 </article>
 
 </body>
