@@ -4,102 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wer Wird Millionär?</title>
-
     <style>
-        h1 {
-            text-align: center;
-            background: linear-gradient(90deg, #bf00ff, #ff8000);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 70px;
-            text-shadow: 0 0 10px rgba(255, 165, 0, 0.4),
-            0 0 10px rgba(255, 0, 255, 0.4);
-            margin-top: 30px;
-        }
-
-        h2 {
-            align-self: flex-start;
-            background: linear-gradient(90deg, #bf00ff, #ff8000);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 40px;
-            text-shadow: 0 0 10px rgba(255, 165, 0, 0.4),
-            0 0 10px rgba(255, 0, 255, 0.4);
-            margin-left: 40px;
-            margin-top: 1px;
-        }
-
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1f1d1d;
+            font-family: Montserrat, sans-serif;
+            background: linear-gradient(to left, #050a5e, #040c43);
             color: #fff;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
         }
 
-        body {
-            background-color: #1f1d1d;
+        h1 {
+            text-align: center;
+            background: linear-gradient(to right, #00ff7e, #f333ff);
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+            font-family: Montserrat, sans-serif;
+            font-size: 70px;
+            margin-left: 300px;
+            margin-top: 105px;
+        }
+
+        p {
+            margin-left: 40px;
+            font-family: Montserrat, sans-serif;
+            font-size: 25px;
+        }
+
+        ul {
+            font-size: 22px;
+            font-family: Montserrat, sans-serif;
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-family: Montserrat, sans-serif;
+            margin-left: 40px;
+        }
+
+        #unique-paragraph{
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>Wer wird Millionär?</h1>
 
-    <section>
-        <h2>Regeln von Wer Wird Millionär</h2>
+<article>
+    <h1>Die Regeln von "Wer wird Millionär?"</h1>
 
-        <section>
-            <h3>Spielverlauf</h3>
-            <ul>
-                <li>Der Kandidat muss 15 Fragen (in Deutschland) mit aufsteigendem Schwierigkeitsgrad beantworten.</li>
-                <li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen eine korrekt ist.</li>
-                <li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li>
-            </ul>
-        </section>
+    <p><strong>Spielverlauf:</strong></p>
+    <ul>
+        <li>Der Kandidat muss 15 Fragen (in Deutschland) mit aufsteigendem Schwierigkeitsgrad beantworten.</li>
+        <li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen eine korrekt ist.</li>
+        <li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li>
+    </ul>
 
-        <section>
-            <h3>Gewinnstufen & Sicherheitsstufen</h3>
-            <ul>
-                <li>Sicherheitsstufe 1: 1.000 € (bei Frage 5)</li>
-                <li>Sicherheitsstufe 2: 16.000 € (bei Frage 10)</li>
-            </ul>
-            <p>Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs
-                garantiert.</p>
-        </section>
+    <p><strong>Gewinnstufen & Sicherheitsstufen:</strong></p>
+    <ul>
+        <li>Sicherheitsstufe 1: 1.000 € (bei Frage 5)</li>
+        <li>Sicherheitsstufe 2: 16.000 € (bei Frage 10)</li>
+    </ul>
+    <p id="unique-paragraph">Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs garantiert.</p>
 
-        <section>
-            <h3>Joker</h3>
-            <ul>
-                <li><strong>50:50-Joker:</strong> Zwei falsche Antworten werden entfernt...</li>
-                <li><strong>Publikumsjoker:</strong> Das Publikum stimmt ab...</li>
-                <li><strong>Telefonjoker:</strong> Der Kandidat ruft eine vertraute Person an...</li>
-                <li><strong>Zusatzjoker:</strong> Ein einzelner Zuschauer wird befragt...</li>
-            </ul>
-        </section>
+    <p><strong>Joker:</strong></p>
+    <ul>
+        <li>50:50-Joker: Zwei falsche Antworten werden entfernt...</li>
+        <li>Publikumsjoker: Das Publikum stimmt ab...</li>
+        <li>Telefonjoker: Der Kandidat ruft eine vertraute Person an...</li>
+        <li>Zusatzjoker: Ein einzelner Zuschauer wird befragt...</li>
+    </ul>
 
-        <section>
-            <h3>Entscheidungsmöglichkeiten des Kandidaten</h3>
-            <ul>
-                <li><strong>Antwort geben:</strong> Wenn der Kandidat sicher ist...</li>
-                <li><strong>Joker einsetzen:</strong> Der Kandidat kann einen der Joker verwenden...</li>
-                <li><strong>Aufhören:</strong> Der Kandidat kann jederzeit aussteigen...</li>
-                <li><strong>Falsche Antwort:</strong> Gibt der Kandidat eine falsche Antwort...</li>
-            </ul>
-        </section>
+    <p><strong>Entscheidungsmöglichkeiten des Kandidaten:</strong></p>
+    <ul>
+        <li>Antwort geben: Wenn der Kandidat sicher ist...</li>
+        <li>Joker einsetzen: Der Kandidat kann einen der Joker verwenden...</li>
+        <li>Aufhören: Der Kandidat kann jederzeit aussteigen...</li>
+        <li>Falsche Antwort: Gibt der Kandidat eine falsche Antwort...</li>
+    </ul>
 
-        <section>
-            <h3>Varianten der Regeln (Deutschland)</h3>
-            <ul>
-                <li><strong>Risiko-Variante:</strong> Kandidaten können eine Sicherheitsstufe selbst festlegen...</li>
-                <li><strong>Promi-Specials:</strong> Hier spielen Prominente für den guten Zweck...</li>
-            </ul>
-            <br>
-        </section>
-</header>
+    <p><strong>Varianten der Regeln (Deutschland):</strong></p>
+    <ul>
+        <li>Risiko-Variante: Kandidaten können eine Sicherheitsstufe selbst festlegen...</li>
+        <li>Promi-Specials: Hier spielen Prominente für den guten Zweck...</li>
+    </ul>
+
+    <br>
+</article>
 
 </body>
 </html>
