@@ -85,12 +85,23 @@ a {
     border-radius: 15px;
     font-size: 18px;
     font-family: Montserrat, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
     color: #fff;
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease; /* Für sanfte Übergänge */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Hover-Effekt */
+a:hover {
+    background: linear-gradient(90deg, #00ffa3, #ff6aff); /* Helleres Gradient */
+    transform: scale(1.1); /* Vergrößerung */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten */
+    font-size: 20px; /* Leicht größere Schrift */
 }
 
 #history {
@@ -99,7 +110,7 @@ a {
 }
 
 #rules {
-    margin-top: -160px;
+    margin-top: -88px;
     margin-left: 510px;
     margin-right: 890px;
 }
@@ -216,7 +227,7 @@ li_Regeln {
 #imageOne {
     position: relative;
     left: 1000px;
-    top: -450px;
+    top: -260px;
     width: 300px;
     height: 300px;
 }
