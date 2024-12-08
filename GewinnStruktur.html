@@ -1,88 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wer Wird Millionär?</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet (1).css">
+    <style>
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ffffff;
+        }
+
+        th {
+            font-size: 1.4em;
+        }
+
+        td {
+            font-size: 1em;
+        }
+
+        .table-title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .table-title {
+            background-color: #43c996;
+            padding: 20px;
+            border-radius: 8px; 
+            color: #ffffff; 
+        }
+
+        .table-title img {
+            width: 80px;
+            height: auto;
+        }
+
+        .table-title span {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .animated-table tbody tr {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .animated-table tbody tr:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        .animated-table tbody tr:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .animated-table tbody tr:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        .animated-table tbody tr:nth-child(4) {
+            animation-delay: 2s;
+        }
+
+        .animated-table tbody tr:nth-child(5) {
+            animation-delay: 2.5s;
+        }
+
+        .animated-table tbody tr:nth-child(6) {
+            animation-delay: 3s;
+        }
+
+        .animated-table tbody tr:nth-child(7) {
+            animation-delay: 3.5s;
+        }
+
+        .animated-table tbody tr:nth-child(8) {
+            animation-delay: 4s;
+        }
+
+        .animated-table tbody tr:nth-child(9) {
+            animation-delay: 4.5s;
+        }
+
+        .animated-table tbody tr:nth-child(10) {
+            animation-delay: 5s;
+        }
+
+        .animated-table tbody tr:nth-child(11) {
+            animation-delay: 5.5s;
+        }
+
+        .animated-table tbody tr:nth-child(12) {
+            animation-delay: 6s;
+        }
+
+        .animated-table tbody tr:nth-child(13) {
+            animation-delay: 6.5s;
+        }
+
+        .animated-table tbody tr:nth-child(14) {
+            animation-delay: 7s;
+        }
+
+        .animated-table tbody tr:nth-child(15) {
+            animation-delay: 7.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<article>
-    <h1>Die Gewinnstruktur von "Wer wird Millionär?"</h1>
-
-    <table>
+    <table class="animated-table">
         <thead>
-        <tr>
-            <th>Frage</th>
-            <th>Gewinn</th>
-        </tr>
+            <tr>
+                <th colspan="4" class="table-title">
+                    <div class="table-title-container">
+                        <img src="Logo_WWM.png" alt="Logo von Wer Wird Millionär">
+                        <span>Die Gewinnstruktur von "Wer wird Millionär?"</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Frage</th>
+                <th>Gewinn</th>
+                <th>Sicherheitsstufe</th>
+                <th>Maximale Zeit</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>50 €</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>100 €</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>200 €</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>500 €</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>1.000 € (1. Sicherheitsstufe)</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>2.000 €</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>4.000 €</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>8.000 €</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>16.000 €</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>32.000 € (2. Sicherheitsstufe)</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>64.000 €</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>125.000 €</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>500.000 €</td>
-        </tr>
-        <tr>
-            <td>14</td>
-            <td>750.000 €</td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>1.000.000 €</td>
-        </tr>
+            <tr>
+                <td>1</td>
+                <td>50 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>15 Sekunden</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>100 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>15 Sekunden</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>200 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>30 Sekunden</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>500 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>30 Sekunden</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>1.000 €</td>
+                <td>Vorhanden</td>
+                <td>45 Sekunden</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>45 Sekunden</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>4.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>1 Minute</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>8.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>1 Minute</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>16.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>1 Minute</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>32.000 €</td>
+                <td>Vorhanden</td>
+                <td>2 Minuten</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>64.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>2 Minuten</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>125.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>3 Minuten</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>500.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>3 Minuten</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>750.000 €</td>
+                <td>Nicht Vorhanden</td>
+                <td>4 Minuten</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>1.000.000 €</td>
+                <td>Vorhanden</td>
+                <td>5 Minuten</td>
+            </tr>
         </tbody>
     </table>
-</article>
 
 </body>
+
 </html>
