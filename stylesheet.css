@@ -88,7 +88,7 @@ a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    text-align: center;
+    text-align: center;     
     transition: all 0.3s ease; /* Für sanfte Übergänge */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
     vertical-align: middle;
