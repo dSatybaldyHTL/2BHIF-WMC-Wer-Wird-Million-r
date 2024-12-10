@@ -11,64 +11,9 @@
             border: 2px solid #4CAF50;
             padding: 15px;
             margin: 20px 0;
-            background-color: rgba(115, 78, 139, 0.7);
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1s ease-in-out forwards;
-        }
-
-        .box {
-            border: 2px solid #4CAF50;
-            padding: 15px;
-            margin: 20px 0;
             background-color: rgba(93, 39, 128, 0.45);
             border-radius: 8px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1s ease-in-out forwards;
-
-            .example {
-                background-color: rgba(0, 0, 255, 0.5);
-            }
-        }
-
-        .box:nth-child(2) {
-            animation-delay: 0.7s;
-        }
-
-        .box:nth-child(3) {
-            animation-delay: 1.4s;
-        }
-
-        .box:nth-child(4) {
-            animation-delay: 2.1s;
-        }
-
-        .box:nth-child(5) {
-            animation-delay: 2.8s;
-        }
-
-        .box:nth-child(6) {
-            animation-delay: 3.5s;
-        }
-
-        .box:nth-child(7) {
-            animation-delay: 4.2s;
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .image-row {
@@ -87,8 +32,8 @@
 
 <body>
     <article>
-        <h1_Geschichte><strong>"Die Geschichte von "Wer wird Millionär?"<img src="Logo_WWM.png"
-                    alt="Beschreibung des Bildes" height="150" width="150"></strong></h1_Geschichte>
+        <h1><strong>"Die Geschichte von "Wer wird Millionär?"<img src="Logo_WWM.png" alt="Beschreibung des Bildes"
+                    height="150" width="150"></strong></h1>
         <div class="box">
             <p style="font-size: 24px; color: rgb(0, 255, 191); font-weight: bold;">Die Entstehung einer weltweiten
                 Erfolgsshow</p>
@@ -140,14 +85,20 @@
                 Windscheid
                 (2015). Die Show hat auch weltweit für Aufsehen gesorgt, etwa durch den Oscar-prämierten Film "Slumdog
                 Millionaire" (2008), der die Geschichte eines jungen Mannes erzählt, der bei der indischen Version der
-                Show eine Million gewinnt.
-            <p></p>
-            <div class="image-row"><img src="https://www.tz.de/assets/images/4/417/4417564-436036890-ralf-schnoor-gewinner-wer-wird-millionaer-05122010-huerth-studio-rtl-sendung-2010-menschen-bilder-em-2eGMLNC5jnec.jpg"
+                Show eine Million gewinnt.</p>
+            <div class="image-row">
+                <img src="https://www.tz.de/assets/images/4/417/4417564-436036890-ralf-schnoor-gewinner-wer-wird-millionaer-05122010-huerth-studio-rtl-sendung-2010-menschen-bilder-em-2eGMLNC5jnec.jpg"
                     alt="Beschreibung des Bildes" height="300" width="300">
-            <img src="data:image/jpeg;base64,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"
-                alt="Beschreibung des Bildes" height="300" width="300"></div>
-
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Beschreibung des Bildes" height="300" width="300"></div>
+            </div>
         </div>
+    </article>
+</body>
+
+</html>
+
+
         <div class="box">
             <p style="font-size: 24px; color: rgb(0, 255, 191); font-weight: bold;">Der anhaltende Reiz von ,,Wer wird
                 Millionär?"</p>
