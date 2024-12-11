@@ -231,3 +231,54 @@ li_Regeln {
     width: 300px;
     height: 300px;
 }
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+td {
+    font-size: 1em;
+}
+
+.table-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.table-title {
+    background-color: #43c996;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.table-title img {
+    width: 80px;
+    height: auto;
+}
+
+.table-title span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.format
+{
+    width: 50px;
+}
