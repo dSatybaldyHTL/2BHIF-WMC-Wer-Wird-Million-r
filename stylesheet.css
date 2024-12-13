@@ -262,10 +262,10 @@ td {
 }
 
 .table-title {
-    background-color: #43c996;
+    background: linear-gradient(to right, #00ff7e, #f333ff);
     padding: 20px;
     border-radius: 8px;
-    color: #ffffff;
+    color: white;
 }
 
 .table-title img {
