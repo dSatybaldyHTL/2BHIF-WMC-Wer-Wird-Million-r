@@ -261,11 +261,25 @@ td {
     gap: 15px;
 }
 
+body  {
+    background-image: url("who-wants-to-be-a-millionaire.png");
+}
+
 .table-title {
     background: linear-gradient(to right, #00ff7e, #f333ff);
     padding: 20px;
     border-radius: 8px;
     color: white;
+}
+
+tr:nth-child(odd)
+{
+    background-color: blue;
+}
+
+tr:nth-child(even)
+{
+    background-color: #050a5e;
 }
 
 .table-title img {
