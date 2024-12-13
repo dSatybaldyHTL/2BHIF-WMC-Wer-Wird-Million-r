@@ -272,14 +272,20 @@ body_win-structure  {
     color: white;
 }
 
-tr:nth-child(odd)
-{
-    background-color: blue;
+
+
+tr:nth-child(even) {
+    opacity: 1; /* Voll sichtbar */
+    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+    color: white; /* Text lesbar auf dunklem Hintergrund */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-tr:nth-child(even)
-{
-    background-color: #050a5e;
+tr:nth-child(odd) {
+    opacity: 1; /* Voll sichtbar */
+    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+    color: white; /* Text lesbar auf dunklem Hintergrund */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .table-title img {
