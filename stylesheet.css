@@ -296,3 +296,11 @@ tr:nth-child(even)
 {
     width: 50px;
 }
+
+.rotating-image {
+    transition: transform 1s ease; /* Langsame Übergangszeit (1 Sekunde) */
+}
+
+.rotating-image:hover {
+    transform: rotate(360deg) scale(1.1); /* Bild dreht sich und wird um 10% größer */
+}
