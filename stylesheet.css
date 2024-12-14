@@ -210,6 +210,18 @@ h3_Regeln {
     font-size: 20px;
 }
 
+h2_Regeln {
+    margin-left: 680px;
+    font-size: 20px;
+    color: rgb(223, 49, 219);
+}
+
+h2_Regeln2 {
+    margin-left: 590px;
+    font-size: 20px;
+    color: rgb(223, 49, 219);
+}
+
 ul_Regeln {
     font-size: 22px;
     font-family: Montserrat, sans-serif;
@@ -219,9 +231,8 @@ ul_Regeln {
 }
 
 li_Regeln {
-    margin-bottom: 15px;
+    font-size: 22px;
     font-family: Montserrat, sans-serif;
-    margin-left: 40px;
 }
 
 #unique-paragraph{
