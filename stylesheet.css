@@ -204,6 +204,12 @@ p_Regeln {
     font-size: 25px;
 }
 
+h3_Regeln {
+    margin-left: 230px;
+    color: rgba(224, 224, 224, 0.69);
+    font-size: 20px;
+}
+
 ul_Regeln {
     font-size: 22px;
     font-family: Montserrat, sans-serif;
