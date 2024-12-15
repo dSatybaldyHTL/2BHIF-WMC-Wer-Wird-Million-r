@@ -17,7 +17,7 @@ body_GewinnStruktur {
     line-height: 1.6;
 }
 
-body_Regeln {
+body_rules {
     font-family: Montserrat, sans-serif;
     background: linear-gradient(to left, #050a5e, #040c43);
     color: #fff;
@@ -66,7 +66,7 @@ h1_GewinnStruktur {
     margin-top: 105px;
 }
 
-h1_Regeln {
+h1_rules {
     text-align: center;
     background: linear-gradient(to right, #00ff7e, #f333ff);
     text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
@@ -198,31 +198,31 @@ th_GewinnStruktur {
     background-color: rgba(243, 51, 255, 0.71);
 }
 
-p_Regeln {
+p_rules {
     margin-left: 40px;
     font-family: Montserrat, sans-serif;
     font-size: 25px;
 }
 
-h3_Regeln {
+h3_rules {
     margin-left: 230px;
     color: rgba(224, 224, 224, 0.7);
     font-size: 20px;
 }
 
-h2_Regeln {
+h2_rules {
     margin-left: 450px;
     font-size: 20px;
     color: rgb(223, 49, 219);
 }
 
-h2_Regeln2 {
+h2_rules2 {
     margin-left: 350px;
     font-size: 20px;
     color: rgb(223, 49, 219);
 }
 
-ul_Regeln {
+ul_rules {
     font-size: 22px;
     font-family: Montserrat, sans-serif;
     margin-left: 40px;
@@ -230,7 +230,7 @@ ul_Regeln {
     margin-bottom: 40px;
 }
 
-li_Regeln {
+li_rules {
     font-size: 22px;
     font-family: Montserrat, sans-serif;
 }
