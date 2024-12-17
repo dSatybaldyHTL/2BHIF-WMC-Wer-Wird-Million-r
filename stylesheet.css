@@ -26,7 +26,6 @@ body_rules {
     line-height: 1.6;
 }
 
-
 h1_index {
     text-align: center;
     background: linear-gradient(to right, #00ff7e, #f333ff);
@@ -88,19 +87,19 @@ a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    text-align: center;     
-    transition: all 0.3s ease; /* Für sanfte Übergänge */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     vertical-align: middle;
     display: inline-block;
     margin: 0 auto;
 }
-/* Hover-Effekt */
+
 a:hover {
-    background: linear-gradient(90deg, #00ffa3, #ff6aff); /* Helleres Gradient */
-    transform: scale(1.1); /* Vergrößerung */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten */
-    font-size: 20px; /* Leicht größere Schrift */
+    background: linear-gradient(90deg, #00ffa3, #ff6aff);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
 }
 
 #history {
@@ -167,7 +166,6 @@ a:hover {
     font-size: 35px;
 }
 
-
 p_Geschichte {
     font-family: Montserrat, sans-serif;
     font-size: 25px;
@@ -217,6 +215,7 @@ nav {
     font-size: 30px;
     color: rgb(223, 49, 219);
 }
+
 ul_rules {
     font-size: 22px;
     font-family: Montserrat, sans-serif;
@@ -230,7 +229,7 @@ li_rules {
     font-family: Montserrat, sans-serif;
 }
 
-#unique-paragraph{
+#unique-paragraph {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -250,8 +249,7 @@ table {
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ffffff;
@@ -272,7 +270,7 @@ td {
     gap: 15px;
 }
 
-body_win-structure  {
+body_win-structure {
     background-image: url("who-wants-to-be-a-millionaire.png");
 }
 
@@ -283,19 +281,17 @@ body_win-structure  {
     color: white;
 }
 
-
-
 tr:nth-child(even) {
-    opacity: 1; /* Voll sichtbar */
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
-    color: white; /* Text lesbar auf dunklem Hintergrund */
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 tr:nth-child(odd) {
-    opacity: 1; /* Voll sichtbar */
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
-    color: white; /* Text lesbar auf dunklem Hintergrund */
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
@@ -309,15 +305,55 @@ tr:nth-child(odd) {
     font-weight: bold;
 }
 
-.format
-{
+.format {
     width: 50px;
 }
 
 .rotating-image {
-    transition: transform 1s ease; /* Langsame Übergangszeit (1 Sekunde) */
+    transition: transform 1s ease;
 }
 
 .rotating-image:hover {
-    transform: rotate(360deg) scale(1.1); /* Bild dreht sich und wird um 10% größer */
+    transform: rotate(360deg) scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left: -50px;
+}
+
+.navbar-right li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: var(--bs-body-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--bs-blue);
 }
