@@ -95,6 +95,8 @@ a {
     display: inline-block;
     margin: 0 auto;
 }
+
+
 /* Hover-Effekt */
 a:hover {
     background: linear-gradient(90deg, #00ffa3, #ff6aff); /* Helleres Gradient */
