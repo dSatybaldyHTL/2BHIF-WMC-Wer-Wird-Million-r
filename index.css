@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #050a5e, #040c43);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+h1_index {
+    text-align: center;
+    background: linear-gradient(to right, #00ff7e, #f333ff);
+    text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-family: montserrat, sans-serif;
+    font-size: 40px;
+    margin-left: 500px;
+    margin-top: 105px;
+}
+
+a {
+    background: linear-gradient(90deg, #00ff7e, #f06aff);
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+a:hover {
+    background: linear-gradient(90deg, #00ffa3, #ff6aff);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+#history {
+    margin-left: 90px;
+    margin-right: 1250px;
+}
+
+#rules {
+    margin-top: -90px;
+    margin-left: 510px;
+    margin-right: 890px;
+}
+
+#winStructure {
+    margin-left: 90px;
+    margin-right: 1250px;
+}
+
+#introduction-paragraph {
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 120px;
+    margin-bottom: 70px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#history-title, #rules-title, #winStructure-title {
+    text-align: left;
+    background: linear-gradient(to right, #00ff7e, #f333ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-family: montserrat, sans-serif;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    font-size: 35px;
+}
+
+#rules-title {
+    margin-top: -90px;
+    margin-left: 225px;
+}
+
+#imageOne {
+    position: relative;
+    left: 1000px;
+    top: -260px;
+    width: 300px;
+    height: 300px;
+}

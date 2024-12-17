@@ -6,51 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wer Wird Millionär?</title>
     <link rel="stylesheet" href="stylesheet.css"></head>
-    <link rel="icon" href="assets/logo-wwm.png" type="image/png">
     <link rel="icon" href="logo-wwm.png" type="image/png">
+
+<style>
+    .image-row {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        border: 2px solid #ffffff;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.82);
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        width: 65%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+        transition: transform 0.5s ease, border-color 0.5s ease;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+        border-color: #00ff7e;
+    }
+
+    body {
+        background-image: url('https://m.media-amazon.com/images/I/91OXosjxZdL.png');
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    .image-border {
+        border: 4px solid #00ff7e;
+        border-radius: 8px;
+
+        transition: transform 0.5s ease, border-color 0.5s ease;
+    }
+
+    .image-border:hover {
+        transform: scale(1.05);
+        border-color: #f333ff;
+    }
+</style>
+</head>
 <body>
 
 <article>
-    <h1_Regeln><strong>Die Regeln von "Wer wird Millionär?"</strong></h1_Regeln>
-
-    <p><strong>Spielverlauf:</strong></p>
+    <h1_rules><strong>Wer wird Millionär?: Regeln einfach erklärt</strong></h1_rules>
+    <h3_rules>Spielverlauf, Gewinnstufen & Sicherheitsstufen, Joker, Entscheidungsmöglichkeiten des Kandidaten, Varianten der Regeln</h3_rules>
+    <div class="image-row">
+    <p><img class="image-border" src="https://cloud.squidex.io/api/assets/myshow-ticketing-prod/4d6c2c8a-af07-4f8b-9ccb-99cfb27f9616/?format=WEBP&width=1400&quality=90&cache=86400"
+         alt="Beschreibung des Bildes" height="300" width="700">
+    </p>
+    </div>
+    <div class="box">
+    <h2_rules><strong>Spielverlauf:</strong></h2_rules>
     <ul>
-        <li>Der Kandidat muss 15 Fragen (in Deutschland) mit aufsteigendem Schwierigkeitsgrad beantworten.</li>
-        <li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen eine korrekt ist.</li>
-        <li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li>
+        <li_rules><li>Der Kandidat muss 15 Fragen (in Deutschland) mit aufsteigendem Schwierigkeitsgrad beantworten.</li></li_rules>
+        <li_rules><li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen eine korrekt ist.</li></li></li_rules>
+        <li_rules><li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li></li_rules>
     </ul>
-
-    <p><strong>Gewinnstufen & Sicherheitsstufen:</strong></p>
+    </div>
+    <div class="box">
+    <h2_rules2><strong>Gewinnstufen & Sicherheitsstufen:</strong></h2_rules2>
     <ul>
-        <li>Sicherheitsstufe 1: 1.000 € (bei Frage 5)</li>
-        <li>Sicherheitsstufe 2: 16.000 € (bei Frage 10)</li>
+        <li_rules><li>Sicherheitsstufe 1: 1.000 € (bei Frage 5)</li></li_rules>
+        <li_rules><li>Sicherheitsstufe 2: 16.000 € (bei Frage 10)</li></li_rules>
+        <li_rules><li>Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs garantiert.</li></li_rules>
     </ul>
-    <p id="unique-paragraph">Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs garantiert.</p>
-
-    <p><strong>Joker:</strong></p>
+    </div>
+    <div class="box">
+    <h2_rules><strong>Joker:</strong></h2_rules>
     <ul>
-        <li>50:50-Joker: Zwei falsche Antworten werden entfernt...</li>
-        <li>Publikumsjoker: Das Publikum stimmt ab...</li>
-        <li>Telefonjoker: Der Kandidat ruft eine vertraute Person an...</li>
-        <li>Zusatzjoker: Ein einzelner Zuschauer wird befragt...</li>
+        <li_rules><li>50:50-Joker: Zwei falsche Antworten werden entfernt...</li></li_rules>
+        <li_rules><li>Publikumsjoker: Das Publikum stimmt ab...</li></li_rules>
+        <li_rules><li>Telefonjoker: Der Kandidat ruft eine vertraute Person an...</li></li_rules>
+        <li_rules><li>Zusatzjoker: Ein einzelner Zuschauer wird befragt...</li></li_rules>
     </ul>
-
-    <p><strong>Entscheidungsmöglichkeiten des Kandidaten:</strong></p>
+    </div>
+    <div class="box">
+    <h2_rules2><strong>Entscheidungsmöglichkeiten des Kandidaten:</strong></h2_rules2>
     <ul>
-        <li>Antwort geben: Wenn der Kandidat sicher ist...</li>
-        <li>Joker einsetzen: Der Kandidat kann einen der Joker verwenden...</li>
-        <li>Aufhören: Der Kandidat kann jederzeit aussteigen...</li>
-        <li>Falsche Antwort: Gibt der Kandidat eine falsche Antwort...</li>
+        <li_rules><li>Antwort geben: Wenn der Kandidat sicher ist...</li></li_rules>
+        <li_rules><li>Joker einsetzen: Der Kandidat kann einen der Joker verwenden...</li></li_rules>
+        <li_rules><li>Aufhören: Der Kandidat kann jederzeit aussteigen...</li></li_rules>
+        <li_rules><li>Falsche Antwort: Gibt der Kandidat eine falsche Antwort...</li></li_rules>
     </ul>
-
-    <p><strong>Varianten der Regeln (Deutschland):</strong></p>
+    </div>
+    <div class="box">
+    <h2_rules2><strong>Varianten der Regeln (Deutschland):</strong></h2_rules2>
     <ul>
-        <li>Risiko-Variante: Kandidaten können eine Sicherheitsstufe selbst festlegen...</li>
-        <li>Promi-Specials: Hier spielen Prominente für den guten Zweck...</li>
+        <li_rules><li>Risiko-Variante: Kandidaten können eine Sicherheitsstufe selbst festlegen...</li></li_rules>
+        <li_rules><li>Promi-Specials: Hier spielen Prominente für den guten Zweck...</li></li_rules>
     </ul>
-
+    </div>
     <br>
 </article>
-
 </body>
 </html>
