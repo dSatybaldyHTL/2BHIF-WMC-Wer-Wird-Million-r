@@ -58,10 +58,13 @@
         }
 
         .title-text {
-            font-size: 30px;
+            font-size: 32px;
             color: rgb(0, 255, 191);
             font-weight: bold;
+            margin-bottom: 0.1rem;
+            line-height: 1.2;
         }
+
 
         .header-container {
             display: flex;
@@ -81,6 +84,22 @@
             transform: scale(1.05);
             border-color: #f333ff;
         }
+
+        h1.main-title {
+            font-size: 5em;
+        }
+
+        @media (max-width: 768px) {
+            h1.main-title {
+                font-size: 1em;
+            }
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+        }
+
     </style>
 </head>
 
@@ -164,7 +183,7 @@
 </div>
 <div class="box">
     <nav><p class="title-text">Erster ausgestrahlter Vorschau von ,,Wer wird
-        Millionär?:</p></nav>
+        Millionär?''</p></nav>
     <iframe
             src="https://www.youtube.com/embed/PGx8r7nuD6c?rel=0"
             width="560"
