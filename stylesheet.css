@@ -68,7 +68,7 @@ h1_GewinnStruktur {
 
 h1_rules {
     text-align: center;
-    background: linear-gradient(to right, #00ff7e, #f333ff);
+    background: linear-gradient(to right, rgb(82, 213, 213), #ff33fc);
     text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -210,18 +210,13 @@ h3_rules {
     font-size: 20px;
 }
 
-h2_rules {
-    margin-left: 450px;
-    font-size: 20px;
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
     color: rgb(223, 49, 219);
 }
-
-h2_rules2 {
-    margin-left: 350px;
-    font-size: 20px;
-    color: rgb(223, 49, 219);
-}
-
 ul_rules {
     font-size: 22px;
     font-family: Montserrat, sans-serif;
