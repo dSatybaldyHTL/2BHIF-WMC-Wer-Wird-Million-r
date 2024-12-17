@@ -24,7 +24,15 @@
         width: 65%;
         margin: auto;
         margin-bottom: 2rem;
+
+        transition: transform 0.5s ease, border-color 0.5s ease;
     }
+
+    .box:hover {
+        transform: scale(1.05);
+        border-color: #00ff7e;
+    }
+
     body {
         background-image: url('https://m.media-amazon.com/images/I/91OXosjxZdL.png');
         background-size: cover;
@@ -34,14 +42,15 @@
     }
 
     .image-border {
-        border: 4px solid blueviolet;
+        border: 4px solid #00ff7e;
         border-radius: 8px;
 
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, border-color 0.5s ease;
     }
 
     .image-border:hover {
         transform: scale(1.05);
+        border-color: #f333ff;
     }
 </style>
 </head>
