@@ -26,6 +26,7 @@ body_rules {
     line-height: 1.6;
 }
 
+
 h1_index {
     text-align: center;
     background: linear-gradient(to right, #00ff7e, #f333ff);
@@ -67,7 +68,7 @@ h1_GewinnStruktur {
 
 h1_rules {
     text-align: center;
-    background: linear-gradient(to right, rgb(82, 213, 213), #ff33fc);
+    background: linear-gradient(to right, #00ff7e, #f333ff);
     text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -87,19 +88,19 @@ a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;     
+    transition: all 0.3s ease; /* Für sanfte Übergänge */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
     vertical-align: middle;
     display: inline-block;
     margin: 0 auto;
 }
-
+/* Hover-Effekt */
 a:hover {
-    background: linear-gradient(90deg, #00ffa3, #ff6aff);
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    background: linear-gradient(90deg, #00ffa3, #ff6aff); /* Helleres Gradient */
+    transform: scale(1.1); /* Vergrößerung */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten */
+    font-size: 20px; /* Leicht größere Schrift */
 }
 
 #history {
@@ -166,6 +167,7 @@ a:hover {
     font-size: 35px;
 }
 
+
 p_Geschichte {
     font-family: Montserrat, sans-serif;
     font-size: 25px;
@@ -208,11 +210,15 @@ h3_rules {
     font-size: 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 30px;
+h2_rules {
+    margin-left: 450px;
+    font-size: 20px;
+    color: rgb(223, 49, 219);
+}
+
+h2_rules2 {
+    margin-left: 350px;
+    font-size: 20px;
     color: rgb(223, 49, 219);
 }
 
@@ -229,7 +235,7 @@ li_rules {
     font-family: Montserrat, sans-serif;
 }
 
-#unique-paragraph {
+#unique-paragraph{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -249,7 +255,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ffffff;
@@ -270,7 +277,7 @@ td {
     gap: 15px;
 }
 
-body_win-structure {
+body_win-structure  {
     background-image: url("who-wants-to-be-a-millionaire.png");
 }
 
@@ -281,17 +288,19 @@ body_win-structure {
     color: white;
 }
 
+
+
 tr:nth-child(even) {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    opacity: 1; /* Voll sichtbar */
+    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+    color: white; /* Text lesbar auf dunklem Hintergrund */
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 tr:nth-child(odd) {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    opacity: 1; /* Voll sichtbar */
+    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+    color: white; /* Text lesbar auf dunklem Hintergrund */
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
@@ -305,55 +314,160 @@ tr:nth-child(odd) {
     font-weight: bold;
 }
 
-.format {
+.format
+{
     width: 50px;
 }
 
 .rotating-image {
-    transition: transform 1s ease;
+    transition: transform 1s ease; /* Langsame Übergangszeit (1 Sekunde) */
 }
 
 .rotating-image:hover {
-    transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1); /* Bild dreht sich und wird um 10% größer */
+}
+
+
+@charset "UTF-8";
+
+:root {
+    --bs-blue: #00ff7e;
+    --bs-purple: #f333ff;
+    --bs-body-bg: linear-gradient(to left, #050a5e, #040c43);
+    --bs-body-color: #fff;
+    --bs-font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background: var(--bs-body-bg);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    background: linear-gradient(to right, var(--bs-blue), var(--bs-purple));
+    text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Montserrat, sans-serif;
+    margin: 20px 0;
+}
+
+a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--bs-blue);
+}
+
+.section-heading {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.section-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 60%;
+}
+
+.masthead {
+    background-color: #040c43;
+    padding-top: 10px; /* Reduced padding-top to move it higher */
+    padding-bottom: 25px; /* Keep the bottom padding as is */
+    color: var(--bs-body-color);
+    text-align: center;
+}
+
+.masthead-subheading {
+    font-size: 2rem;
+    margin-top: 120px; /* Increase the value to move it further down */
+    font-style: italic;
+    opacity: 40%;
+}
+
+.masthead-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 10px; /* Adjust this value to move it further down */
+}
+
+
+.btn-primary {
+    background: var(--bs-blue);
+    border: none;
+    padding: 10px 20px;
+    color: var(--bs-body-color);
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #00ffa3;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
-    padding: 10px 20px;
+    padding: 6px 12px; /* Weniger Padding */
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Dezenterer Schatten */
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    box-sizing: border-box;
     z-index: 1000;
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-right {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    position: relative;
-    left: -50px;
-}
-
-.navbar-right li {
-    display: inline-block;
+    font-size: 0.85rem; /* Kleinere Schrift */
 }
 
 .navbar a {
-    color: var(--bs-body-color);
-    font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
+    color: white;
+    padding: 6px 10px; /* Weniger Platz für Links */
+    font-size: 0.85rem; /* Auch die Link-Schriftgröße anpassen */
 }
 
 .navbar a:hover {
-    color: var(--bs-blue);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.navbar-logo img {
+    width: 75px;
+    height: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #00ffa3;
+    transform: scale(1.1);
 }
