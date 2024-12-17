@@ -32,6 +32,17 @@
         margin: 0;
         color: rgb(255, 255, 255);
     }
+
+    .image-border {
+        border: 4px solid blueviolet;
+        border-radius: 8px;
+
+        transition: transform 0.5s ease;
+    }
+
+    .image-border:hover {
+        transform: scale(1.05);
+    }
 </style>
 </head>
 <body>
@@ -40,7 +51,7 @@
     <h1_rules><strong>Wer wird Millionär?: Regeln einfach erklärt</strong></h1_rules>
     <h3_rules>Spielverlauf, Gewinnstufen & Sicherheitsstufen, Joker, Entscheidungsmöglichkeiten des Kandidaten, Varianten der Regeln</h3_rules>
     <div class="image-row">
-    <p><img src="https://cloud.squidex.io/api/assets/myshow-ticketing-prod/4d6c2c8a-af07-4f8b-9ccb-99cfb27f9616/?format=WEBP&width=1400&quality=90&cache=86400"
+    <p><img class="image-border" src="https://cloud.squidex.io/api/assets/myshow-ticketing-prod/4d6c2c8a-af07-4f8b-9ccb-99cfb27f9616/?format=WEBP&width=1400&quality=90&cache=86400"
          alt="Beschreibung des Bildes" height="300" width="700">
     </p>
     </div>
