@@ -1,96 +1,126 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to left, #050a5e, #040c43);
-    color: #fff;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    overflow: auto;
+@charset "UTF-8";
+
+:root {
+    --bs-blue: #00ff7e;
+    --bs-purple: #f333ff;
+    --bs-body-bg: linear-gradient(to left, #050a5e, #040c43);
+    --bs-body-color: #fff;
+    --bs-font-family: Arial, sans-serif;
 }
 
-h1_index {
+body {
+    margin: 0;
+    font-family: var(--bs-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background: var(--bs-body-bg);
+}
+
+h1, h2, h3 {
     text-align: center;
-    background: linear-gradient(to right, #00ff7e, #f333ff);
+    background: linear-gradient(to right, var(--bs-blue), var(--bs-purple));
     text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline;
-    font-family: montserrat, sans-serif;
-    font-size: 40px;
-    margin-left: 500px;
-    margin-top: 105px;
+    font-family: Montserrat, sans-serif;
+    margin: 20px 0;
 }
 
 a {
-    background: linear-gradient(90deg, #00ff7e, #f06aff);
-    padding: 15px 25px;
-    border-radius: 15px;
-    font-size: 18px;
-    font-family: Montserrat, sans-serif;
-    color: #fff;
+    color: var(--bs-body-color);
     text-decoration: none;
-    display: inline-block;
-    text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    vertical-align: middle;
-    margin: 0 auto;
 }
 
 a:hover {
-    background: linear-gradient(90deg, #00ffa3, #ff6aff);
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    color: var(--bs-blue);
 }
 
-#history {
-    margin-left: 90px;
-    margin-right: 1250px;
+.section-heading {
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-#rules {
-    margin-top: -90px;
-    margin-left: 510px;
-    margin-right: 890px;
-}
-
-#winStructure {
-    margin-left: 90px;
-    margin-right: 1250px;
-}
-
-#introduction-paragraph {
-    margin-top: 50px;
-    margin-left: 90px;
-    margin-right: 120px;
-    margin-bottom: 70px;
-    font-size: 25px;
+.section-subheading {
+    font-size: 1.5rem;
     font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 60%;
 }
 
-#history-title, #rules-title, #winStructure-title {
-    text-align: left;
-    background: linear-gradient(to right, #00ff7e, #f333ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline;
-    font-family: montserrat, sans-serif;
-    margin-top: -30px;
-    margin-bottom: 10px;
-    margin-left: 90px;
-    font-size: 35px;
+.masthead {
+    background-color: #040c43;
+    padding-top: 10px; /* Reduced padding-top to move it higher */
+    padding-bottom: 25px; /* Keep the bottom padding as is */
+    color: var(--bs-body-color);
+    text-align: center;
 }
 
-#rules-title {
-    margin-top: -90px;
-    margin-left: 225px;
+.masthead-subheading {
+    font-size: 2rem;
+    margin-top: 120px; /* Increase the value to move it further down */
+    font-style: italic;
+    opacity: 40%;
 }
 
-#imageOne {
-    position: relative;
-    left: 1000px;
-    top: -260px;
-    width: 300px;
-    height: 300px;
+.masthead-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 10px; /* Adjust this value to move it further down */
+}
+
+
+.btn-primary {
+    background: var(--bs-blue);
+    border: none;
+    padding: 10px 20px;
+    color: var(--bs-body-color);
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #00ffa3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Solid black background */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px; /* Adds space between navbar items */
+    list-style: none;
+    padding: 0;
+    position: relative; /* Allow positioning with 'left' or 'right' */
+    left: -50px; /* Moves the navbar items closer to the left */
+}
+
+.navbar-right li {
+    display: inline-block; /* Ensures the navbar items are displayed horizontally */
+}
+
+.navbar a {
+    color: var(--bs-body-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--bs-blue);
 }
