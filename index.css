@@ -56,7 +56,7 @@
     display: inline-block;
 }
 
-.navbar-menu a {
+.navbar-menu li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -214,7 +214,6 @@ a:hover {
 .navbar a {
     color: var(--bs-body-color);
     font-family: Montserrat;
-    font-weight: bold;
     text-decoration: none;
 }
 
