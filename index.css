@@ -132,6 +132,8 @@ a:hover {
 .navbar-title {
     margin: 0; /* Entfernt Standardabstand von <p> */
     white-space: nowrap; /* Verhindert Zeilenumbruch des Textes */
+    font-size: 1.5rem; /* Oder die gewünschte Größe */
+    font-weight: bold; /* Optional: Macht den Text fett */
 }
 
 
@@ -175,4 +177,12 @@ a:hover {
 .navbar-menu a:hover {
     color: #00ffa3;
     transform: scale(1.1);
+}
+
+.rotating-image {
+    transition: transform 1s ease; /* Langsame Übergangszeit (1 Sekunde) */
+}
+
+.rotating-image:hover {
+    transform: rotate(360deg) scale(1.1); /* Bild dreht sich und wird um 10% größer */
 }
