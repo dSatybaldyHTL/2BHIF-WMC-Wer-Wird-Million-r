@@ -360,6 +360,13 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
+h4 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
 a {
     color: var(--bs-body-color);
     text-decoration: none;
@@ -421,7 +428,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 6px 12px; /* Weniger Padding */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Dezenterer Schatten */
     position: fixed;
     top: 0;
@@ -431,6 +438,18 @@ a:hover {
     z-index: 1000;
     font-size: 0.85rem; /* Kleinere Schrift */
 }
+
+.navbar-logo {
+    display: flex; /* Elemente horizontal nebeneinander anordnen */
+    align-items: center; /* Vertikal zentrieren */
+    gap: 10px; /* Abstand zwischen Bild und Text */
+}
+
+.navbar-title {
+    margin: 0; /* Entfernt Standardabstand von <p> */
+    white-space: nowrap; /* Verhindert Zeilenumbruch des Textes */
+}
+
 
 .navbar a {
     text-decoration: none;
