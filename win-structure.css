@@ -81,15 +81,6 @@ td {
     color: white;
 }
 
-.rotating-image {
-    height: 150px;
-    margin-right: 20px;
-    transition: transform 0.5s ease;
-}
-
-.rotating-image:hover {
-    transform: rotate(360deg);
-}
 
 .highlight-first-row td {
     background-color: rgba(0, 255, 126, 0.5);
