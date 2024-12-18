@@ -1,0 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+:target {
+    scroll-margin-top: 100px; /* Abstand von der Oberseite */
+}
+
+body {
+    background-image: url("winners-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 70px;
+    background: linear-gradient(to right, #16ffd4, #e372ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(0, 255, 126, 0.7);
+    color: black;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.box {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.box img {
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+}
+
+.box h2 {
+    margin-top: 0;
+}
