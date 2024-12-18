@@ -80,29 +80,11 @@ h1_rules {
 }
 
 a {
-    background: linear-gradient(90deg, #00ff7e, #f06aff);
-    padding: 15px 25px;
-    border-radius: 15px;
-    font-size: 18px;
-    font-family: Montserrat, sans-serif;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;     
-    transition: all 0.3s ease; /* Für sanfte Übergänge */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
-    vertical-align: middle;
-    display: inline-block;
-    margin: 0 auto;
+    color: var(--bs-link-color);
+    text-decoration: underline;
 }
-
-
-/* Hover-Effekt */
 a:hover {
-    background: linear-gradient(90deg, #00ffa3, #ff6aff); /* Helleres Gradient */
-    transform: scale(1.1); /* Vergrößerung */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stärkerer Schatten */
-    font-size: 20px; /* Leicht größere Schrift */
+    color: var(--bs-link-hover-color);
 }
 
 #history {
@@ -180,7 +162,14 @@ p_Geschichte {
 
 p, ul, ol_GewinnStruktur {
     margin-left: 40px;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+}
+
+ul2
+{
+    margin-left: 40px;
+    font-size: 18px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -371,6 +360,7 @@ a {
     color: var(--bs-body-color);
     text-decoration: none;
     transition: all 0.3s ease;
+    font-family: Montserrat, sans-serif;
 }
 
 a:hover {
@@ -423,64 +413,43 @@ a:hover {
     background: #00ffa3;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 12px; /* Weniger Padding */
-    background-color: #000;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Dezenterer Schatten */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
-    font-size: 0.85rem; /* Kleinere Schrift */
-}
-
 .navbar-logo {
     display: flex; /* Elemente horizontal nebeneinander anordnen */
     align-items: center; /* Vertikal zentrieren */
     gap: 10px; /* Abstand zwischen Bild und Text */
+    cursor: pointer;
 }
 
 .navbar-title {
+    font-family: Montserrat;
     margin: 0; /* Entfernt Standardabstand von <p> */
     white-space: nowrap; /* Verhindert Zeilenumbruch des Textes */
+    font-size: 1.5rem; /* Oder die gewünschte Größe */
+    font-weight: bold; /* Optional: Macht den Text fett */
+    cursor: pointer;
 }
 
 
-.navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 6px 10px; /* Weniger Platz für Links */
-    font-size: 0.85rem; /* Auch die Link-Schriftgröße anpassen */
-}
-
-.navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-}
 
 .navbar-logo img {
     width: 75px;
     height: auto;
+    margin-left: 10px;
 }
 
 .navbar-menu {
     list-style: none;
     display: flex;
-    gap: 20px;
     padding: 0;
     margin: 0;
+    font-family: Montserrat, sans-serif;
 }
 
 .navbar-menu li {
     display: inline-block;
 }
 
-.navbar-menu a {
+.navbar-menu li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -491,4 +460,64 @@ a:hover {
 .navbar-menu a:hover {
     color: #00ffa3;
     transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 8px 0px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left: -50px;
+}
+
+.navbar-right li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: var(--bs-body-color);
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--bs-blue);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px; /* Weniger Platz für Links */
+    font-size: 0.85rem; /* Auch die Link-Schriftgröße anpassen */
+    font-family: Montserrat;
+    top: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
