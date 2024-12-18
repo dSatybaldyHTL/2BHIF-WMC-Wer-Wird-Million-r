@@ -75,7 +75,7 @@ h1_rules {
     display: inline;
     font-family: montserrat, sans-serif;
     font-size: 50px;
-    margin-left: 205px;
+    margin-left: 620px;
     margin-top: 105px;
 }
 
@@ -196,9 +196,13 @@ p_rules {
 }
 
 h3_rules {
-    margin-left: 230px;
+    margin-left: 220px;
     color: rgba(224, 224, 224, 0.7);
     font-size: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 h2_rules {
