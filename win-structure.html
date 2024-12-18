@@ -4,20 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wer Wird Millionär?</title>
+    <title>Gewinnstruktur</title>
     <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="icon" href="logo-wwm.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            background-image: url("wwm-background-dark.png");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding-top: 80px;
+        }
+
+        /* Header */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 70px;
+            background: linear-gradient(to right, #16ffd4, #e372ec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Box-Container */
+        .box {
+            border: 2px solid #ffffff;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            width: 70%;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        /* Tabelle */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: linear-gradient(to right, #00b894, #d45bf7);
+            color: black;
+        }
+
+        th:first-child {
+            background: linear-gradient(to right, #16ffd4, #e372ec);
+            color: black;
+            font-weight: bold;
+        }
+
+        th:last-child {
+            background: linear-gradient(to left, #16ffd4, #e372ec);
+            color: black;
+            font-weight: bold;
+        }
+
+
+        tr:first-child td {
+            background-color: transparent;
+            color: white;
+        }
+
+        .highlight-first-row td {
+            background-color: transparent;
+            color: white;
+        }
+
+        td {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+
+        .rotating-image {
+            height: 150px;
+            margin-right: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .rotating-image:hover {
+            transform: rotate(360deg);
+        }
+
+        .highlight-first-row td {
+            background-color: rgba(0, 255, 126, 0.5);
+            color: black;
+        }
+
+    </style>
 </head>
 
-<style>
-    body {
-        background-image: url("wwm-background.png");
-        background-position: center;
-        padding-top: 120px;
-    }
-</style>
 <body>
-
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index.html';">
         <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image">
@@ -31,99 +125,85 @@
     </ul2>
 </nav>
 
+<div class="header-container">
+    <h1>Die Gewinnstruktur</h1>
+</div>
+
+<div class="box">
+    <h2>Der Weg zur 1.000.000 €</h2>
+    <p>Hier finden Sie die gesamte Gewinnstruktur, die jeder Teilnehmer durch das Spiel durchläuft, um die Millionen-Frage zu erreichen.</p>
+
     <table>
         <thead>
-            <tr id="header">
-                <th colspan="2" class="table-title">
-                    <div class="table-title-container">
-                        <img src="logo-wwm.png" alt="Logo von Wer Wird Millionär">
-                        <span>Die Gewinnstruktur</span>
-                        <img src="logo-wwm.png" alt="Logo von Wer Wird Millionär">
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>Frage</th>
-                <th>Gewinn</th>
-            </tr>
+        <tr>
+            <th>Frage</th>
+            <th>Gewinn</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>50 €</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>100 €</td>
-
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>200 €</td>
-
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>500 €</td>
-
-            </tr>
-            <tr class="format">
-                <td>5</td >
-                <td>1.000 € (Sicherheitsstufe)</td>
-
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>2.000 €</td>
-
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>4.000 €</td>
-
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>8.000 €</td>
-
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>16.000 €</td>
-
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>32.000 € (Sicherheitsstufe)</td>
-
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>64.000 €</td>
-
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>125.000 €</td>
-
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>500.000 €</td>
-
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>750.000 €</td>
-
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>1.000.000 € (Sicherheitsstufe)</td>
-            </tr>
+        <tr class="highlight-first-row">
+            <td>1</td>
+            <td>50 €</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>100 €</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>200 €</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>500 €</td>
+        </tr>
+        <tr class="format">
+            <td>5</td>
+            <td>1.000 € (Sicherheitsstufe)</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>2.000 €</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>4.000 €</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>8.000 €</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>16.000 €</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>32.000 € (Sicherheitsstufe)</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>64.000 €</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>125.000 €</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>500.000 €</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>750.000 €</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>1.000.000 € (Sicherheitsstufe)</td>
+        </tr>
         </tbody>
     </table>
+</div>
 
 </body>
-
 </html>
