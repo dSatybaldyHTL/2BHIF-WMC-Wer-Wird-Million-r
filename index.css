@@ -28,6 +28,18 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
+h2.section-heading {
+    position: relative;
+    top: 130px;
+    margin-top: 0;
+}
+
+h3.section-subheading {
+    position: relative;
+    top: 120px;
+    margin-top: 0;
+}
+
 a {
     color: var(--bs-body-color);
     text-decoration: none;
@@ -51,29 +63,40 @@ a:hover {
 }
 
 .masthead {
-    background-color: #040c43;
-    padding-top: 10px; /* Reduced padding-top to move it higher */
-    padding-bottom: 25px; /* Keep the bottom padding as is */
-    color: var(--bs-body-color);
-    text-align: center;
-}
-
-.masthead-subheading {
-    font-size: 2rem;
-    margin-top: 120px; /* Increase the value to move it further down */
-    font-style: italic;
-    opacity: 40%;
+    background: url("background.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .masthead-heading {
     font-size: 3rem;
     text-transform: uppercase;
-    margin-top: 10px; /* Adjust this value to move it further down */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    margin: 0;
 }
 
+.masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+}
 
 .btn-primary {
-    background: var(--bs-blue);
+background: var(--bs-blue);
     border: none;
     padding: 10px 20px;
     color: var(--bs-body-color);
@@ -88,7 +111,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000; /* Solid black background */
+    background-color: #000000;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -103,15 +126,15 @@ a:hover {
 
 .navbar-right {
     display: flex;
-    gap: 15px; /* Adds space between navbar items */
+    gap: 15px;
     list-style: none;
     padding: 0;
-    position: relative; /* Allow positioning with 'left' or 'right' */
-    left: -50px; /* Moves the navbar items closer to the left */
+    position: relative;
+    left: -50px;
 }
 
 .navbar-right li {
-    display: inline-block; /* Ensures the navbar items are displayed horizontally */
+    display: inline-block;
 }
 
 .navbar a {
