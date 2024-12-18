@@ -5,16 +5,6 @@ html {
     scroll-margin-top: 100px; /* Abstand von der Oberseite */
 }
 
-body {
-    background-image: url("winners-background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    font-family: Arial, sans-serif;
-    padding-top: 80px;
-    scroll-behavior: smooth;
-}
-
 .header-container {
     display: flex;
     align-items: center;
