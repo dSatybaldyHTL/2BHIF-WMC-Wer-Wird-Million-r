@@ -19,7 +19,7 @@
     .box {
         border: 2px solid #ffffff;
         padding: 15px;
-        background-color: rgb(0, 4, 41);
+        background-color: rgba(0, 0, 0, 0.65);
         border-radius: 8px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         width: 65%;
@@ -29,13 +29,8 @@
         transition: transform 0.5s ease, border-color 0.5s ease;
     }
 
-    .box:hover {
-        transform: scale(1.05);
-        border-color: #00ff7e;
-    }
-
     body {
-        background-image: url('https://static.vecteezy.com/ti/gratis-vektor/p1/24310294-drei-dimensional-erde-dunkel-blau-und-lila-kreis-hintergrund-vektor.jpg');
+        background-image: url('Rules-Background.png');
         background-size: cover;
         background-attachment: fixed;
         margin: 0;
@@ -46,13 +41,30 @@
     .image-border {
         border: 4px solid #ffffff;
         border-radius: 8px;
-
-        transition: transform 0.5s ease, border-color 0.5s ease;
     }
 
-    .image-border:hover {
-        transform: scale(1.05);
-        border-color: #f333ff;
+    p.title-text {
+        text-align: center;
+        background: linear-gradient(to right, #a3b8ff, #caa2e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat, sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        margin: 0;
+    }
+
+    p.title-text {
+        text-align: center;
+        background: linear-gradient(to right, #a3b8ff, #caa2e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat, sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(0, 255, 126, 0.22), 0 0 10px rgba(255, 51, 255, 0.26);
+        margin: 0;
     }
 </style>
 </head>
@@ -84,7 +96,7 @@
     </div>
     <div class="box">
         <nav>
-            <strong>Spielverlauf</strong></nav>
+            <p class="title-text">Spielverlauf</p></nav>
             <ul>
                 <li_rules><li>Der Kandidat muss 15 Fragen (in Deutschland) mit aufsteigendem Schwierigkeitsgrad beantworten.</li></li_rules>
                 <li_rules><li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen eine korrekt ist.</li></li></li_rules>
@@ -93,7 +105,7 @@
     </div>
     <div class="box">
         <nav>
-            <strong>Gewinnstufen & Sicherheitsstufen</strong></nav>
+            <p class="title-text">Gewinnstufen & Sicherheitsstufen</p></nav>
             <ul>
                 <li_rules><li>Sicherheitsstufe 1: 1.000 € (bei Frage 5)</li></li_rules>
                 <li_rules><li>Sicherheitsstufe 2: 16.000 € (bei Frage 10)</li></li_rules>
@@ -102,7 +114,7 @@
     </div>
     <div class="box">
         <nav>
-            <strong>Joker</strong></nav>
+            <p class="title-text">Joker</p></nav>
             <ul>
                 <li_rules><li>50:50-Joker: Zwei falsche Antworten werden entfernt...</li></li_rules>
                 <li_rules><li>Publikumsjoker: Das Publikum stimmt ab...</li></li_rules>
@@ -112,7 +124,7 @@
     </div>
     <div class="box">
         <nav>
-            <strong>Entscheidungsmöglichkeiten des Kandidaten</strong></nav>
+            <p class="title-text">Entscheidungsmöglichkeiten des Kandidaten</p></nav>
             <ul>
                 <li_rules><li>Antwort geben: Wenn der Kandidat sicher ist...</li></li_rules>
                 <li_rules><li>Joker einsetzen: Der Kandidat kann einen der Joker verwenden...</li></li_rules>
@@ -122,7 +134,7 @@
     </div>
     <div class="box">
         <nav>
-            <strong>Varianten der Regeln (Deutschland)</strong></nav>
+            <p class="title-text">Varianten der Regeln (Deutschland)</p></nav>
             <ul>
                 <li_rules><li>Risiko-Variante: Kandidaten können eine Sicherheitsstufe selbst festlegen...</li></li_rules>
                 <li_rules><li>Promi-Specials: Hier spielen Prominente für den guten Zweck...</li></li_rules>
