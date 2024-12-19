@@ -72,17 +72,19 @@ h1_rules {
     text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline;
-    font-family: montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
     font-size: 50px;
     margin-left: 620px;
     margin-top: 105px;
+    font-weight: bold;
 }
 
 a {
     color: var(--bs-link-color);
     text-decoration: underline;
 }
+
 a:hover {
     color: var(--bs-link-hover-color);
 }
@@ -283,8 +285,6 @@ body_win-structure  {
     color: white;
 }
 
-
-
 tr:nth-child(even) {
     opacity: 1; /* Voll sichtbar */
     background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
@@ -321,7 +321,6 @@ tr:nth-child(odd) {
 .rotating-image:hover {
     transform: rotate(360deg) scale(1.1); /* Bild dreht sich und wird um 10% größer */
 }
-
 
 @charset "UTF-8";
 
@@ -433,8 +432,6 @@ a:hover {
     cursor: pointer;
 }
 
-
-
 .navbar-logo img {
     width: 75px;
     height: auto;
@@ -517,8 +514,6 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
-
-
 
 *,
 *::before,
