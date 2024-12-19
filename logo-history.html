@@ -33,6 +33,7 @@
 
     h2 {
       margin-top: 40px;
+      font-size: 36px; /* Größere Schrift für h2 */
     }
 
     .container {
@@ -43,26 +44,26 @@
       margin-top: 20px;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap; /* Bilder umbrechen, wenn Platz nicht ausreicht */
-      justify-content: center; /* Zentriert die Inhalte horizontal */
-      gap: 20px; /* Abstand zwischen den Boxen */
-    }
-
     .box {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 10px;
       border-radius: 8px;
       text-align: center;
-      width: calc(33.33% - 20px); /* Exakt 3 Boxen pro Zeile */
-      box-sizing: border-box; /* Padding wird in die Breite einbezogen */
+      width: calc(33.33% - 20px);
+      box-sizing: border-box;
+      transition: transform 0.3s, border 0.3s; /* Sanfte Übergänge für Vergrößerung und Rahmen */
+    }
+
+    .box:hover {
+      border: 3px solid lightblue; /* Farbiger Rand */
+      transform: scale(1.05); /* Vergrößern der Box */
     }
 
     .box img {
-      width: 400px; /* Festgelegte Breite */
-      height: 320px; /* Festgelegte Höhe */
-      object-fit: contain; /* Bild wird skaliert, um zu passen */
+      width: 400px;
+      height: 320px;
+      object-fit: contain;
+      border-radius: 8px;
     }
 
     .box p {
