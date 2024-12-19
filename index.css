@@ -817,7 +817,7 @@ progress {
 .img-fluid {
     max-width: 100%;
     height: auto;
-    margin-left: 50px;
+    margin-left: 43px;
 }
 
 .img-fluid:hover
@@ -11258,7 +11258,7 @@ header.masthead .masthead-heading {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin-left: 0px;
+    margin-left: -3px;
 }
 
 #content .content-item .content-caption .content-caption-subheading {
