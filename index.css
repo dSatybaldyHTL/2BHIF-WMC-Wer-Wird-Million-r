@@ -820,6 +820,12 @@ progress {
     margin-left: 50px;
 }
 
+.img-fluid:hover
+{
+    border: 5px solid white;
+    transition: border 0.3s;
+}
+
 .img-thumbnail {
     padding: 0.25rem;
     background-color: #fff;
@@ -11261,9 +11267,9 @@ header.masthead .masthead-heading {
 }
 
 .content-item:hover {
-    border: 3px solid white;
     transform: scale(1.1);
-    filter: brightness(1.5);
+    filter: brightness(3);
+    transition: transform 0.3s;
 }
 
 .content-modal .modal-dialog {
