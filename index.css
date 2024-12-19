@@ -11252,7 +11252,7 @@ header.masthead .masthead-heading {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin-left: -95px;
+    margin-left: 0px;
 }
 
 #content .content-item .content-caption .content-caption-subheading {
