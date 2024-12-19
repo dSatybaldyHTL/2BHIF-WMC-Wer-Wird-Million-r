@@ -817,6 +817,7 @@ progress {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    margin-left: 50px;
 }
 
 .img-thumbnail {
@@ -11242,9 +11243,27 @@ header.masthead .masthead-heading {
     font-weight: 700;
     margin-bottom: 0;
 }
+
+.content-caption-heading
+{
+    font-size: 1.75rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: -95px;
+}
+
 #content .content-item .content-caption .content-caption-subheading {
     font-style: italic;
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.content-item:hover {
+    border: 3px solid white;
+    transform: scale(1.1);
+    filter: brightness(1.5);
 }
 
 .content-modal .modal-dialog {
