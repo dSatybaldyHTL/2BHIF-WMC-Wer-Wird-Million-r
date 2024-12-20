@@ -286,16 +286,16 @@ body_win-structure  {
 }
 
 tr:nth-child(even) {
-    opacity: 1; /* Voll sichtbar */
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
-    color: white; /* Text lesbar auf dunklem Hintergrund */
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 tr:nth-child(odd) {
-    opacity: 1; /* Voll sichtbar */
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
-    color: white; /* Text lesbar auf dunklem Hintergrund */
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
@@ -315,11 +315,11 @@ tr:nth-child(odd) {
 }
 
 .rotating-image {
-    transition: transform 1s ease; /* Langsame Übergangszeit (1 Sekunde) */
+    transition: transform 1s ease;
 }
 
 .rotating-image:hover {
-    transform: rotate(360deg) scale(1.1); /* Bild dreht sich und wird um 10% größer */
+    transform: rotate(360deg) scale(1.1);
 }
 
 @charset "UTF-8";
@@ -384,15 +384,15 @@ a:hover {
 
 .masthead {
     background-color: #040c43;
-    padding-top: 10px; /* Reduced padding-top to move it higher */
-    padding-bottom: 25px; /* Keep the bottom padding as is */
+    padding-top: 10px;
+    padding-bottom: 25px;
     color: var(--bs-body-color);
     text-align: center;
 }
 
 .masthead-subheading {
     font-size: 2rem;
-    margin-top: 120px; /* Increase the value to move it further down */
+    margin-top: 120px;
     font-style: italic;
     opacity: 40%;
 }
@@ -400,7 +400,7 @@ a:hover {
 .masthead-heading {
     font-size: 3rem;
     text-transform: uppercase;
-    margin-top: 10px; /* Adjust this value to move it further down */
+    margin-top: 10px;
 }
 
 
@@ -417,18 +417,18 @@ a:hover {
 }
 
 .navbar-logo {
-    display: flex; /* Elemente horizontal nebeneinander anordnen */
-    align-items: center; /* Vertikal zentrieren */
-    gap: 10px; /* Abstand zwischen Bild und Text */
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
 }
 
 .navbar-title {
     font-family: Montserrat;
-    margin: 0; /* Entfernt Standardabstand von <p> */
-    white-space: nowrap; /* Verhindert Zeilenumbruch des Textes */
-    font-size: 1.5rem; /* Oder die gewünschte Größe */
-    font-weight: bold; /* Optional: Macht den Text fett */
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -504,8 +504,8 @@ a:hover {
 .navbar a {
     text-decoration: none;
     color: white;
-    padding: 6px 10px; /* Weniger Platz für Links */
-    font-size: 0.85rem; /* Auch die Link-Schriftgröße anpassen */
+    padding: 6px 10px;
+    font-size: 0.85rem;
     font-family: Montserrat;
     top: 10px;
 }

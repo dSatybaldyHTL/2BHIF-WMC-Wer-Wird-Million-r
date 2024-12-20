@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 :target {
-    scroll-margin-top: 100px; /* Abstand von der Oberseite */
+    scroll-margin-top: 100px;
 }
 
 .header-container {

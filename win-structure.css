@@ -7,7 +7,6 @@ body {
     padding-top: 80px;
 }
 
-/* Header */
 .header-container {
     display: flex;
     align-items: center;
@@ -23,7 +22,6 @@ h1 {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-/* Box-Container */
 .box {
     border: 2px solid #ffffff;
     padding: 20px;
@@ -35,7 +33,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-/* Tabelle */
 table {
     width: 100%;
     border-collapse: collapse;
