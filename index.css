@@ -817,7 +817,13 @@ progress {
 .img-fluid {
     max-width: 100%;
     height: auto;
-    margin-left: 50px;
+    margin-left: 43px;
+}
+
+.img-fluid:hover
+{
+    border: 5px solid white;
+    transition: border 0.3s;
 }
 
 .img-thumbnail {
@@ -11252,7 +11258,7 @@ header.masthead .masthead-heading {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin-left: 0px;
+    margin-left: -3px;
 }
 
 #content .content-item .content-caption .content-caption-subheading {
@@ -11261,9 +11267,9 @@ header.masthead .masthead-heading {
 }
 
 .content-item:hover {
-    border: 3px solid white;
     transform: scale(1.1);
-    filter: brightness(1.5);
+    filter: brightness(3);
+    transition: transform 0.3s;
 }
 
 .content-modal .modal-dialog {
