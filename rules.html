@@ -24,8 +24,39 @@
         width: 65%;
         margin: auto;
         margin-bottom: 2rem;
-
         transition: transform 0.5s ease, border-color 0.5s ease;
+        animation: fadeIn 1.5s ease forwards;
+        opacity: 0;
+    }
+
+    .box:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .box:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    .box:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    .box:nth-child(4) {
+        animation-delay: 1.5s;
+    }
+    .box:nth-child(5) {
+        animation-delay: 2s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     body {
@@ -54,6 +85,19 @@
         margin: 0;
     }
 
+    h1.main-title {
+        text-align: center;
+        background: linear-gradient(to right, #6addf1, #e372ec);
+        text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat, sans-serif;
+        font-size: 70px;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 560px;
+    }
+
     .space-picture {
         margin-left: 60px;
     }
@@ -74,11 +118,11 @@
     </ul2>
 </nav>
 <article>
-    <h1_rules><strong>Die Regeln</strong></h1_rules>
+    <h1 class="main-title">Die Regeln</h1>
     <h3_rules>Spielverlauf, Gewinnstufen & Sicherheitsstufen, Joker, Entscheidungsmöglichkeiten des Kandidaten, Varianten der Regeln</h3_rules>
     <div class="image-row">
         <p><img class="image-border" src="https://cloud.squidex.io/api/assets/myshow-ticketing-prod/4d6c2c8a-af07-4f8b-9ccb-99cfb27f9616/?format=WEBP&width=1400&quality=90&cache=86400"
-                alt="Beschreibung des Bildes" height="300" width="700">
+                alt="Beschreibung des Bildes" height="350" width="750">
         </p>
     </div>
     <div class="box">

@@ -18,6 +18,8 @@
             width: 70%;
             margin: auto;
             margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease forwards;
+            opacity: 0;
         }
 
         h1.main-title {
@@ -99,6 +101,50 @@
             font-size: 22px;
             font-family: Montserrat, sans-serif;
         }
+
+        .box:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .box:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .box:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .box:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        .box:nth-child(5) {
+            animation-delay: 2s;
+        }
+
+        .box:nth-child(6) {
+            animation-delay: 2.5s;
+        }
+
+        .box:nth-child(7) {
+            animation-delay: 3s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .image-border {
+            border: 4px solid #ffffff;
+            border-radius: 8px;
+            margin-left: 185px;
+        }
     </style>
 </head>
 
@@ -122,6 +168,7 @@
     <div class="box">
         <nav><p class="title-text">Die Entstehung einer weltweiten
             Erfolgsshow</p></nav>
+        <p><img class="image-border" src="history-picture.jpg" alt="Logo" height="300" width="540"></p>
         <p class="text">"Wer wird Millionär?" ist eine der bekanntesten Quizshows der Welt und
             begeistert seit Jahrzehnten ein Millionenpublikum. Die Idee stammt ursprünglich aus Großbritannien, wo
             die Show am 4. September 1998 unter dem Namen "Who Wants to Be a Millionaire?" beim Sender ITV erschien.
@@ -133,6 +180,7 @@
     <div class="box">
         <nav><p class="title-text">Das Spielprinzip: Spannung und
             Strategie</p></nav>
+        <p><img class="image-border" src="history-picture-2.jpg" alt="Logo" height="300" width="540"></p>
         <p class="text">Das Grundprinzip der Show ist, dass Kandidaten 15 Multiple-Choice-Fragen beantworten müssen, die mit
             jeder Stufe schwieriger werden. Der Hauptpreis ist eine außergewöhnlich hohe Summe – in Großbritannien waren
             es anfangs 1 Million Pfund, was damals für eine Quizshow sensationell war. Die Kandidaten haben vier Joker
@@ -170,20 +218,15 @@
             Millionaire" (2008), der die Geschichte eines jungen Mannes erzählt, der bei der indischen Version der
             Show eine Million gewinnt.</p>
     </div>
-    </div>
-    </div>
-</article>
-</body>
-
-<div class="box">
+    <div class="box">
     <nav><p class="title-text">Der anhaltende Reiz von ,,Wer wird
         Millionär?"</p></nav>
     <p class="text">"Wer wird Millionär?" bleibt bis heute ein Publikumsliebling. Die Mischung aus Wissen, Strategie und
         Nervenkitzel sowie der sympathische Umgang des Moderators mit den Kandidaten machen die Show zu einem echten
         Klassiker,
         der auch nach über 20 Jahren faszinierend ist.</p>
-</div>
-<div class="box">
+    </div>
+    <div class="box">
     <nav><p class="title-text">Erster ausgestrahlter Vorschau von ,,Wer wird
         Millionär?''</p></nav>
 
