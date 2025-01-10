@@ -419,8 +419,9 @@ a:hover {
 .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .navbar-title {
@@ -443,6 +444,7 @@ a:hover {
     display: flex;
     padding: 0;
     margin: 0;
+    margin-right: 25px;
     font-family: Montserrat, sans-serif;
 }
 
