@@ -18,3 +18,10 @@
 
 2012: Ein besonderes Logo für das Prominenten-Special in diesem Jahr.
 
+### Diverse Specials:
+
+2006, 2007 – 2008, 2008 – 2009: Logos für verschiedene Specials, die in diesen Zeiträumen ausgestrahlt wurden.
+
+2013, 2013 – Heute, 2014 – Heute: Spezielle Logos für Specials, die ab 2013 eingeführt wurden und teilweise bis heute verwendet werden.
+
+2014, 2015 (mehrfach), 2016 (mehrfach), 2017 (mehrfach), 2018 (mehrfach), 2019: Logos für diverse Specials in den jeweiligen Jahren, die besondere Themen oder Anlässe der Show repräsentieren.
