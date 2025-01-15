@@ -18,7 +18,10 @@
             width: 70%;
             margin: auto;
             margin-bottom: 2rem;
-            animation: fadeIn 0.7s ease forwards;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            animation: fadeIn 1s ease forwards;
             opacity: 0;
         }
 
@@ -104,32 +107,32 @@
             font-family: Montserrat, sans-serif;
         }
 
-        .box:nth-child(1) {
-            animation-delay: 0s;
-        }
-
-        .box:nth-child(2) {
+        .box:nth-of-type(1) {
             animation-delay: 0.5s;
         }
 
-        .box:nth-child(3) {
+        .box:nth-of-type(2) {
             animation-delay: 1s;
         }
 
-        .box:nth-child(4) {
+        .box:nth-of-type(3) {
             animation-delay: 1.5s;
         }
 
-        .box:nth-child(5) {
+        .box:nth-of-type(4) {
             animation-delay: 2s;
         }
 
-        .box:nth-child(6) {
+        .box:nth-of-type(5) {
             animation-delay: 2.5s;
         }
 
-        .box:nth-child(7) {
+        .box:nth-of-type(6) {
             animation-delay: 3s;
+        }
+
+        .box:nth-of-type(7) {
+            animation-delay: 3.5s;
         }
 
         @keyframes fadeIn {
