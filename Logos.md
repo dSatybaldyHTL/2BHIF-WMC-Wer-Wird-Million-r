@@ -8,6 +8,16 @@
 
 2008 – Heute: Das aktuelle Logo, das seit 2008 verwendet wird und die bisher letzte größere Designänderung darstellt.
 
+### Jubiläumsfolgen:
+
+2005: Speziallogo zum Jubiläum der Show in diesem Jahr.
+
+2009: Ein weiteres Jubiläumslogo, das anlässlich des zehnjährigen Bestehens von WWM gestaltet wurde.
+
+2012, 2014, 2016, 2017: Spezielle Logos für die jeweiligen Jubiläumsjahre, die besondere Meilensteine der Sendung markieren.
+
+2019 / 20 Jahre WWM: Ein spezielles Logo zum zwanzigjährigen Jubiläum der Show, das die lange Erfolgsgeschichte von WWM feiert.
+
 ### Prominenten-Specials:
 
 2000 – 2008: Logo für die ersten Prominenten-Specials, die in diesem Zeitraum ausgestrahlt wurden.
