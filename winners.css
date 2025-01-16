@@ -18,6 +18,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: fadeIn 1.5s ease-out;
 }
 
 table {
@@ -51,6 +52,7 @@ td {
     width: 70%;
     margin: auto;
     margin-bottom: 2rem;
+    animation: fadeIn 2s ease-out 0.2s forwards; /* Adds delay for the box element */
 }
 
 .box img {
@@ -61,4 +63,26 @@ td {
 
 .box h2 {
     margin-top: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
