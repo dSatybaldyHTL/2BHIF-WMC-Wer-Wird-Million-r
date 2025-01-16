@@ -53,11 +53,16 @@
       text-align: center;
       width: calc(33.33% - 20px);
       box-sizing: border-box;
-      transition: transform 0.3s, border 0.3s;
+      overflow: hidden;
+      transition: transform 0.3s, height 0.3s, border 0.3s;
+      height: 420px; /* Standardhöhe */
+      position: relative;
     }
+
     .box:hover {
       border: 3px solid lightblue;
       transform: scale(1.05);
+      height: 500px; /* Erhöhte Höhe beim Hover */
     }
 
     .box img {
@@ -67,8 +72,20 @@
       border-radius: 8px;
     }
 
-    .box p {
-      margin: 10px 0 0;
+    .box .text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      display: none; /* Unsichtbar bis Hover */
+    }
+
+    .box:hover .text {
+      display: block; /* Text sichtbar beim Hover */
     }
 
 
