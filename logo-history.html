@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 
+<!-- html in arbeit von Dvin nicht ändern -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +23,9 @@
 
     h1, h2 {
       text-align: center;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 1s ease forwards;
+      opacity: 0; /* Startet unsichtbar */
+      transform: translateY(30px); /* Startet leicht nach unten verschoben */
+      animation: fadeInEffect 1.5s ease forwards; /* Fade-Effekt */
     }
 
     h1 {
@@ -38,7 +40,7 @@
     h2 {
       margin-top: 40px;
       font-size: 36px;
-      animation-delay: 1.5s; /* Verzögerung für den Fade-Effekt */
+      animation-delay: 0.5s; /* Verzögerung für den Fade-Effekt */
     }
 
     .container {
@@ -58,6 +60,17 @@
 
     .container:nth-of-type(2) {
       animation-delay: 2.7s; /* Verzögerung für das zweite Container */
+    }
+
+    @keyframes fadeInEffect {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeInUp {
@@ -111,6 +124,7 @@
       display: block; /* Text erscheint beim Hover */
     }
   </style>
+
 </head>
 
 <body>
