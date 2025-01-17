@@ -150,6 +150,7 @@ a:hover {
     position: relative;
     margin: 0;
     padding: 0;
+    animation: fadeInBanner 2s ease-in-out;
 }
 
 .masthead-heading {
@@ -174,6 +175,40 @@ a:hover {
     transform: translate(-50%, -50%);
     z-index: 2;
     margin: 0;
+}
+
+@keyframes fadeInBanner {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.masthead h2 {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.masthead h3 {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 1.75s;
 }
 
 .btn-primary {
