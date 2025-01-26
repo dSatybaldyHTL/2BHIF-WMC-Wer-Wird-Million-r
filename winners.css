@@ -44,6 +44,10 @@ td {
     color: white;
 }
 
+.text{
+    padding-left: 100px;
+}
+
 .box {
     border: 2px solid #ffffff;
     padding: 20px;
