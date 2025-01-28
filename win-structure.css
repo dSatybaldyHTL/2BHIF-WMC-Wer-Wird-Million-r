@@ -25,9 +25,10 @@ h1 {
 .box {
     border: 2px solid #ffffff;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.58);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    color: white;
     width: 70%;
     margin: auto;
     margin-bottom: 2rem;
@@ -36,6 +37,7 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
+
     margin: 20px 0;
 }
 
@@ -74,7 +76,7 @@ tr:first-child td {
 }
 
 td {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(29, 29, 31, 0);
     color: white;
 }
 
