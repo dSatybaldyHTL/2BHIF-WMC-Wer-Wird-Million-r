@@ -462,7 +462,7 @@ a {
 }
 
 a:hover {
-    color: var(--bs-blue);
+    color: var(--bs-purple);
 }
 
 .section-heading {
