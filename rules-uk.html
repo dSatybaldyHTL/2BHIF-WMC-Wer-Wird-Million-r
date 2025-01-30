@@ -1,71 +1,214 @@
 <!DOCTYPE html>
 <html lang="de">
-<article>
-    <h1 class="main-title">Die Regeln</h1>
-    <div class="box">
-        <nav>
-            <p class="title-text">Spielverlauf</p></nav>
-        <p><img class="image-border" src="rules-uk-picture-1.jpg" alt="Logo" height="300" width="540"></p>
-        <ul>
-            <li_rules><li>Der Kandidat muss nacheinander bis zu 15 Multiple-Choice-Fragen beantworten, um die Höchstsumme von £1.000.000 zu gewinnen</li></li_rules>
-            <li_rules><li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen nur eine korrekt ist.</li></li></li_rules>
-            <li_rules><li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li></li_rules>
-            <li_rules><li>Die Schwierigkeit der Fragen steigt mit jeder Stufe.</li></li_rules>
-            <li_rules><li>Der Kandidat hat keine Zeitbegrenzung pro Frage und kann jederzeit aussteigen. </li></li_rules>
-            <li_rules><li>Wenn er eine falsche Antwort gibt, fällt er auf die letzte gesicherte Gewinnstufe zurück.</li></li_rules>
-            <li_rules><li>Das Spiel beginnt mit einer leichten Frage und steigert sich zu anspruchsvolleren Themen
-                aus verschiedenen Wissensgebieten.</li></li_rules>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wer wird Millionär - Regeln</title>
+    <link rel="stylesheet" href="stylesheet.css"></head>
+<link rel="icon" href="logo-wwm.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p.title-text {
+            text-align: center;
+            background: linear-gradient(to right, #00ff7e, #f333ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Montserrat, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+            margin: 0 auto;
+        }
+
+        h1.main-title {
+            text-align: center;
+            background: linear-gradient(to right, #6addf1, #e372ec);
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Montserrat, sans-serif;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 50px auto 30px;
+            display: block;
+            padding-top: 40px;
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.58);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            color: white;
+            border: 2px solid #ffffff;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .image-border {
+            height: 300px;
+            width: 540px;
+            border: 2px solid #000;
+            border-radius: 5px;
+        }
+
+        .text-container {
+            flex: 1;
+        }
+
+        .title-text {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .joker-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            margin-left: 370px;
+        }
+
+        .joker-images img {
+            height: 120px;
+            width: 160px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-logo" onclick="window.location.href='index.html';">
+        <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image">
+        <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
     </div>
-    <div class="box">
-        <nav>
-            <p class="title-text">Gewinnstufen & Sicherheitsstufen</p></nav>
-        <p><img class="image-border" src="rules-pics/rules-gewinnstufen.png" alt="Logo" height="300" width="540"></p>
-        <ul>
-            <li_rules><li><strong>Sicherheitsstufe 1:</strong> 1.000 € (bei Frage 5)</li></li_rules>
-            <li_rules><li><strong>Sicherheitsstufe 2:</strong> 16.000 € (bei Frage 10)</li></li_rules>
-            <li_rules><li>Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs garantiert.</li></li_rules>
-        </ul>
-    </div>
-    <div class="box">
-        <nav>
-            <p class="title-text">Joker</p></nav>
-        <ul>
-            <li_rules><li><strong>50:50-Joker</strong>: Zwei falsche Antworten werden entfernt, sodass nur noch eine falsche und die richtige Antwort übrig bleiben.</li></li_rules>
-            <li_rules><li><strong>Telefonjoker:</strong> Der Kandidat kann einen Freund anrufen und erhält 30 Sekunden, um sich mit ihm über die Frage zu beraten.</li></li_rules>
-            <li_rules><li><strong>Publikumsjoker:</strong> Das Studiopublikum gibt eine Einschätzung zur Frage ab, die in Prozenten angezeigt wird.</li></li_rules>
-            <li_rules><li><strong>"Ask the Host" (Frag den Moderator):</strong> Der Moderator gibt seine persönliche Einschätzung ab</li></li_rules>
-            <li_rules><li><strong>"Switch the Question" (Fragen-Tausch):</strong> Der Kandidat kann eine Frage überspringen und eine neue erhalten (in einigen Varianten).</li></li_rules>
-            <img class="space-picture" src="rules-pics/50-50-joker.png" height="120" width="160">
-            <img src="rules-pics/audience.png" height="120" width="160">
-            <img src="rules-pics/telephone-joker.png" height="120" width="160">
-            <img src="rules-pics/extra-joker.png" height="120" width="160">
-        </ul>
-    </div>
-    <div class="box">
-        <nav>
-            <p class="title-text">Entscheidungsmöglichkeiten des Kandidaten</p></nav>
-        <p><img class="image-border" src="rules-pics/Entscheidung_des_Spielers.png" alt="Logo" height="300" width="540"></p>
-        <ul>
-            <li_rules><li>Eine Antwort auswählen und bestätigen. Sobald die Antwort bestätigt wurde, kann sie nicht mehr geändert werden.</li></li_rules>
-            <li_rules><li>Einen Joker einsetzen, um Hilfe zu erhalten.</li></li_rules>
-            <li_rules><li>Das Spiel beenden und den bis dahin gewonnenen Betrag mitnehmen.</li></li_rules>
-            <li_rules><li>Ein Risiko eingehen und weiterspielen. Wenn der Kandidat eine falsche Antwort gibt, fällt er auf die letzte Sicherheitsstufe zurück.</li></li_rules>
-        </ul>
-    </div>
-    <div class="box">
-        <nav>
-            <p class="title-text">Varianten der Regeln</p></nav>
-        <p><img class="image-border" src="rules-pics/rules-entscheidungsmöglichkeiten.jpg" alt="Logo" height="300" width="540"></p>
-        <ul>
-            <li_rules><li>Kürzere Versionen: Statt 15 Fragen gibt es manchmal nur 12 Fragen mit angepassten Gewinnstufen.</li></li_rules>
-            <li_rules><li>"Fastest Finger First": Früher mussten mehrere Kandidaten eine Einstiegsfrage beantworten, um ins Hauptspiel zu kommen.
-                Diese Runde wurde später in einigen Versionen weggelassen.</li></li_rules>
-            <li_rules><li>Zeitbegrenzung: In manchen Spezialversionen (z. B. Who Wants to Be a Super Millionaire?) hatten Kandidaten eine feste Zeit, um eine Antwort zu geben.</li></li_rules>
-            <li_rules><li>Berühmte Sonderausgaben: Es gibt spezielle Editionen mit Prominenten oder Themenabenden
-                (z. B. "Britain’s Brainiest Family").</li></li_rules>
-        </ul>
-    </div>
+    <ul2 class="navbar-menu">
+        <li><a href="index.html#introduction">Einführung</a></li>
+        <li><a href="index.html#contents">Inhalte</a></li>
+        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#team">Team</a></li>
+    </ul2>
+</nav>
+<h1 class="main-title">Die Regeln</h1>
+
+<div class="box">
+    <p class="title-text">Spielverlauf</p>
     <br>
-</article>
+    <div class="container">
+        <img src="rules-uk-picture-1.jpg" alt="Logo" height="500" width="400">
+        <div class="text-container">
+            <ul>
+                <li_rules><li>Der Kandidat muss nacheinander bis zu 15 Multiple-Choice-Fragen beantworten, um die Höchstsumme
+                    von £1.000.000 zu gewinnen.</li></li_rules>
+                    <li_rules><li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen nur eine korrekt ist.</li></li_rules>
+                    <li_rules><li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li></li_rules>
+                    <li_rules><li>Die Schwierigkeit der Fragen steigt mit jeder Stufe.</li></li_rules>
+                    <li_rules><li>Der Kandidat hat keine Zeitbegrenzung pro Frage und kann jederzeit aussteigen.</li></li_rules>
+                    <li_rules><li>Wenn er eine falsche Antwort gibt, fällt er auf die letzte gesicherte Gewinnstufe zurück.</li></li_rules>
+                                        <li_rules><li>Das Spiel beginnt mit einer leichten Frage und steigert sich zu anspruchsvolleren
+                                            Themen aus verschiedenen Wissensgebieten.</li></li_rules>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <p class="title-text">Gewinnstufen & Sicherheitsstufen</p>
+    <br>
+    <div class="container">
+        <img class="image-border" src="rules-pics/rules-gewinnstufen.png" alt="Logo">
+        <div class="text-container">
+            <ul>
+                <li_rules><li><strong>Sicherheitsstufe 1:</strong> £1.000 (bei Frage 5)</li></li_rules>
+                    <li_rules><li><strong>Sicherheitsstufe 2:</strong> £32.000 (bei Frage 10)</li></li_rules>
+                        <li_rules><li>Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs garantiert.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <p class="title-text">Joker</p>
+    <br>
+    <ul>
+        <li_rules><li><strong>50:50-Joker:</strong> Zwei falsche Antworten werden entfernt, sodass nur noch eine falsche und die richtige Antwort übrig bleiben.</li></li_rules>
+        <li_rules><li><strong>Telefonjoker:</strong> Der Kandidat kann einen Freund anrufen und erhält 30 Sekunden, um sich mit ihm über die Frage zu beraten.</li></li_rules>
+        <li_rules><li><strong>Publikumsjoker:</strong> Das Studiopublikum gibt eine Einschätzung zur Frage ab, die in Prozenten angezeigt wird.</li></li_rules>
+        <li_rules><li><strong>"Ask the Host" (Frag den Moderator):</strong> Der Moderator gibt seine persönliche Einschätzung ab.</li></li_rules>
+                        <li_rules><li><strong>"Switch the Question" (Fragen-Tausch):</strong> Der Kandidat kann eine Frage überspringen und eine neue erhalten
+                            (in einigen Varianten).</li></li_rules>
+    </ul>
+    <div class="joker-images">
+        <img src="rules-pics/50-50-joker.png">
+        <img src="rules-pics/audience.png">
+        <img src="rules-pics/telephone-joker.png">
+        <img src="rules-pics/extra-joker.png">
+    </div>
+</div>
+
+<div class="box">
+    <p class="title-text">Entscheidungsmöglichkeiten des Kandidaten</p>
+    <br>
+    <div class="container">
+        <img class="image-border" src="rules-pics/Entscheidung_des_Spielers.png" alt="Logo">
+        <div class="text-container">
+            <ul>
+                <li_rules><li>Eine Antwort auswählen und bestätigen. Sobald die Antwort bestätigt wurde,
+                    kann sie nicht mehr geändert werden.</li></li_rules>
+                <li_rules><li>Einen Joker einsetzen, um Hilfe zu erhalten.</li></li_rules>
+                <li_rules><li>Das Spiel beenden und den bis dahin gewonnenen Betrag mitnehmen.</li></li_rules>
+                <li_rules><li>Ein Risiko eingehen und weiterspielen. Wenn der Kandidat eine falsche Antwort gibt,
+                    fällt er auf die letzte Sicherheitsstufe zurück.</li></li_rules>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <p class="title-text">Varianten der Regeln</p>
+    <br>
+    <div class="container">
+        <br>
+        <img class="image-border" src="rules-pics/rules-entscheidungsmöglichkeiten.jpg" alt="Logo">
+        <div class="text-container">
+            <ul>
+                <li_rules><li>Kürzere Versionen: Statt 15 Fragen gibt es manchmal nur 12 Fragen mit angepassten Gewinnstufen.</li></li_rules>
+                    <li_rules><li>"Fastest Finger First": Früher mussten mehrere Kandidaten eine Einstiegsfrage beantworten, um ins Hauptspiel zu kommen.
+                        Diese Runde wurde später in einigen Versionen weggelassen.</li></li_rules>
+                <li_rules><li>Zeitbegrenzung: In manchen Spezialversionen (z. B. Who Wants to Be a Super Millionaire?) hatten Kandidaten eine feste Zeit, um eine Antwort zu geben.</li></li_rules>
+                <li_rules><li>Berühmte Sonderausgaben: Es gibt spezielle Editionen mit Prominenten oder Themenabenden (z. B. "Britain’s Brainiest Family").</li></li_rules>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
