@@ -81,12 +81,13 @@ h1_rules {
 }
 
 a {
-    color: var(--bs-link-color);
-    text-decoration: underline;
+    color: var(--bs-body-color);
+    font-family: Montserrat;
+    text-decoration: none;
 }
 
 a:hover {
-    color: var(--bs-link-hover-color);
+    color: var(--bs-purple);
 }
 
 #history {
@@ -325,8 +326,8 @@ tr:nth-child(odd) {
 @charset "UTF-8";
 
 :root {
-    --bs-purple: #3f3a83;
-    --bs-gold: #ffd700;
+    --bs-purple: #9a7746;
+    --bs-gold: #fddd78;
     --bs-body-bg: linear-gradient(to left, #050a5e, #040c43);
     --bs-body-color: #fff;
     --bs-font-family: Arial, sans-serif;
