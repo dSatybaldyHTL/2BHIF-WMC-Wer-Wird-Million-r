@@ -70,14 +70,17 @@
         }
 
         .box {
-            width: 80vw; /* Breitere Boxen */
-            min-height: 150px; /* Mindesthöhe für mehr Text */
+            width: 100vw; /* Immer volle Breite */
+            min-height: 400px; /* Größere Box für mehr Text */
             background-color: black;
             color: white;
             padding: 20px;
-            transition: all 0.3s ease-in-out;
-            text-align: center;
-            border-radius: 10px; /* Abgerundete Ecken */
+            text-align: center; /* Zentriert Bilder und Text */
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Zentriert Inhalt */
+            justify-content: center;
         }
 
         .container {
@@ -101,27 +104,70 @@
             font-size: 16px; /* Optional: Schriftgröße anpassen */
         }
 
-        .box:hover {
-            border: 3px solid lightblue;
-            width: 100vw; /* Dehnt sich auf die gesamte Breite aus */
-            border-radius: 0; /* Ecken entfernen für den Effekt */
-        }
+
 
         .box img {
             width: 400px;
             height: 320px;
             object-fit: contain;
             border-radius: 8px;
+            margin-top: 10px;
         }
+
 
         .box .text {
             margin-top: 10px;
-            display: none; /* Text wird erst bei Hover sichtbar */
+            display: block; /* Text immer sichtbar */
+            text-align: center;
+            max-width: 80%;
         }
 
-        .box:hover .text {
-            display: block; /* Text erscheint beim Hover */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
+
+        .logo-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black; /* Schwarzer Kasten */
+            padding: 20px;
+            width: 80vw; /* Breiter Kasten */
+            border-radius: 0; /* Keine abgerundeten Ecken */
+        }
+
+        .logo-box img {
+            width: 400px; /* Bild bleibt groß */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Drei Spalten */
+            width: 100%;
+            color: white;
+        }
+
+        .info-box {
+            text-align: left;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .info-box:nth-child(2) {
+            text-align: center;
+        }
+
+        .info-box:nth-child(3) {
+            text-align: right;
+        }
+
+
+
+
     </style>
 
 </head>
@@ -144,226 +190,26 @@
 
 <!-- Normale Logos -->
 <h2>Logos</h2>
-<div class="container">
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Logos/1999-2000.png" alt="Normales Logo 1">
-        <p>1999-2000</p>
-        <div class="text">Das ursprüngliche Logo der Show, eingeführt mit dem Start von WWM in Deutschland.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Logos/2000-2008.png" alt="Normales Logo 2">
-        <p>2000-2008</p>
-        <div class="text">Ein überarbeitetes Logo, das die erste Anpassung des Designs darstellt.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Logos/2008.png" alt="Normales Logo 3">
-        <p>2008</p>
-        <div class="text">Das aktuelle Logo, das seit 2008 verwendet wird und die bisher letzte größere Designänderung darstellt.</div>
+<div class="logo-container">
+    <div class="logo-box">
+        <img src="Entwicklung_von_Logos/Logos/1999-2000.png" alt="Logo">
+
+        <div class="info-container">
+            <div class="info-box">
+                <strong>DESIGNER:</strong> Unknown
+            </div>
+            <div class="info-box">
+                <strong>TYPOGRAPHY:</strong> Copperplate Gothic <br> ITC Conduit <br> Coronet (pound signs)
+            </div>
+            <div class="info-box">
+                <strong>LAUNCHED:</strong> August 12<sup>th</sup> 1998
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- Jubiläumsfolgen -->
-<h2>Jubiläumsfolgen</h2>
-<div class="container">
-    <!-- Ähnliches Muster für weitere Boxen -->
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2005.png" alt="Jubiläumslogo 1">
-        <p>2005</p>
-        <div class="text">Speziallogo zum Jubiläum der Show in diesem Jahr.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2009.png" alt="Jubiläumslogo 1">
-        <p>2009</p>
-        <div class="text">Ein weiteres Jubiläumslogo, das anlässlich des zehnjährigen Bestehens von WWM gestaltet wurde.</div>
-    </div><div class="box">
-    <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2012.png" alt="Jubiläumslogo 1">
-    <p>2012</p>
-    <div class="text">Spezielle Logos für die jeweiligen Jubiläumsjahre, die besondere Meilensteine der Sendung markieren.</div>
-</div><div class="box">
-    <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2014.png" alt="Jubiläumslogo 1">
-    <p>2014</p>
-    <div class="text">Spezielle Logos für die jeweiligen Jubiläumsjahre, die besondere Meilensteine der Sendung markieren.</div>
-</div><div class="box">
-    <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2016.png" alt="Jubiläumslogo 1">
-    <p>2016</p>
-    <div class="text">Spezielle Logos für die jeweiligen Jubiläumsjahre, die besondere Meilensteine der Sendung markieren.</div>
-</div><div class="box">
-    <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2017.png" alt="Jubiläumslogo 1">
-    <p>2017</p>
-    <div class="text">Spezielle Logos für die jeweiligen Jubiläumsjahre, die besondere Meilensteine der Sendung markieren.</div>
-</div><div class="box">
-    <img src="Entwicklung_von_Logos/Jubilaeumsfolgen/2019-2020.jpg" alt="Jubiläumslogo 1">
-    <p>2019-2020</p>
-    <div class="text">Ein spezielles Logo zum zwanzigjährigen Jubiläum der Show, das die lange Erfolgsgeschichte von WWM feiert.</div>
 
-</div>
-    <!-- Weitere Boxen -->
-</div>
 
-<!-- Prominenten-Specials -->
-<h2>Prominenten-Specials</h2>
-<div class="container">
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Prominenten-Specials/2000-2008.png" alt="Jubiläumslogo 1">
-        <p>2000-2008</p>
-        <div class="text">Logo für die ersten Prominenten-Specials, die in diesem Zeitraum ausgestrahlt wurden.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Prominenten-Specials/2005.png" alt="Jubiläumslogo 1">
-        <p>2005</p>
-        <div class="text">Ein spezielles Logo für das Prominenten-Special dieses Jahres.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Prominenten-Specials/2008.png" alt="Jubiläumslogo 1">
-        <p>2008</p>
-        <div class="text">Aktuelles Logo für die Prominenten-Specials, das seit 2008 verwendet wird.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Prominenten-Specials/2012.png" alt="Jubiläumslogo 1">
-        <p>2012</p>
-        <div class="text">Ein besonderes Logo für das Prominenten-Special in diesem Jahr.</div>
-    </div>
-</div>
-
-<!-- Diverse Specials -->
-<h2>Diverse Specials</h2>
-<div class="container">
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2006.png" alt="Jubiläumslogo 1">
-        <p>2006</p>
-        <div class="text">Logo von dem Special, das in diesem Zeitraum ausgestrahlt wurde</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2007-2008.png" alt="Jubiläumslogo 1">
-        <p>2007-2008</p>
-        <div class="text">Logo von dem Special, das in diesem Zeitraum ausgestrahlt wurde</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2008-2009.png" alt="Jubiläumslogo 1">
-        <p>2008-2009</p>
-        <div class="text">Logo von dem Special, das in diesem Zeitraum ausgestrahlt wurde</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2013.png" alt="Jubiläumslogo 1">
-        <p>2013</p>
-        <div class="text">Spezielles Logo für Specials, die ab 2013 eingeführt wurden und teilweise bis heute verwendet werden.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2013-Heute.png" alt="Jubiläumslogo 1">
-        <p>2013-Heute</p>
-        <div class="text">Spezielles Logo für Specials, die ab 2013 eingeführt wurden und teilweise bis heute verwendet werden.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2014.png" alt="Jubiläumslogo 1">
-        <p>2014</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2014-Heute.png" alt="Jubiläumslogo 1">
-        <p>2014-Heute</p>
-        <div class="text">Spezielles Logo für Specials, die ab 2013 eingeführt wurden und teilweise bis heute verwendet werden.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2015_01.png" alt="Jubiläumslogo 1">
-        <p>2015</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2015_02.png" alt="Jubiläumslogo 1">
-        <p>2015</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2015_03.png" alt="Jubiläumslogo 1">
-        <p>2015</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2016_01.png" alt="Jubiläumslogo 1">
-        <p>2016</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2016_02.png" alt="Jubiläumslogo 1">
-        <p>2016</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2016_03.png" alt="Jubiläumslogo 1">
-        <p>2016</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2016_04.png" alt="Jubiläumslogo 1">
-        <p>2016</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2016_05.png" alt="Jubiläumslogo 1">
-        <p>2016</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2016_06.png" alt="Jubiläumslogo 1">
-        <p>2016</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2017_01.png" alt="Jubiläumslogo 1">
-        <p>2017</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2017_02.png" alt="Jubiläumslogo 1">
-        <p>2017</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_01.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_02.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_03.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_04.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_05.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_06.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_07.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2018_08.png" alt="Jubiläumslogo 1">
-        <p>2018</p>
-        <div class="text">Logo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-    <div class="box">
-        <img src="Entwicklung_von_Logos/Diverse-Specials/2019.png" alt="Jubiläumslogo 1">
-        <p>2019</p>
-        <div class="text">ELogo für diverse Specials in dem jeweiligem Jahr, das besondere Themen oder Anlässe der Show repräsentiert.</div>
-    </div>
-</div>
 </body>
 
 </html>
