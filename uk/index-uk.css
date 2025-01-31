@@ -144,7 +144,7 @@ a:hover {
 }
 
 .masthead {
-    background: url("index-pics/background.jpg") no-repeat center center;
+    background: url("index-uk-pics/background.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -11208,7 +11208,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("index-pics/background.jpg");
+    background-image: url("index-uk-pics/background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
