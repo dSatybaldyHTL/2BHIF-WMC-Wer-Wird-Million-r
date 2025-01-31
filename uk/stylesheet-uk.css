@@ -461,7 +461,7 @@ a:hover {
 }
 
 .navbar-menu a:hover {
-    color: #00ffa3;
+    color: var(--bs-blue);
     transform: scale(1.1);
 }
 
@@ -500,7 +500,7 @@ a:hover {
 }
 
 .navbar a:hover {
-    color: var(--bs-blue);
+    color: #7c5f31;
 }
 
 .navbar a {
