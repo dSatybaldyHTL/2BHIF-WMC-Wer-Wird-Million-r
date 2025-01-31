@@ -128,7 +128,7 @@ a {
 }
 
 a:hover {
-    color: var(--bs-purple);
+    color: var(--bs-blue);
 }
 
 .section-heading {
@@ -212,7 +212,7 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--bs-purple);
+    background: var(--bs-blue);
     border: none;
     padding: 10px 20px;
     color: var(--bs-body-color);
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: var(--bs-purple);
+    background: #00ffa3;
 }
 
 .navbar {
@@ -260,7 +260,7 @@ a:hover {
 }
 
 .navbar a:hover {
-    color: var(--bs-purple);
+    color: var(--bs-gold);
 }
 
 :root {
