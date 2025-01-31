@@ -334,6 +334,11 @@ a:hover {
     --bs-highlight-bg: #fff4cc;
 }
 
+#introduction .fa-stack .fa-circle {
+    color: var(--bs-gold) !important;
+}
+
+
 *,
 *::before,
 *::after {
