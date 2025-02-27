@@ -17,185 +17,185 @@
 <link rel="icon" href="logo-uk.png" type="image/png">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
 
-    <style>
-        body {
-            background-image: url("Entwicklung_von_Logos/logo-history-background.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 20px;
+<style>
+    body {
+        background-image: url("Entwicklung_von_Logos/logo-history-background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        text-align: center;
+        opacity: 0; /* Startet unsichtbar */
+        transform: translateY(30px); /* Startet leicht nach unten verschoben */
+        animation: fadeInEffect 1.5s ease forwards; /* Fade-Effekt */
+    }
+
+    h1 {
+        font-size: 50px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 120px;
+        animation-delay: 0.2s; /* Verzögerung für den Effekt */
+    }
+
+    h2 {
+        margin-top: 40px;
+        font-size: 36px;
+        animation-delay: 0.5s; /* Verzögerung für den Fade-Effekt */
+    }
+
+    @keyframes fadeInEffect {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
         }
-
-        h1, h2 {
-            text-align: center;
-            opacity: 0; /* Startet unsichtbar */
-            transform: translateY(30px); /* Startet leicht nach unten verschoben */
-            animation: fadeInEffect 1.5s ease forwards; /* Fade-Effekt */
+        100% {
+            opacity: 1;
+            transform: translateY(0);
         }
+    }
 
-        h1 {
-            font-size: 50px;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-top: 120px;
-            animation-delay: 0.2s; /* Verzögerung für den Effekt */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
         }
-
-        h2 {
-            margin-top: 40px;
-            font-size: 36px;
-            animation-delay: 0.5s; /* Verzögerung für den Fade-Effekt */
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
+    }
 
-        @keyframes fadeInEffect {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    .box {
+        width: 100vw; /* Immer volle Breite */
+        min-height: 400px; /* Größere Box für mehr Text */
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center; /* Zentriert Bilder und Text */
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Zentriert Inhalt */
+        justify-content: center;
+    }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    .container {
+        display: flex;
+        flex-direction: column; /* Stellt die Boxen untereinander */
+        align-items: center; /* Zentriert die Boxen horizontal */
+        gap: 20px; /* Abstand zwischen den Boxen */
+    }
 
-        .box {
-            width: 100vw; /* Immer volle Breite */
-            min-height: 400px; /* Größere Box für mehr Text */
-            background-color: black;
-            color: white;
-            padding: 20px;
-            text-align: center; /* Zentriert Bilder und Text */
-            border-radius: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Zentriert Inhalt */
-            justify-content: center;
-        }
+    .container:nth-of-type(1) {
+        animation-delay: 1.7s; /* Verzögerung für das erste Container */
+    }
 
-        .container {
-            display: flex;
-            flex-direction: column; /* Stellt die Boxen untereinander */
-            align-items: center; /* Zentriert die Boxen horizontal */
-            gap: 20px; /* Abstand zwischen den Boxen */
-        }
+    .container:nth-of-type(2) {
+        animation-delay: 2.7s; /* Verzögerung für das zweite Container */
+    }
 
-        .container:nth-of-type(1) {
-            animation-delay: 1.7s; /* Verzögerung für das erste Container */
-        }
-
-        .container:nth-of-type(2) {
-            animation-delay: 2.7s; /* Verzögerung für das zweite Container */
-        }
-
-        .box p {
-            margin: 10px 0 0; /* Abstand nach oben */
-            text-align: center; /* Zentriert den Text horizontal */
-            font-size: 16px; /* Optional: Schriftgröße anpassen */
-        }
+    .box p {
+        margin: 10px 0 0; /* Abstand nach oben */
+        text-align: center; /* Zentriert den Text horizontal */
+        font-size: 16px; /* Optional: Schriftgröße anpassen */
+    }
 
 
 
-        .box img {
-            width: 400px;
-            height: 320px;
-            object-fit: contain;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
+    .box img {
+        width: 400px;
+        height: 320px;
+        object-fit: contain;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
 
 
-        .box .text {
-            margin-top: 10px;
-            display: block; /* Text immer sichtbar */
-            text-align: center;
-            max-width: 80%;
-        }
+    .box .text {
+        margin-top: 10px;
+        display: block; /* Text immer sichtbar */
+        text-align: center;
+        max-width: 80%;
+    }
 
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
 
-        .logo-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: black; /* Schwarzer Kasten */
-            padding: 20px;
-            width: 80vw; /* Breiter Kasten */
-            border-radius: 0; /* Keine abgerundeten Ecken */
-        }
+    .logo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black; /* Schwarzer Kasten */
+        padding: 20px;
+        width: 80vw; /* Breiter Kasten */
+        border-radius: 0; /* Keine abgerundeten Ecken */
+    }
 
-        .logo-box img {
-            width: 400px; /* Bild bleibt groß */
-            height: auto;
-            margin-bottom: 10px;
-        }
+    .logo-box img {
+        width: 400px; /* Bild bleibt groß */
+        height: auto;
+        margin-bottom: 10px;
+    }
 
-        .info-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr; /* Drei Spalten */
-            width: 100%;
-            color: white;
-        }
+    .info-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Drei Spalten */
+        width: 100%;
+        color: white;
+    }
 
-        .info-box {
-            text-align: left;
-            padding: 5px;
-            font-size: 18px;
-        }
+    .info-box {
+        text-align: left;
+        padding: 5px;
+        font-size: 18px;
+    }
 
-        .info-box:nth-child(2) {
-            text-align: center;
-        }
+    .info-box:nth-child(2) {
+        text-align: center;
+    }
 
-        .info-box:nth-child(3) {
-            text-align: right;
-        }
+    .info-box:nth-child(3) {
+        text-align: right;
+    }
 
-        .additional-info {
-            margin-top: 20px;
-            font-size: 16px;
-            text-align: center;
-            color: white; /* Anpassen der Textfarbe */
-        }
+    .additional-info {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        color: white; /* Anpassen der Textfarbe */
+    }
 
-        /* Container für den "See More"-Link */
-        .see-more-container {
-            text-align: center; /* Zentriert den Link */
-            margin-top: 10px; /* Abstand zum oberen Inhalt */
-        }
+    /* Container für den "See More"-Link */
+    .see-more-container {
+        text-align: center; /* Zentriert den Link */
+        margin-top: 10px; /* Abstand zum oberen Inhalt */
+    }
 
-        /* Styling für den "See More"-Link */
-        .see-more-link {
-            display: inline-block; /* Macht den Link block-level, aber inline */
-            text-decoration: none; /* Kein Unterstrich standardmäßig */
-            font-weight: bold;
-            transition: text-decoration 0.3s ease; /* Sanfter Übergang für den Unterstrich */
-        }
+    /* Styling für den "See More"-Link */
+    .see-more-link {
+        display: inline-block; /* Macht den Link block-level, aber inline */
+        text-decoration: none; /* Kein Unterstrich standardmäßig */
+        font-weight: bold;
+        transition: text-decoration 0.3s ease; /* Sanfter Übergang für den Unterstrich */
+    }
 
-        /* Wenn der Benutzer mit der Maus über den Link fährt */
-        .see-more-link:hover {
-            text-decoration: underline; /* Unterstrich erscheint */
-        }
+    /* Wenn der Benutzer mit der Maus über den Link fährt */
+    .see-more-link:hover {
+        text-decoration: underline; /* Unterstrich erscheint */
+    }
 
 
 
-    </style>
+</style>
 
 </head>
 
