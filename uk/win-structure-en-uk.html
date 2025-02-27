@@ -18,6 +18,43 @@
             font-family: Arial, sans-serif;
             padding-top: 80px;
         }
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-right: -500px;
+            font-family: Montserrat, sans-serif;
+        }
     </style>
 </head>
 
@@ -33,6 +70,14 @@
         <li><a href="index-uk.html#about">About Us</a></li>
         <li><a href="index-uk.html#team">Team</a></li>
     </ul2>
+    <!-- Language Selection Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Sprache</button>
+        <div class="lang-dropdown-content">
+            <a href="win-structure-en-uk.html">Englisch</a>
+            <a href="win-structure-de-uk.html">Deutsch</a>
+        </div>
+    </div>
 </nav>
 
 <div class="header-container">
