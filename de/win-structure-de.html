@@ -9,6 +9,45 @@
     <link rel="stylesheet" href="win-structure.css">
     <link rel="icon" href="logo-wwm.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <style>
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-right: -700px;
+            font-family: Montserrat, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,6 +62,14 @@
         <li><a href="index.html#about">Über uns</a></li>
         <li><a href="index.html#team">Team</a></li>
     </ul2>
+    <!-- Sprachwahl Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Sprache</button>
+        <div class="lang-dropdown-content">
+            <a href="win-structure-en.html">Englisch</a>
+            <a href="win-structure-de.html">Deutsch</a>
+        </div>
+    </div>
 </nav>
 
 <div class="header-container">
