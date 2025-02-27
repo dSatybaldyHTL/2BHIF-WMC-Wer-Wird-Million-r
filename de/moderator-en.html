@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Der Moderator</title>
+    <title>The Moderator</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="logo-wwm.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -117,6 +117,44 @@
                 transform: translateY(0);
             }
         }
+
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-right: -500px;
+            font-family: Montserrat, sans-serif;
+        }
     </style>
 </head>
 
@@ -124,52 +162,60 @@
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index.html';">
         <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image">
-        <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
+        <p class="navbar-title"><strong>Who Wants to Be a Millionaire</strong></p>
     </div>
     <ul2 class="navbar-menu">
-        <li><a href="index.html#introduction">Einführung</a></li>
-        <li><a href="index.html#contents">Inhalte</a></li>
-        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#introduction">Introduction</a></li>
+        <li><a href="index.html#contents">Contents</a></li>
+        <li><a href="index.html#about">About Us</a></li>
         <li><a href="index.html#team">Team</a></li>
     </ul2>
+    <!-- Language Selection Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Language</button>
+        <div class="lang-dropdown-content">
+            <a href="history-en.html">English</a>
+            <a href="history-de.html">German</a>
+        </div>
+    </div>
 </nav>
-<h1 class="main-title">Der Moderator</h1>
+<h1 class="main-title">The Moderator</h1>
 <div class="box">
-    <p class="title-text">Wer ist Günther Jauch?</p>
+    <p class="title-text">Who is Günther Jauch?</p>
     <p><img class="image-border" src="moderator-pics/moderator.jpg" alt="Logo" height="300" width="540"></p>
-    <p>Günther Jauch ist ein bekannter deutscher Fernsehmoderator, Journalist und Produzent. Besonders bekannt ist er für die Moderation der Quizsendung <strong>„Wer wird Millionär?“</strong>, die er seit 1999 auf RTL moderiert. Seine Karriere im deutschen Fernsehen erstreckt sich über Jahrzehnte, und er gilt als einer der beliebtesten Moderatoren des Landes.</p>
+    <p>Günther Jauch is a well-known German television host, journalist, and producer. He is especially famous for hosting the quiz show <strong>"Who Wants to Be a Millionaire?"</strong>, which he has been hosting since 1999 on RTL. His career in German television spans decades, and he is regarded as one of the country's most beloved hosts.</p>
 </div>
 <div class="box">
-    <p class="title-text">Frühes Leben und Ausbildung</p>
+    <p class="title-text">Early Life and Education</p>
     <p><img class="image-border" src="moderator-pics/moderator-pictures-2.jpg" alt="Logo" height="300" width="540"></p>
-    <p>Günther Jauch wurde am <strong>13. Juli 1956</strong> in Münster geboren. Er besuchte das humanistische Gymnasium in Oldenburg und legte dort sein Abitur ab. Nach der Schule begann er ein Studium der Rechtswissenschaften, wechselte jedoch später zur Publizistik und Politik an der <strong>Ludwig-Maximilians-Universität München</strong>. Während dieser Zeit absolvierte er eine journalistische Ausbildung an der renommierten <strong>Deutschen Journalistenschule</strong> in München.</p>
+    <p>Günther Jauch was born on <strong>July 13, 1956</strong> in Münster. He attended the humanistic high school in Oldenburg and graduated there. After school, he began studying law, but later switched to journalism and political science at the <strong>Ludwig Maximilian University of Munich</strong>. During this time, he completed a journalistic training program at the prestigious <strong>German Journalism School</strong> in Munich.</p>
 </div>
 <div class="box">
-    <p class="title-text">Karriere</p>
+    <p class="title-text">Career</p>
     <p><img class="image-border" src="moderator-pics/moderator-pictures-3.jpg" alt="Logo" height="300" width="540"></p>
-    <p>Günther Jauchs beruflicher Weg begann im Hörfunk, bevor er zum Fernsehen wechselte. Einige Höhepunkte seiner Karriere umfassen:</p>
+    <p>Günther Jauch’s career began in radio before he switched to television. Some highlights of his career include:</p>
     <ul>
-        <li><strong>1985–1989:</strong> Co-Moderator der Sportsendung „Das aktuelle Sportstudio“ im ZDF</li>
-        <li><strong>1990–1995:</strong> Hauptmoderator der ARD-Sendung „Sport-Schau“</li>
-        <li><strong>Seit 1999:</strong> Moderator von „Wer wird Millionär?“</li>
-        <li><strong>2011–2018:</strong> Gastgeber der politischen Talkshow „Günther Jauch“ in der ARD</li>
+        <li><strong>1985–1989:</strong> Co-host of the sports program "Das aktuelle Sportstudio" on ZDF</li>
+        <li><strong>1990–1995:</strong> Main host of the ARD program "Sport-Schau"</li>
+        <li><strong>Since 1999:</strong> Host of "Who Wants to Be a Millionaire?"</li>
+        <li><strong>2011–2018:</strong> Host of the political talk show "Günther Jauch" on ARD</li>
     </ul>
-    <p>Zusätzlich ist Günther Jauch Produzent und Mitinhaber der Firma <strong>i&u TV</strong>, die verschiedene TV-Formate produziert.</p>
+    <p>In addition, Günther Jauch is a producer and co-owner of the company <strong>i&u TV</strong>, which produces various TV formats.</p>
 </div>
 <div class="box">
-    <p class="title-text">Privates Leben</p>
+    <p class="title-text">Personal Life</p>
     <p><img class="image-border" src="moderator-pics/moderator-pictures-4.jpg" alt="Logo" height="300" width="540"></p>
-    <p>Günther Jauch ist seit <strong>2006</strong> mit Dorothea Sihler verheiratet. Das Paar hat vier Kinder, von denen zwei adoptiert sind. Die Familie lebt in Potsdam, wo Jauch mehrere historische Gebäude restauriert hat. Er ist bekannt für sein soziales Engagement und seine Spendenbereitschaft.</p>
+    <p>Günther Jauch has been married to Dorothea Sihler since <strong>2006</strong>. The couple has four children, two of whom are adopted. The family lives in Potsdam, where Jauch has restored several historic buildings. He is known for his social engagement and generosity in donations.</p>
 </div>
 <div class="box">
-    <p class="title-text">Besonderheiten</p>
+    <p class="title-text">Notable Features</p>
     <p><img class="image-border" src="moderator-pics/moderator-pictures-5.jpg" alt="Logo" height="300" width="540"></p>
     <ul>
-        <li>Günther Jauch ist für seine humorvolle und charmante Art bei Zuschauern äußerst beliebt.</li>
-        <li>Er wurde mit Preisen wie dem <strong>Bambi</strong>, dem <strong>Deutschen Fernsehpreis</strong> und dem <strong>Grimme-Preis</strong> ausgezeichnet.</li>
-        <li>Trotz seiner Popularität achtet er streng auf seine Privatsphäre.</li>
+        <li>Günther Jauch is very popular among viewers for his humorous and charming manner.</li>
+        <li>He has won awards such as the <strong>Bambi</strong>, the <strong>German Television Award</strong>, and the <strong>Grimme Prize</strong>.</li>
+        <li>Despite his popularity, he is very protective of his privacy.</li>
     </ul>
-    <p>Günther Jauch bleibt eine prägende Persönlichkeit im deutschen Fernsehen und hat das Unterhaltungsgeschäft nachhaltig beeinflusst.</p>
+    <p>Günther Jauch remains a prominent figure in German television and has had a lasting impact on the entertainment industry.</p>
 </div>
 </div>
 </body>
