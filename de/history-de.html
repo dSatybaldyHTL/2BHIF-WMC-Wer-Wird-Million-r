@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Geschichte</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="logo-wwm.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <style>
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-right: -700px;
+            font-family: Montserrat, sans-serif;
+        }
+        .box {
+            border: 2px solid #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.58);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        h1.main-title {
+            text-align: center;
+            background: linear-gradient(to right, #6addf1, #e372ec);
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Montserrat, sans-serif;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 0 auto;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 80px;
+            background-image: url('history-pics/history-background.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        iframe {
+            margin-left: 230px;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size:5em;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+        }
+
+        p.title-text {
+            text-align: center;
+            background: linear-gradient(to right, #00ff7e, #f333ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Montserrat, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            padding: 10px 20px;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+            border: 4px solid #a3b8ff;
+            border: 4px solid #caa2e5;
+            border-radius: 8px;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+            border-color: #a3b8ff;
+            border-color: #caa2e5;
+        }
+
+        h1.main-title {
+            font-size: 5em;
+        }
+
+        .text {
+            font-size: 22px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .box:nth-of-type(1) {
+            animation-delay: 0.5s;
+        }
+
+        .box:nth-of-type(2) {
+            animation-delay: 1s;
+        }
+
+        .box:nth-of-type(3) {
+            animation-delay: 1.5s;
+        }
+
+        .box:nth-of-type(4) {
+            animation-delay: 2s;
+        }
+
+        .box:nth-of-type(5) {
+            animation-delay: 2.5s;
+        }
+
+        .box:nth-of-type(6) {
+            animation-delay: 3s;
+        }
+
+        .box:nth-of-type(7) {
+            animation-delay: 3.5s;
+        }
+        .box:nth-of-type(8) {
+            animation-delay: 4s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .image-border {
+            border: 4px solid #ffffff;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .video-container
+        {
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="navbar-logo" onclick="window.location.href='index.html';">
+        <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image">
+        <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
+    </div>
+    <ul2 class="navbar-menu">
+        <li><a href="index.html#introduction">Einführung</a></li>
+        <li><a href="index.html#contents">Inhalte</a></li>
+        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#team">Team</a></li>
+    </ul2>
+    <!-- Sprachwahl Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Sprache</button>
+        <div class="lang-dropdown-content">
+            <a href="history-en.html">Englisch</a>
+            <a href="history-de.html">Deutsch</a>
+        </div>
+    </div>
+</nav>
+<article>
+    <div class="header-container">
+        <h1 class="main-title"><strong>Die Geschichte</strong></h1>
+    </div>
+    <div class="box">
+        <nav><p class="title-text">Die Entstehung einer weltweiten
+            Erfolgsshow</p></nav>
+        <p><img class="image-border" src="history-pics/history-picture.jpg" alt="Logo" height="300" width="540"></p>
+        <p class="text">„Wer wird Millionär?“ wurde ursprünglich 1998 in Großbritannien unter dem Namen
+            „Who Wants to Be a Millionaire?“ entwickelt. Das innovative Konzept, ein Quizformat mit Spannung,
+            Strategie und Unterhaltung zu verbinden, wurde schnell zu einem globalen Phänomen.
+            In Deutschland feierte die Sendung am 3. September 1999 auf RTL ihre Premiere. Moderiert von Günther Jauch,
+            der seither das Gesicht der deutschen Version ist, setzte die Show von Beginn an neue Maßstäbe im deutschen
+            Fernsehen.</p>
+    </div>
+    <div class="box">
+        <nav><p class="title-text">Das Spielprinzip: Spannung und
+            Strategie</p></nav>
+        <p><img class="image-border" src="history-pics/history-picture-2.jpg" alt="Logo" height="300" width="540"></p>
+        <p class="text">In der deutschen Version von „Wer wird Millionär?“ müssen die Kandidat:innen 15 Multiple-Choice-Fragen
+            beantworten, die mit jeder Stufe schwieriger werden. Der Hauptgewinn beträgt 1 Million Euro.
+            Zur Unterstützung stehen drei Joker zur Verfügung: der 50:50-Joker, der Publikumsjoker und der Telefonjoker.
+            Bei der Risikovariante, die vor dem Spiel gewählt werden kann, erhalten die Kandidat:innen einen zusätzlichen Joker,
+            den Zusatzjoker, mit dem sie eine Person aus dem Publikum um Hilfe bitten können. Diese Entscheidung ist jedoch
+            endgültig und sorgt für zusätzliche Spannung.
+        </p>
+    </div>
+    <div class="box">
+        <nav><p class="title-text">Die Erfolgsgeschichte
+        </p></nav>
+        <p><img class="image-border" src="history-pics/history-picture-3.png" alt="Logo" height="300" width="540"></p>
+        <p class="text">Der Erfolg in Großbritannien führte dazu, dass das Format in über 100 Ländern lizenziert und angepasst
+            wurde. In Deutschland startete die Show am 3. September 1999 auf RTL unter dem Titel "Wer wird
+            Millionär?",
+            moderiert von Günther Jauch, der bis heute das Gesicht der Sendung ist. Jauch begeistert die Zuschauer
+            mit seinem
+            charmanten und humorvollen Moderationsstil, der die Show zu einem festen Bestandteil der deutschen
+            Fernsehlandschaft gemacht hat.</p>
+    </div>
+    <div class="box">
+        <nav><p class="title-text">Einzigartige Anpassungen in
+            Deutschland</p></nav>
+        <p><img class="image-border" src="history-pics/history-picture-6.jpg" alt="Logo" height="300" width="540"></p>
+        <p class="text">Die deutsche Version unterscheidet sich in einigen Punkten von der britischen Version. So gibt es in
+            Deutschland eine Risikovariante, bei der Kandidaten selbst entscheiden können, ob sie eine zusätzliche
+            Sicherheitsstufe
+            nutzen möchten. Regelmäßig finden auch Prominentenspecials statt, bei denen Stars für wohltätige Zwecke
+            spielen.</p>
+    </div>
+    <div class="box">
+        <nav><p class="title-text">Unvergessliche Momente und globale
+            Relevanz</p></nav>
+        <p><img class="image-border" src="history-pics/history-picture-5.jpg" alt="Logo" height="300" width="540"></p>
+        <p class="text">In Deutschland blieb der erste Millionengewinn von Eckhard Freise im Jahr 2000 unvergessen.
+            Auch Kandidaten wie Ralf Schnoor und Leon Windscheid schrieben Geschichte mit ihrem Wissen.
+            Die Prominentenspecials sorgten für Highlights, etwa mit Oliver Pocher oder Barbara Schöneberger.
+            Besonders spannend waren riskante Entscheidungen bei der Millionenfrage oder lustige Patzer bei einfachen Fragen,
+            die die Zuschauer zum Schmunzeln brachten.</p>
+    </div>
+    <div class="box">
+    <nav><p class="title-text">Der anhaltende Reiz von ,,Wer wird
+        Millionär?"</p></nav>
+        <p><img class="image-border" src="history-pics/history-picture-4.jpg" alt="Logo" height="300" width="540"></p>
+    <p class="text">"Wer wird Millionär?" bleibt bis heute ein Publikumsliebling. Die Mischung aus Wissen, Strategie und
+        Nervenkitzel sowie der sympathische Umgang des Moderators mit den Kandidaten machen die Show zu einem echten
+        Klassiker,
+        der auch nach über 20 Jahren faszinierend ist.</p>
+    </div>
+    <div class="box">
+    <nav><p class="title-text">Erster ausgestrahlter Vorschau</p></nav>
+    <div class ="video-container">
+        <br><iframe
+            src="https://www.youtube.com/embed/PGx8r7nuD6c?rel=0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+</article>
+</body>
+</html>
