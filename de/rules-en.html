@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Die Regeln</title>
+    <title>The Rules</title>
     <link rel="stylesheet" href="stylesheet.css"></head>
 <link rel="icon" href="logo-wwm.png" type="image/png">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
@@ -100,51 +100,97 @@
         margin-left: 100px;
     }
 
+    .lang-dropdown {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .lang-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .lang-dropdown:hover .lang-dropdown-content {
+        display: block;
+    }
+
+    .lang-dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .lang-dropdown-content a:hover {
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-right: -500px;
+        font-family: Montserrat, sans-serif;
+    }
+
 </style>
 </head>
 <body>
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index.html';">
         <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image">
-        <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
+        <p class="navbar-title"><strong>Who Wants to Be a Millionaire?</strong></p>
     </div>
     <ul2 class="navbar-menu">
-        <li><a href="index.html#introduction">Einführung</a></li>
-        <li><a href="index.html#contents">Inhalte</a></li>
-        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#introduction">Introduction</a></li>
+        <li><a href="index.html#contents">Contents</a></li>
+        <li><a href="index.html#about">About Us</a></li>
         <li><a href="index.html#team">Team</a></li>
     </ul2>
+    <!-- Language Selection Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Language</button>
+        <div class="lang-dropdown-content">
+            <a href="rules-en.html">English</a>
+            <a href="rules-de.html">German</a>
+        </div>
+    </div>
 </nav>
 <article>
-    <h1 class="main-title">Die Regeln</h1>
+    <h1 class="main-title">The Rules</h1>
     <div class="box">
         <nav>
-            <p class="title-text">Spielverlauf</p></nav>
+            <p class="title-text">Game Flow</p></nav>
         <p><img class="image-border" src="rules-pics/rules-picture.png" alt="Logo" height="300" width="540"></p>
         <ul>
-            <li_rules><li>Der Kandidat muss 15 Fragen (in Deutschland) mit aufsteigendem Schwierigkeitsgrad beantworten.</li></li_rules>
-            <li_rules><li>Jede Frage hat vier Antwortmöglichkeiten (A, B, C, D), von denen eine korrekt ist.</li></li></li_rules>
-            <li_rules><li>Mit jeder korrekt beantworteten Frage steigt der Gewinnbetrag.</li></li_rules>
+            <li_rules><li>The contestant must answer 15 questions (in Germany) with increasing difficulty.</li></li_rules>
+            <li_rules><li>Each question has four answer choices (A, B, C, D), with one correct answer.</li></li_rules>
+            <li_rules><li>With each correct answer, the prize money increases.</li></li_rules>
         </ul>
     </div>
     <div class="box">
         <nav>
-            <p class="title-text">Gewinnstufen & Sicherheitsstufen</p></nav>
+            <p class="title-text">Prize Tiers & Safety Levels</p></nav>
         <p><img class="image-border" src="rules-pics/rules-gewinnstufen.png" alt="Logo" height="300" width="540"></p>
         <ul>
-            <li_rules><li>Sicherheitsstufe 1: 1.000 € (bei Frage 5)</li></li_rules>
-            <li_rules><li>Sicherheitsstufe 2: 16.000 € (bei Frage 10)</li></li_rules>
-            <li_rules><li>Erreicht der Kandidat eine Sicherheitsstufe, wird dieser Betrag im Falle eines falschen Antwortversuchs garantiert.</li></li_rules>
+            <li_rules><li>Safety Level 1: €1,000 (at question 5)</li></li_rules>
+            <li_rules><li>Safety Level 2: €16,000 (at question 10)</li></li_rules>
+            <li_rules><li>If the contestant reaches a safety level, this amount is guaranteed in case of an incorrect answer attempt.</li></li_rules>
         </ul>
     </div>
     <div class="box">
         <nav>
-            <p class="title-text">Joker</p></nav>
+            <p class="title-text">Jokers</p></nav>
         <ul>
-            <li_rules><li>50:50-Joker: Zwei falsche Antworten werden entfernt...</li></li_rules>
-            <li_rules><li>Publikumsjoker: Das Publikum stimmt ab...</li></li_rules>
-            <li_rules><li>Telefonjoker: Der Kandidat ruft eine vertraute Person an...</li></li_rules>
-            <li_rules><li>Zusatzjoker: Ein einzelner Zuschauer wird befragt...</li></li_rules>
+            <li_rules><li>50:50 Joker: Two incorrect answers are removed...</li></li_rules>
+            <li_rules><li>Audience Joker: The audience votes...</li></li_rules>
+            <li_rules><li>Phone Joker: The contestant calls a trusted person...</li></li_rules>
+            <li_rules><li>Extra Joker: A single audience member is asked...</li></li_rules>
 
             <img class="space-picture" src="rules-pics/50-50-joker.png" height="120" width="160">
             <img src="rules-pics/audience.png" height="120" width="160">
@@ -154,22 +200,22 @@
     </div>
     <div class="box">
         <nav>
-            <p class="title-text">Entscheidungsmöglichkeiten des Kandidaten</p></nav>
+            <p class="title-text">Contestant's Decisions</p></nav>
         <p><img class="image-border" src="rules-pics/Entscheidung_des_Spielers.png" alt="Logo" height="300" width="540"></p>
         <ul>
-            <li_rules><li>Antwort geben: Wenn der Kandidat sicher ist...</li></li_rules>
-            <li_rules><li>Joker einsetzen: Der Kandidat kann einen der Joker verwenden...</li></li_rules>
-            <li_rules><li>Aufhören: Der Kandidat kann jederzeit aussteigen...</li></li_rules>
-            <li_rules><li>Falsche Antwort: Gibt der Kandidat eine falsche Antwort...</li></li_rules>
+            <li_rules><li>Answer: If the contestant is confident...</li></li_rules>
+            <li_rules><li>Use a Joker: The contestant can use one of the jokers...</li></li_rules>
+            <li_rules><li>Quit: The contestant can quit at any time...</li></li_rules>
+            <li_rules><li>Incorrect Answer: If the contestant gives a wrong answer...</li></li_rules>
         </ul>
     </div>
     <div class="box">
         <nav>
-            <p class="title-text">Varianten der Regeln</p></nav>
+            <p class="title-text">Variants of the Rules</p></nav>
         <p><img class="image-border" src="rules-pics/rules-entscheidungsmöglichkeiten.jpg" alt="Logo" height="300" width="540"></p>
         <ul>
-            <li_rules><li>Risiko-Variante: Kandidaten können eine Sicherheitsstufe selbst festlegen...</li></li_rules>
-            <li_rules><li>Promi-Specials: Hier spielen Prominente für den guten Zweck...</li></li_rules>
+            <li_rules><li>Risk Variant: Contestants can set their own safety level...</li></li_rules>
+            <li_rules><li>Celeb Specials: Celebrities play for a good cause...</li></li_rules>
         </ul>
     </div>
     <br>
