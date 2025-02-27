@@ -18,6 +18,45 @@
     <link rel="icon" href="logo-uk.png">
     <style>
 
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-right: -700px;
+            font-family: Montserrat, sans-serif;
+        }
+
     </style>
 </head>
 <body id="page-top">
@@ -28,7 +67,7 @@
             <img src="logo-uk.png" alt="Logo" style="width: 75px; height: auto;"/>
         </a>
     </div-->
-    <div class="navbar-logo" onclick="window.location.href='index-uk.html';">
+    <div class="navbar-logo" onclick="window.location.href='index-de-uk.html';">
         <img src="logo-uk.png" alt="Beschreibung des Bildes" height="165" width="165" class="rotating-image">
         <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
     </div>
@@ -38,6 +77,14 @@
         <li><a href="#about">Über uns</a></li>
         <li><a href="#team">Team</a></li>
     </ul>
+    <!-- Language Selection Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Sprache</button>
+        <div class="lang-dropdown-content">
+            <a href="index-en-uk.html">Englisch</a>
+            <a href="index-de-uk.html">Deutsch</a>
+        </div>
+    </div>
 </nav>
 <!-- Masthead-->
 <header class="masthead">
