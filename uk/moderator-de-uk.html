@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Der Moderator</title>
+  <link rel="stylesheet" href="stylesheet-uk.css">
+  <link rel="icon" href="logo-uk.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <style>
+    p.title-text {
+      text-align: center;
+      background: linear-gradient(to right, #7c5f31, #fddd78);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat, sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+      margin: 0;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      border: 2px solid #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    h1, h2, h3 {
+      color: #ffcc00;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      background-image: url('moderator-uk-images/Moderator-uk-background-1.png');
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.66);
+      z-index: -1;
+    }
+
+    .image-border {
+      border: 4px solid #ffffff;
+      border-radius: 8px;
+      margin-left: 185px;
+      margin-bottom: 20px;
+    }
+
+    h1.main-title {
+      text-align: center;
+      background: linear-gradient(to right, #7c5f31, #fddd78);
+      text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Montserrat, sans-serif;
+      font-size: 70px;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: 500px;
+    }
+
+    .image-border {
+      border: 4px solid #ffffff;
+      border-radius: 8px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .box:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+
+    .box:nth-of-type(2) {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .lang-dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .lang-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .lang-dropdown:hover .lang-dropdown-content {
+      display: block;
+    }
+
+    .lang-dropdown-content a {
+      color: rgb(255, 255, 255);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .lang-dropdown-content a:hover {
+      background-color: rgb(255, 255, 255);
+    }
+
+    .navbar-menu {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      margin-right: -700px;
+      font-family: Montserrat, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="navbar-logo" onclick="window.location.href='index-uk.html';">
+    <img src="logo-uk.png" alt="Logo" height="165" width="165" class="rotating-image">
+    <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
+  </div>
+  <ul2 class="navbar-menu">
+    <li><a href="index-uk.html#introduction">Einführung</a></li>
+    <li><a href="index-uk.html#contents">Inhalt</a></li>
+    <li><a href="index-uk.html#about">Über uns</a></li>
+    <li><a href="index-uk.html#team">Team</a></li>
+  </ul2>
+  <!-- Language Selection Dropdown -->
+  <div class="lang-dropdown">
+    <button class="lang-btn">Sprache</button>
+    <div class="lang-dropdown-content">
+      <a href="moderator-en-uk.html">Englisch</a>
+      <a href="moderator-de-uk.html">Deutsch</a>
+    </div>
+  </div>
+</nav>
+<h1 class="main-title">Der Moderator</h1>
+<div class="box">
+  <p class="title-text">Wer ist Chris Tarrant?</p>
+  <p class="title-text">(Der erste Moderator von UK)</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_2-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Chris Tarrant ist ein britischer Fernsehmoderator, der vor allem durch seine Moderation der Quizsendung Who Wants to Be a Millionaire? bekannt wurde. Er präsentierte die Show von 1998 bis 2014 und prägte mit seiner unverwechselbaren Art das Format, das weltweit adaptiert wurde.</p>
+  <br>
+  <p class="title-text">Frühes Leben und Ausbildung</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_3-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Chris Tarrant wurde am <strong>10. Oktober 1946</strong> in Reading, England, geboren. Er besuchte die King’s School in Worcester und zeigte früh Interesse an Journalismus und Unterhaltung. Anschließend studierte er Anglistik an der <strong>University of Birmingham</strong> und begann seine Karriere beim Radio.</p>
+  <br>
+  <p class="title-text">Karriere</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_4-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Chris Tarrant begann seine Laufbahn im Rundfunk und Fernsehen bereits in den 1970er Jahren. Einige wichtige Stationen seiner Karriere umfassen:</p>
+  <ul>
+    <li><strong>1972–1983:</strong> Moderator der Kindersendung Tiswas</li>
+    <li><strong>1984–1992:</strong> Gastgeber der Sendung OTT</li>
+    <li><strong>1993–2004:</strong> Moderator der Radiosendung Capital Breakfast</li>
+    <li><strong>1998–2014:</strong> Moderator von Who Wants to Be a Millionaire?</li>
+  </ul>
+  <p>Tarrant machte sich mit seinem humorvollen und spannungsgeladenen Moderationsstil einen Namen. Sein Satz "Is that your final answer?" wurde weltweit bekannt.</p>
+  <br>
+  <p class="title-text">Privates Leben</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_5-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Chris Tarrant war zweimal verheiratet und hat mehrere Kinder. Neben seiner Fernsehkarriere engagiert er sich in verschiedenen wohltätigen Organisationen. Er erlitt 2014 einen Schlaganfall, von dem er sich jedoch gut erholte.</p>
+</div>
+
+<div class="box">
+  <p class="title-text">Wer ist Jeremy Clarkson?</p>
+  <p class="title-text">(Aktueller Moderator von UK)</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_1-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Jeremy Clarkson ist ein britischer Fernsehmoderator, Journalist und Autor, der vor allem durch die Automobilshow Top Gear internationale Bekanntheit erlangte. Seit 2018 moderiert er die Neuauflage von Who Wants to Be a Millionaire? und bringt seinen markanten Humor in die Show ein.</p>
+  <br>
+  <p class="title-text">Frühes Leben und Ausbildung</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_8-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Jeremy Clarkson wurde am <strong>11. April 1960</strong> in Doncaster, England, geboren. Er besuchte die Repton School, wo er für sein rebellisches Verhalten bekannt war. Nach der Schule begann er eine Karriere im Journalismus und spezialisierte sich auf Automobiljournalismus.</p>
+  <br>
+  <p class="title-text">Karriere</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_6-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Clarksons Karriere erstreckt sich über mehrere Jahrzehnte in Fernsehen und Printmedien. Wichtige Stationen:</p>
+  <ul>
+    <li><strong>1988–2015:</strong> Hauptmoderator der BBC-Sendung Top Gear</li>
+    <li><strong>Seit 2016:</strong> Moderator der Amazon-Show The Grand Tour</li>
+    <li><strong>Seit 2018:</strong> Moderator von Who Wants to Be a Millionaire?</li>
+  </ul>
+  <p>Clarkson bringt seinen typischen Sarkasmus und seine scharfzüngigen Kommentare in die Quizsendung ein, was ihr eine neue Dynamik verleiht.</p>
+  <br>
+  <p class="title-text">Privates Leben</p>
+  <p><img class="image-border" src="moderator-uk-images/Moderator-pic_9-uk.png" alt="Logo" height="300" width="540"></p>
+  <p>Jeremy Clarkson war zweimal verheiratet und hat drei Kinder. Er lebt auf einer Farm in den Cotswolds und betreibt seit 2021 seine eigene Landwirtschaft, was in der Serie Clarkson’s Farm dokumentiert wird.</p>
+</div>
+</body>
+</html>
