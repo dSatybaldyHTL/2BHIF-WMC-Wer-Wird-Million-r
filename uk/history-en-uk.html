@@ -9,48 +9,20 @@
     <link rel="icon" href="logo-uk.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <style>
-        /* Haupt-CSS-Styles */
-        body {
-            margin: 0;
-            padding-top: 80px;
-            background-image: url('history-uk-images/history-uk-background1.png');
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .navbar {
-            background-color: #333;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-        }
-
-        .navbar-logo {
-            display: inline-block;
-            padding-left: 20px;
-            cursor: pointer;
-        }
-
-        .navbar-menu {
-            list-style: none;
-            display: inline;
-        }
-
-        .navbar-menu li {
-            display: inline-block;
-            margin: 0 20px;
-        }
-
-        .navbar-menu a {
-            text-decoration: none;
+        .box {
+            border: 2px solid #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.58);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
             color: white;
-            font-weight: bold;
-        }
-
-        .navbar-menu a:hover {
-            color: #f1f1f1;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
         }
 
         h1.main-title {
@@ -67,62 +39,89 @@
             margin-bottom: 30px;
         }
 
-        /* Sprachumschalter */
-        .language-switcher {
-            text-align: right;
-            margin: 10px;
-            padding: 10px;
+        body {
+            margin: 0;
+            padding-top: 80px;
+            background-image: url('history-uk-images/history-uk-background1.png');
+            background-size: cover;
+            background-attachment: fixed;
         }
 
-        .language-switcher a {
-            text-decoration: none;
+        iframe {
+            margin-left: 230px;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size:5em;
             font-weight: bold;
-            font-size: 1em;
-            margin: 5px;
-            padding: 8px 15px;
-            border-radius: 5px;
-            background-color: #ddd;
-            color: black;
-            display: inline-block;
-        }
-
-        .language-switcher a:hover {
-            background-color: #bbb;
-        }
-
-        .language-switcher img {
-            vertical-align: middle;
-            margin-right: 5px;
-            width: 20px;
-        }
-
-        .box {
-            border: 2px solid #ffffff;
-            padding: 15px;
-            border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.58);
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            margin-top: 10px;
             color: white;
-            width: 70%;
-            margin: auto;
-            margin-bottom: 2rem;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            animation: fadeIn 0.5s ease forwards;
-            opacity: 1; /* Die Opazität wurde hier auf 1 gesetzt, um die Elemente sofort sichtbar zu machen */
         }
 
-        .image-border {
-            border: 4px solid #ffffff;
-            border-radius: 8px;
-            margin: 20px auto;
-            display: block;
+        p.title-text {
+            text-align: center;
+            background: linear-gradient(to right, #7c5f31, #fddd78);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Montserrat, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(0, 255, 126, 0.29), 0 0 20px rgba(255, 51, 255, 0.31);
+            margin: 0;
+            margin-bottom: 30px;
         }
 
-        .video-container {
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            padding: 10px 20px;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+            border: 4px solid #a3b8ff;
+            border: 4px solid #caa2e5;
             border-radius: 8px;
-            margin: 20px auto;
-            display: block;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+            border-color: #a3b8ff;
+            border-color: #caa2e5;
+        }
+
+        h1.main-title {
+            font-size: 5em;
+        }
+
+        .text {
+            font-size: 22px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .box:nth-of-type(1) {
+            animation-delay: 0.5s;
+        }
+
+        .box:nth-of-type(2) {
+            animation-delay: 1s;
+        }
+
+        .box:nth-of-type(3) {
+            animation-delay: 1.5s;
+        }
+
+        .box:nth-of-type(4) {
+            animation-delay: 2s;
+        }
+
+        .box:nth-of-type(5) {
+            animation-delay: 2.5s;
         }
 
         @keyframes fadeIn {
@@ -135,60 +134,97 @@
                 transform: translateY(0);
             }
         }
+        .image-border {
+            border: 4px solid #ffffff;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .video-container
+        {
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+        }
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
-
 <body>
-
-<!-- Sprachumschalter -->
-<div class="language-switcher">
-    <a href="history-de.html"><img src="flag-de.png" alt="Deutsch"> Deutsch</a>
-    <a href="history-en.html"><img src="flag-en.png" alt="English"> English</a>
-</div>
-
-<!-- Navigation -->
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index-uk.html';">
         <img src="logo-uk.png" alt="Logo" height="165" width="165" class="rotating-image">
         <p class="navbar-title"><strong>Who Wants to Be a Millionaire</strong></p>
     </div>
-    <ul class="navbar-menu">
+    <ul2 class="navbar-menu">
         <li><a href="index-uk.html#introduction">Introduction</a></li>
         <li><a href="index-uk.html#contents">Contents</a></li>
         <li><a href="index-uk.html#about">About Us</a></li>
         <li><a href="index-uk.html#team">Team</a></li>
-    </ul>
+    </ul2>
+    <!-- Language Selection Dropdown -->
+    <div class="lang-dropdown">
+        <button class="lang-btn">Language</button>
+        <div class="lang-dropdown-content">
+            <a href="history-en-uk.html">English</a>
+            <a href="history-de-uk.html">Deutsch</a>
+        </div>
+    </div>
 </nav>
-
 <article>
     <div class="header-container">
         <h1 class="main-title"><strong>The History</strong></h1>
     </div>
-
     <div class="box">
         <nav><p class="title-text">The Faces Behind a Legendary Quiz Show</p></nav>
         <p><img class="image-border" src="history-uk-images/history-uk-img2.png" alt="Logo" height="300" width="540"></p>
-        <p class="text">Who Wants to Be a Millionaire? was launched in the UK in 1998 and quickly became a global phenomenon. Two hosts shaped the British version: Chris Tarrant, who led the show from the beginning and helped it gain international fame, and Jeremy Clarkson, who reinterpreted the format starting in 2018 with his distinctive style.</p>
+        <p class="text">Who Wants to Be a Millionaire? was launched in the UK in 1998 and quickly became a global phenomenon. Two hosts played a key role in shaping the British version: Chris Tarrant, who led the show from the beginning and helped it achieve international fame, and Jeremy Clarkson, who brought his distinctive style to the format in 2018.</p>
     </div>
-
     <div class="box">
         <nav><p class="title-text">Chris Tarrant: The Man Who Started It All</p></nav>
         <p><img class="image-border" src="history-uk-images/history-uk-img5.png" alt="Logo" height="300" width="540"></p>
-        <p class="text">Chris Tarrant was the face of the British version of Who Wants to Be a Millionaire? from 1998 to 2014. With his calm but tension-filled moderation, he made the quiz format unique. His iconic phrase “Is that your final answer?” became world-famous. Tarrant's era was marked by unforgettable moments, including the scandal involving Charles Ingram, who attempted to cheat his way to the million with a coughing scheme.</p>
-    </div>
+        <p class="text">Chris Tarrant was the face of the British version of Who Wants to Be a Millionaire? from 1998 to 2014. With his calm yet suspenseful hosting style, he made the quiz format unique. His iconic phrase, "Is that your final answer?" became world-famous. Tarrant’s era was marked by unforgettable moments—including the scandal surrounding Charles Ingram, who attempted to cheat his way to a million with a coughing scheme.</p>
 
+    </div>
     <div class="box">
         <nav><p class="title-text">Jeremy Clarkson: A New Era for the Cult Quiz</p></nav>
-        <p><img class="image-border" src="history-uk-images/history-uk-img6.png" alt="Logo" height="300" width="540"></p>
-        <p class="text">In 2018, Jeremy Clarkson took over as the host. Known from Top Gear and The Grand Tour, he brought his unmistakable humor and quick wit to the show. Clarkson's direct and often ironic comments made for many entertaining situations. He was particularly impressed by the millionaire winner Donald Fear, who answered all the questions in record time in 2020.</p>
-    </div>
 
+        <p><img class="image-border" src="history-uk-images/history-uk-img6.png" alt="Logo" height="300" width="540"></p>
+        <p class="text">In 2018, Jeremy Clarkson took over as the host. Known from Top Gear and The Grand Tour, he brought his unmistakable humor and quick wit to the show. Clarkson's direct and often ironic comments led to many entertaining moments. He was particularly impressed by millionaire winner Donald Fear, who answered all the questions in record time in 2020.</p>
+    </div>
     <div class="box">
         <nav><p class="title-text">Two Hosts, One Unforgettable Legacy</p></nav>
         <p><img class="image-border" src="history-uk-images/history-uk-img3.png" alt="Logo" height="300" width="540"></p>
-        <p class="text">Chris Tarrant and Jeremy Clarkson represent two different eras of the show. While Tarrant brought tension and tradition, Clarkson added a modern and humorous touch. However, one thing remains the same: The fascination for the quiz that captivates people worldwide.</p>
+        <p class="text">Chris Tarrant and Jeremy Clarkson represent two different eras of the show. While Tarrant brought suspense and tradition, Clarkson added a modern and humorous touch. Yet one thing remains unchanged: the fascination with the quiz that captivates audiences worldwide.</p>
     </div>
-
     <div class="box">
         <nav><p class="title-text">First Broadcasted Preview</p></nav>
         <div class="video-container">
@@ -197,6 +233,5 @@
         </div>
     </div>
 </article>
-
 </body>
 </html>
