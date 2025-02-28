@@ -8350,6 +8350,7 @@ textarea.form-control-lg {
 }
 
 .text-muted {
+    font-family: 'Montserrat', sans-serif;
     --bs-text-opacity: 1;
     color: #b9c5c5 !important;
 }
