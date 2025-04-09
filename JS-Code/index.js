@@ -10,7 +10,7 @@ fetch('https://localhost:3000/questions')
         function loadQuestion(question) {
             document.getElementById('frageText').textContent = question.frage;
             const antwortenContainer = document.getElementById('antworten-container');
-            antwortenContainer.innerHTML = '';
+            antwortenContainer.innerHTML = ''; // Alle alten Buttons entfernen
 
             question.antworten.forEach(item => {
                 const button = document.createElement('button');
@@ -18,46 +18,41 @@ fetch('https://localhost:3000/questions')
                 button.classList.add('antworten-button');
 
                 button.onclick = () => {
-                    const isCorrect = checkAnswer(item, question.rightAnswer);
+                    const isCorrect = checkAnswer(item, question.rightAnswer); // Überprüfen, ob die Antwort richtig ist
+
+                    // Gehe durch alle Buttons und färbe sie
                     const buttons = document.querySelectorAll('.antworten-button');
-
                     buttons.forEach((btn) => {
-                        btn.disabled = true;
-
                         if (btn.textContent === question.rightAnswer) {
-                            btn.style.backgroundColor = 'green';
-                        } else if (btn.textContent === item && !isCorrect) {
-                            btn.style.backgroundColor = 'red';
+                            btn.style.backgroundColor = 'green'; // Färbe den richtigen Button grün
                         }
+                        if (btn.textContent === item && !isCorrect) {
+                            btn.style.backgroundColor = 'red'; // Färbe die falsche Antwort rot
+                        }
+                        btn.disabled = true; // Alle Buttons deaktivieren, nachdem eine Antwort ausgewählt wurde
                     });
 
-                    if (isCorrect) {
-                        // kleine Pause, dann nächste Frage
-                        setTimeout(() => {
-                            questionCounter++;
-                            if (questionCounter < 15 && questionCounter < data.length) {
-                                loadQuestion(data[questionCounter]);
-                            } else {
-                                showEndScreen("Glückwunsch! Du hast alle 15 Fragen geschafft!");
-                            }
-                        }, 1500);
-                    } else {
-                        setTimeout(() => {
-                            showEndScreen("Falsch beantwortet. Spiel beendet.");
-                        }, 1500);
-                    }
+                    // "Nächste Frage"-Button anzeigen
+                    document.getElementById('nextButton').style.display = 'block';
                 };
 
                 antwortenContainer.appendChild(button);
             });
         }
 
-        function showEndScreen(message) {
-            document.getElementById('frageText').textContent = message;
-            document.getElementById('antworten-container').innerHTML = '';
-        }
+        // "Nächste Frage"-Button
+        document.getElementById('nextButton').onclick = () => {
+            questionCounter++;
+            if (questionCounter < data.length) {
+                loadQuestion(data[questionCounter]);
+                document.getElementById('nextButton').style.display = 'none'; // Button wieder verstecken
+            } else {
+                document.getElementById('frageText').textContent = "Quiz beendet!";
+                document.getElementById('antworten-container').innerHTML = '';
+                document.getElementById('nextButton').style.display = 'none';
+            }
+        };
 
-        // Start mit der ersten Frage
         loadQuestion(data[questionCounter]);
     })
     .catch(error => console.error("Fehler beim Laden:", error));
