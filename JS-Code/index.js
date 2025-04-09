@@ -1,23 +1,15 @@
-function makeUpperCase(value) {
-    console.log(value.toUpperCase());
-}
 
-function reverseString(str) {
-    console.log(str.split('').reverse().join(''));
-}
+fetch('https://localhost:3000/questions')
+.then(response => response.json())
+.then(data => {
+    data.forEach((question) => {
 
-function handleName(name, cb) {
-    const fullName = `${name} smith`;
-    cb(fullName);
-}
-
-// handleName('peter', makeUpperCase);
-// handleName('peter', reverseString);
-
-handleName('susan', (value) => console.log(value));
-
-const btn = document.querySelector('.btn');
-
-btn.addEventListener('click', function() {
-    console.log('Hello World!');
+    })
 })
+
+function checkAnswer(userAnswer, answer) {
+    if (userAnswer === answer) {
+        return true;
+    }
+    return false;
+}
