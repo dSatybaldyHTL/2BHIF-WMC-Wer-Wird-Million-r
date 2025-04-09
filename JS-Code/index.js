@@ -10,7 +10,7 @@ fetch('https://localhost:3000/questions')
         function loadQuestion(question) {
             document.getElementById('frageText').textContent = question.frage;
             const antwortenContainer = document.getElementById('antworten-container');
-            antwortenContainer.innerHTML = ''; // Alle alten Buttons entfernen
+            antwortenContainer.innerHTML = '';
 
             question.antworten.forEach(item => {
                 const button = document.createElement('button');
@@ -18,18 +18,17 @@ fetch('https://localhost:3000/questions')
                 button.classList.add('antworten-button');
 
                 button.onclick = () => {
-                    const isCorrect = checkAnswer(item, question.rightAnswer); // Überprüfen, ob die Antwort richtig ist
+                    const isCorrect = checkAnswer(item, question.rightAnswer);
 
-                    // Gehe durch alle Buttons und färbe sie
                     const buttons = document.querySelectorAll('.antworten-button');
                     buttons.forEach((btn) => {
                         if (btn.textContent === question.rightAnswer) {
-                            btn.style.backgroundColor = 'green'; // Färbe den richtigen Button grün
+                            btn.style.backgroundColor = 'green';
                         }
                         if (btn.textContent === item && !isCorrect) {
-                            btn.style.backgroundColor = 'red'; // Färbe die falsche Antwort rot
+                            btn.style.backgroundColor = 'red';
                         }
-                        btn.disabled = true; // Alle Buttons deaktivieren, nachdem eine Antwort ausgewählt wurde
+                        btn.disabled = true;
                     });
 
                     // "Nächste Frage"-Button anzeigen
@@ -40,12 +39,11 @@ fetch('https://localhost:3000/questions')
             });
         }
 
-        // "Nächste Frage"-Button
         document.getElementById('nextButton').onclick = () => {
             questionCounter++;
             if (questionCounter < data.length) {
                 loadQuestion(data[questionCounter]);
-                document.getElementById('nextButton').style.display = 'none'; // Button wieder verstecken
+                document.getElementById('nextButton').style.display = 'none';
             } else {
                 document.getElementById('frageText').textContent = "Quiz beendet!";
                 document.getElementById('antworten-container').innerHTML = '';
