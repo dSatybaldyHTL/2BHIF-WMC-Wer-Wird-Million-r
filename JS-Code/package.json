@@ -1,10 +1,155 @@
 {
-  "name": "JSON-2-CallBacks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "private": true
+  "packName": "Wer wird Millionär - Fragen",
+  "questions": [
+    {
+      "level": "sehr leicht",
+      "question": "Welcher dieser Begriffe stammt ursprünglich aus der Fotografie und bedeutet heute „besonders beliebt“?",
+      "options": ["A: Zoom", "B: Klick", "C: Schnappschuss", "D: Highlight"],
+      "answer": "D"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Welche dieser Städte ist nicht Hauptstadt eines Landes?",
+      "options": ["A: Paris", "B: Madrid", "C: Zürich", "D: Rom"],
+      "answer": "C"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Was ist die Hauptzutat von traditionellem Pesto Genovese?",
+      "options": ["A: Tomaten", "B: Basilikum", "C: Paprika", "D: Thymian"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Welche Maßeinheit steht für elektrische Spannung?",
+      "options": ["A: Ampere", "B: Volt", "C: Ohm", "D: Watt"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Wer ist der Erfinder der Relativitätstheorie?",
+      "options": ["A: Stephen Hawking", "B: Galileo Galilei", "C: Albert Einstein", "D: Isaac Newton"],
+      "answer": "C"
+    },
+    {
+      "level": "leicht",
+      "question": "Wofür steht das „D“ im Kürzel „DVD“?",
+      "options": ["A: Digital", "B: Direct", "C: Disk", "D: Data"],
+      "answer": "A"
+    },
+    {
+      "level": "leicht",
+      "question": "Wie nennt man eine besonders schnelle Internetverbindung?",
+      "options": ["A: DSL", "B: GPS", "C: HTML", "D: VGA"],
+      "answer": "A"
+    },
+    {
+      "level": "leicht",
+      "question": "Welche Band veröffentlichte das Album „The Dark Side of the Moon“?",
+      "options": ["A: Queen", "B: Pink Floyd", "C: The Beatles", "D: Nirvana"],
+      "answer": "B"
+    },
+    {
+      "level": "leicht",
+      "question": "Was ist ein Synonym für das Wort „kurios“?",
+      "options": ["A: Langweilig", "B: Merkwürdig", "C: Fröhlich", "D: Laut"],
+      "answer": "B"
+    },
+    {
+      "level": "leicht",
+      "question": "Welcher Planet besitzt ein ausgeprägtes Ringsystem?",
+      "options": ["A: Mars", "B: Neptun", "C: Saturn", "D: Venus"],
+      "answer": "C"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Welcher deutsche Philosoph prägte den Begriff des „Übermenschen“?",
+      "options": ["A: Hegel", "B: Kant", "C: Nietzsche", "D: Schopenhauer"],
+      "answer": "C"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Was bedeutet „Carpe Diem“ aus dem Lateinischen übersetzt?",
+      "options": ["A: Genieße den Abend", "B: Nutze den Tag", "C: Fürchte den Morgen", "D: Ergreife die Stunde"],
+      "answer": "B"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Wie heißt der kleine Bruder von Mario im Nintendo-Universum?",
+      "options": ["A: Luigi", "B: Yoshi", "C: Bowser", "D: Wario"],
+      "answer": "A"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "In welcher Sportart gibt es einen „Schmetterball“?",
+      "options": ["A: Volleyball", "B: Handball", "C: Basketball", "D: Tischtennis"],
+      "answer": "A"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Was ist das chemische Symbol von Gold?",
+      "options": ["A: Au", "B: Ag", "C: Go", "D: Gd"],
+      "answer": "A"
+    },
+    {
+      "level": "schwer",
+      "question": "In welchem Jahr fiel die Berliner Mauer?",
+      "options": ["A: 1987", "B: 1989", "C: 1991", "D: 1993"],
+      "answer": "B"
+    },
+    {
+      "level": "schwer",
+      "question": "Was bezeichnet man in der Musik als 'Fuge'?",
+      "options": ["A: Eine Tonleiter", "B: Ein schneller Rhythmus", "C: Ein polyphones Kompositionsprinzip", "D: Ein Orchesterstück"],
+      "answer": "C"
+    },
+    {
+      "level": "schwer",
+      "question": "Welches chemische Element hat das Elementsymbol 'Sn'?",
+      "options": ["A: Silber", "B: Antimon", "C: Zinn", "D: Blei"],
+      "answer": "C"
+    },
+    {
+      "level": "schwer",
+      "question": "Wer schrieb das Theaterstück 'Warten auf Godot'?",
+      "options": ["A: Bertolt Brecht", "B: Samuel Beckett", "C: Friedrich Dürrenmatt", "D: Jean-Paul Sartre"],
+      "answer": "B"
+    },
+    {
+      "level": "schwer",
+      "question": "Wie viele Chromosomen hat ein Mensch normalerweise?",
+      "options": ["A: 42", "B: 44", "C: 46", "D: 48"],
+      "answer": "C"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Wie heißt die mathematische Folge, in der jede Zahl die Summe der beiden vorhergehenden ist?",
+      "options": ["A: Pascalsche Folge", "B: Fibonacci-Folge", "C: Eulersche Reihe", "D: Archimedes-Zahl"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welcher Komponist war taub und schrieb dennoch weltberühmte Musikstücke?",
+      "options": ["A: Bach", "B: Mozart", "C: Beethoven", "D: Chopin"],
+      "answer": "C"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "In welchem Land liegt der Ursprung der Schrödingers-Katze-Idee?",
+      "options": ["A: Deutschland", "B: Österreich", "C: Schweiz", "D: USA"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Wie viele Planck-Zeiten passen in eine Sekunde?",
+      "options": ["A: Etwa 10^34", "B: Etwa 10^44", "C: Etwa 10^54", "D: Etwa 10^64"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welcher Algorithmus wird in der Informatik zur schnellstmöglichen Suche in sortierten Listen verwendet?",
+      "options": ["A: Bubble Sort", "B: Binäre Suche", "C: Brute Force", "D: Linear Scan"],
+      "answer": "B"
+    }
+  ]
 }
