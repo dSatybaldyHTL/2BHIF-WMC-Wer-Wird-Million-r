@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wer wird Millionär</title>
-    <link rel="stylesheet" href="stylesheet-uk.css">
+    <link rel="stylesheet" href="quiz-uk.css">
     <link rel="icon" href="logo-uk.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <style>
@@ -23,7 +23,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-image: url('quiz-uk-background.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index-en-uk.html';">
         <img src="logo-uk.png" alt="Logo" height="165" width="165" class="rotating-image">
@@ -38,9 +38,9 @@
 </nav>
 
 <div class="quiz-container">
-    <h2 id="frageText">Frage wird geladen...</h2>
+    <h2 id="frageText" class="frage-text">Frage wird geladen...</h2>
     <div id="antworten-container" class="antworten-container"></div>
-    <button id="nextButton" style="display:none;">Nächste Frage</button>
+    <button id="nextButton" class="naechste-button" style="display:none;">Nächste Frage</button>
 </div>
 
 <script src="../JS-Code/index.js"></script>
