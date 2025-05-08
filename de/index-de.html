@@ -17,6 +17,18 @@
     <link href="index.css" rel="stylesheet"/>
     <link rel="icon" href="logo-wwm.png">
     <style>
+
+        .play-button {
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
         .lang-dropdown {
             position: relative;
             display: inline-block;
@@ -357,7 +369,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
                 <h4 class="mb-4">Bist du bereit für die Million?</h4>
-                <button class="btn btn-primary btn-lg">Spiel starten</button>
+                <button class="btn btn-primary play-button">
+                    🎮 Spiel starten
+                </button>
                 <p class="mt-3 text-muted">15 Fragen – 4 Joker – 1 Million. Viel Glück!</p>
             </div>
         </div>
