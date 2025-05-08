@@ -1,37 +1,44 @@
-function checkAnswer(userAnswer, answer) {
-    return userAnswer === answer;
+function checkAnswer(userAnswer, correctAnswer) {
+    return userAnswer === correctAnswer;
 }
 
-fetch('https://localhost:3000/questions')
-    .then(response => response.json())
-    .then(data => {
+fetch('http://localhost:3000/questions')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Netzwerkfehler beim Laden der Fragen');
+        }
+        return response.json();
+    })
+    .then(questions => {
         let questionCounter = 0;
 
         function loadQuestion(question) {
-            document.getElementById('frageText').textContent = question.frage;
+            document.getElementById('frageText').textContent = question.question;
+
             const antwortenContainer = document.getElementById('antworten-container');
             antwortenContainer.innerHTML = '';
 
-            question.antworten.forEach(item => {
+            question.options.forEach(option => {
                 const button = document.createElement('button');
-                button.textContent = item;
+                button.textContent = option;
                 button.classList.add('antworten-button');
 
                 button.onclick = () => {
-                    const isCorrect = checkAnswer(item, question.rightAnswer);
+                    const userAnswer = option.charAt(0); // Nur A, B, C oder D
+                    const isCorrect = checkAnswer(userAnswer, question.answer);
 
                     const buttons = document.querySelectorAll('.antworten-button');
-                    buttons.forEach((btn) => {
-                        if (btn.textContent === question.rightAnswer) {
+                    buttons.forEach(btn => {
+                        const btnAnswer = btn.textContent.charAt(0);
+                        if (btnAnswer === question.answer) {
                             btn.style.backgroundColor = 'green';
                         }
-                        if (btn.textContent === item && !isCorrect) {
+                        if (btnAnswer === userAnswer && !isCorrect) {
                             btn.style.backgroundColor = 'red';
                         }
                         btn.disabled = true;
                     });
 
-                    // "Nächste Frage"-Button anzeigen
                     document.getElementById('nextButton').style.display = 'block';
                 };
 
@@ -41,16 +48,19 @@ fetch('https://localhost:3000/questions')
 
         document.getElementById('nextButton').onclick = () => {
             questionCounter++;
-            if (questionCounter < data.length) {
-                loadQuestion(data[questionCounter]);
+            if (questionCounter < questions.length) {
+                loadQuestion(questions[questionCounter]);
                 document.getElementById('nextButton').style.display = 'none';
             } else {
-                document.getElementById('frageText').textContent = "Quiz beendet!";
+                document.getElementById('frageText').textContent = "🎉 Quiz beendet!";
                 document.getElementById('antworten-container').innerHTML = '';
                 document.getElementById('nextButton').style.display = 'none';
             }
         };
 
-        loadQuestion(data[questionCounter]);
+        loadQuestion(questions[questionCounter]);
     })
-    .catch(error => console.error("Fehler beim Laden:", error));
+    .catch(error => {
+        console.error("Fehler beim Laden der Fragen:", error);
+        document.getElementById('frageText').textContent = "❌ Fehler beim Laden der Fragen.";
+    });
