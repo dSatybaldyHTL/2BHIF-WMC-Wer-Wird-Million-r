@@ -17,6 +17,22 @@
     <link href="index.css" rel="stylesheet"/>
     <link rel="icon" href="logo-wwm.png">
     <style>
+
+        .play-button {
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+            background-color: #28a745; /* oder die exakte grüne Farbe aus dem Navbar-Hover */
+            border: none;
+            color: white;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            background-color: #218838; /* etwas dunkler beim Hover */
+        }
+
         .lang-dropdown {
             position: relative;
             display: inline-block;
@@ -51,7 +67,7 @@
             list-style: none;
             display: flex;
             padding: 0;
-            margin: 0 -500px 0 0;
+            margin: 0 -420px 0 0;
             font-family: Montserrat, sans-serif;
         }
     </style>
@@ -68,6 +84,7 @@
         <li><a href="#contents">Contents</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#team">Team</a></li>
+        <li><a href="#game">Game</a></li>
     </ul>
     <!-- Language Selection Dropdown -->
     <div class="lang-dropdown">
@@ -332,6 +349,24 @@
                     <img class="mx-auto rounded-circle" src="index-pics/ali-photo.jpg" alt="..."/>
                     <h4>Hasem Ali</h4>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="game">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-heading text-uppercase">Game</h2>
+            <p class="text-muted">Test your knowledge in our “Who Wants to Be a Millionaire?” quiz</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h4 class="mb-4">Are you ready for the million?</h4>
+                <button class="btn btn-primary play-button">
+                    🎮 Start Game
+                </button>
+                <p class="mt-3 text-muted">15 questions – 4 lifelines – 1 million. Good luck!</p>
             </div>
         </div>
     </div>
