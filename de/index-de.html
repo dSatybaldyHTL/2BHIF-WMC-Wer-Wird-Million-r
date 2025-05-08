@@ -21,12 +21,16 @@
         .play-button {
             font-size: 1.5rem;
             padding: 1rem 3rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background-color: #28a745; /* oder die exakte grüne Farbe aus dem Navbar-Hover */
+            border: none;
+            color: white;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
         }
 
         .play-button:hover {
             transform: scale(1.1);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            background-color: #218838; /* etwas dunkler beim Hover */
         }
 
         .lang-dropdown {
