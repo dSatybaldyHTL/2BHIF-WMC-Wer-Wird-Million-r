@@ -443,8 +443,7 @@ a:hover {
     list-style: none;
     display: flex;
     padding: 0;
-    margin: 0;
-    margin-right: 25px;
+    margin: 0 25px 0 0;
     font-family: Montserrat, sans-serif;
 }
 
@@ -500,7 +499,7 @@ a:hover {
 }
 
 .navbar a:hover {
-    color: #7c5f31;
+    color: #00ffa3;
 }
 
 .navbar a {
@@ -733,8 +732,7 @@ body {
     list-style: none;
     display: flex;
     padding: 0;
-    margin: 0;
-    margin-right: 25px;
+    margin: 0 25px 0 0;
     font-family: Montserrat, sans-serif;
 }
 
