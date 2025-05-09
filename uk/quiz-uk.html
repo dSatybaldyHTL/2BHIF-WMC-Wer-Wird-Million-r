@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wer wird Millionär</title>
+    <title>Who Wants to Be a Millionaire</title>
     <link rel="stylesheet" href="quiz-uk.css">
     <link rel="stylesheet" href="stylesheet-uk.css">
     <link rel="icon" href="logo-uk.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <style>
-        #antworten-container button {
+        #answer-container button {
             display: block;
             margin: 10px 0;
             padding: 10px;
@@ -38,23 +38,23 @@
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index-en-uk.html';">
         <img src="logo-uk.png" alt="Logo" height="165" width="165" class="rotating-image">
-        <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
+        <p class="navbar-title"><strong>Who Wants to Be a Millionaire</strong></p>
     </div>
     <ul class="navbar-menu">
-        <li><a href="index-en-uk.html#introduction">Einführung</a></li>
-        <li><a href="index-en-uk.html#contents">Inhalt</a></li>
-        <li><a href="index-en-uk.html#about">Über Uns</a></li>
+        <li><a href="index-en-uk.html#introduction">Introduction</a></li>
+        <li><a href="index-en-uk.html#contents">Contents</a></li>
+        <li><a href="index-en-uk.html#about">About Us</a></li>
         <li><a href="index-en-uk.html#team">Team</a></li>
     </ul>
 </nav>
 
 <div class="quiz-container">
-    <div id="schwierigkeitsgrad">Schwierigkeitsgrad: sehr leicht</div>
-    <div id="frageNummer"></div>
-    <div id="kontostand">Kontostand: 0 €</div>
-    <h2 id="frageText" class="frage-text">Frage wird geladen...</h2>
-    <div id="antworten-container" class="antworten-container"></div>
-    <button id="nextButton" class="naechste-button" style="display:none;">Nächste Frage</button>
+    <div id="Difficulty">Difficulty: Very easy</div>
+    <div id="questionNumber"></div>
+    <div id="Balance">Balance: 0 €</div>
+    <h2 id="questionPlaintext" class="question-Plaintext">Loading question...</h2>
+    <div id="answer-container" class="answer-container"></div>
+    <button id="nextButton" class="next-button" style="display:none;">Next question</button>
 </div>
 
 <!-- Hier wird der Game Over-Bereich dynamisch hinzugefügt -->

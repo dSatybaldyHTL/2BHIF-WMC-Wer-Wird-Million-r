@@ -760,19 +760,19 @@ body {
     margin: 120px auto 40px auto;
     padding: 30px;
     background: rgba(0, 0, 0, 0.8);
-    border: 3px solid #fddd78;
+    border: 3px solid #00ffa6;
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(253, 221, 120, 0.8);
+    box-shadow: 0 0 30px rgb(243, 51, 255);
     text-align: center;
 }
 
-.frage-text {
+.question-Plaintext {
     font-size: 1.8rem;
     margin-bottom: 30px;
-    background: linear-gradient(to right, #fddd78, #7c5f31);
+    background: linear-gradient(to right, #e500ff, #00ff95);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 15px rgba(253, 221, 120, 0.6);
+    text-shadow: 0 0 150px rgb(0, 225, 255);
 }
 
 .antworten-container {
@@ -782,7 +782,7 @@ body {
     justify-items: center;
 }
 
-.antworten-button {
+.answers-button {
     width: 100%;
     max-width: 400px;
     padding: 15px 20px;
@@ -807,23 +807,23 @@ body {
     cursor: not-allowed;
 }
 
-.naechste-button {
+.next-button {
     margin-top: 25px;
     padding: 12px 30px;
     font-size: 1.2rem;
     font-family: Montserrat, sans-serif;
-    background: linear-gradient(to right, #fddd78, #7c5f31);
+    background: linear-gradient(to right, #00ff5f, #007c27);
     border: none;
     border-radius: 30px;
     color: #000;
     cursor: pointer;
-    box-shadow: 0 0 20px rgba(253, 221, 120, 0.8);
+    box-shadow: 0 0 20px rgba(9, 255, 107, 0.8);
     transition: all 0.3s ease;
 }
 
-.naechste-button:hover {
+.next-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(253, 221, 120, 1);
+    box-shadow: 0 0 30px rgb(0, 255, 186);
 }
 
 .game-over-container {
