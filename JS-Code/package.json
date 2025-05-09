@@ -32,6 +32,36 @@
       "answer": "C"
     },
     {
+      "level": "sehr leicht",
+      "question": "Was ist der längste Fluss der Welt?",
+      "options": ["A: Nil", "B: Amazonas", "C: Mississippi", "D: Donau"],
+      "answer": "A"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Wie viele Planeten gibt es in unserem Sonnensystem?",
+      "options": ["A: 7", "B: 8", "C: 9", "D: 10"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Welche Farbe hat der Himmel an einem klaren Tag?",
+      "options": ["A: Rot", "B: Blau", "C: Grün", "D: Gelb"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Wie viele Beine hat ein Insekt?",
+      "options": ["A: 4", "B: 6", "C: 8", "D: 10"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Was ist die Hauptstadt von Deutschland?",
+      "options": ["A: Berlin", "B: München", "C: Hamburg", "D: Frankfurt"],
+      "answer": "A"
+    },
+    {
       "level": "leicht",
       "question": "Wofür steht das „D“ im Kürzel „DVD“?",
       "options": ["A: Digital", "B: Direct", "C: Disk", "D: Data"],
@@ -60,6 +90,24 @@
       "question": "Welcher Planet besitzt ein ausgeprägtes Ringsystem?",
       "options": ["A: Mars", "B: Neptun", "C: Saturn", "D: Venus"],
       "answer": "C"
+    },
+    {
+      "level": "leicht",
+      "question": "Welche Farbe hat der Smaragd?",
+      "options": ["A: Blau", "B: Grün", "C: Rot", "D: Gelb"],
+      "answer": "B"
+    },
+    {
+      "level": "leicht",
+      "question": "Wie heißt die Hauptstadt von Italien?",
+      "options": ["A: Rom", "B: Mailand", "C: Florenz", "D: Venedig"],
+      "answer": "A"
+    },
+    {
+      "level": "leicht",
+      "question": "Welches Tier ist das größte Landtier der Erde?",
+      "options": ["A: Elefant", "B: Giraffe", "C: Nashorn", "D: Löwe"],
+      "answer": "A"
     },
     {
       "level": "mittelschwer",
@@ -92,6 +140,24 @@
       "answer": "A"
     },
     {
+      "level": "mittelschwer",
+      "question": "Welches Land hat den höchsten Berg der Welt, den Mount Everest?",
+      "options": ["A: Nepal", "B: China", "C: Indien", "D: Pakistan"],
+      "answer": "A"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "In welchem Jahr fand der erste Menschflug ins All statt?",
+      "options": ["A: 1957", "B: 1961", "C: 1965", "D: 1970"],
+      "answer": "B"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Wie viele Kontinente gibt es auf der Erde?",
+      "options": ["A: 5", "B: 6", "C: 7", "D: 8"],
+      "answer": "C"
+    },
+    {
       "level": "schwer",
       "question": "In welchem Jahr fiel die Berliner Mauer?",
       "options": ["A: 1987", "B: 1989", "C: 1991", "D: 1993"],
@@ -120,6 +186,12 @@
       "question": "Wie viele Chromosomen hat ein Mensch normalerweise?",
       "options": ["A: 42", "B: 44", "C: 46", "D: 48"],
       "answer": "C"
+    },
+    {
+      "level": "schwer",
+      "question": "Wer entwickelte die Relativitätstheorie?",
+      "options": ["A: Isaac Newton", "B: Albert Einstein", "C: Max Planck", "D: Werner Heisenberg"],
+      "answer": "B"
     },
     {
       "level": "sehr schwer",
