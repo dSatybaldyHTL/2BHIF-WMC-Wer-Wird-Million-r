@@ -5,37 +5,27 @@ function checkAnswer(userAnswer, correctAnswer) {
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; // Swap
+        [array[i], array[j]] = [array[j], array[i]];
     }
 }
 
 function restartQuiz() {
-    // Setze den Kontostand zurück
     accountBalance = 0;
-    document.getElementById('kontostand').textContent = `Kontostand: 0 €`;
-
-    // Setze den Fragezähler zurück
+    document.getElementById('Balance').textContent = `Balance: 0 €`;
     questionCounter = 0;
     currentLevelIndex = 0;
-
-    // Starte das Quiz erneut
     fetchQuestions();
 }
 
 function goToHomepage() {
-    // Umleitung zur Hauptseite (ersetze den Link durch die korrekte URL)
-    window.location.href = "index-en-uk.html";  // Beispiel: Hauptseite
+    window.location.href = "index-en-uk.html";
 }
 
 function showGameOver() {
-    // Verstecke alle anderen UI-Elemente
-    document.getElementById('frageText').textContent = "❌ Game Over!";
+    document.getElementById('questionPlaintext').textContent = "❌ Game Over!";
+    document.getElementById('answer-container').innerHTML = '';
+    document.getElementById('nextButton').style.display = 'none';
 
-    // Blende die Fragen und Antworten aus
-    document.getElementById('antworten-container').innerHTML = '';
-    document.getElementById('nextButton').style.display = 'none'; // Verstecke den "Next" Button
-
-    // Erstelle den Game Over Container
     const gameOverContainer = document.createElement('div');
     gameOverContainer.id = 'gameOverContainer';
     gameOverContainer.style.textAlign = "center";
@@ -47,7 +37,6 @@ function showGameOver() {
     `;
     document.body.appendChild(gameOverContainer);
 
-    // Füge Event-Listener für die Buttons hinzu
     document.getElementById('restartButton').onclick = restartQuiz;
     document.getElementById('homepageButton').onclick = goToHomepage;
 }
@@ -68,44 +57,35 @@ fetch('http://localhost:3000/questions')
             'sehr schwer': []
         };
 
-        // Gruppiere Fragen nach Schwierigkeitsgrad
         questions.forEach(question => {
             questionsByLevel[question.level].push(question);
         });
 
-        // Ziehe 3 zufällige Fragen aus jedem Schwierigkeitsgrad
         const selectedQuestions = [];
         Object.keys(questionsByLevel).forEach(level => {
             const levelQuestions = questionsByLevel[level];
-            shuffleArray(levelQuestions); // Mische die Fragen für das aktuelle Level
-            selectedQuestions.push(...levelQuestions.slice(0, 3)); // Wähle 3 zufällige Fragen
+            shuffleArray(levelQuestions);
+            selectedQuestions.push(...levelQuestions.slice(0, 3));
         });
 
         let questionCounter = 0;
         let currentLevelIndex = 0;
         const levels = ['sehr leicht', 'leicht', 'mittelschwer', 'schwer', 'sehr schwer'];
 
-        // Gewinne pro Frage
         const prizes = [
             100, 200, 300, 500, 1000, 2000, 4000,
             8000, 16000, 32000, 64000, 125000, 250000,
             500000, 1000000
         ];
 
-        // Initialer Kontostand
         let accountBalance = 0;
 
-        // Funktion zum Laden der Frage
         function loadQuestion(question) {
-            document.getElementById('frageText').textContent = question.question;
+            document.getElementById('questionPlaintext').textContent = question.question;
+            document.getElementById('Difficulty').textContent = `Difficulty: ${levels[currentLevelIndex]}`;
+            document.getElementById('questionNumber').textContent = `Question ${questionCounter + 1} – Prize: ${prizes[questionCounter]} €`;
 
-            // Setze den aktuellen Schwierigkeitsgrad
-            document.getElementById('schwierigkeitsgrad').textContent = `Schwierigkeitsgrad: ${levels[currentLevelIndex]}`;
-
-            // Anzeige des Preises und der Frageanzahl
-            document.getElementById('frageNummer').textContent = `Frage ${questionCounter + 1} – Gewinn: ${prizes[questionCounter]} €`;
-
-            const antwortenContainer = document.getElementById('antworten-container');
+            const antwortenContainer = document.getElementById('answer-container');
             antwortenContainer.innerHTML = '';
 
             question.options.forEach(option => {
@@ -114,7 +94,7 @@ fetch('http://localhost:3000/questions')
                 button.classList.add('antworten-button');
 
                 button.onclick = () => {
-                    const userAnswer = option.charAt(0); // Nur A, B, C oder D
+                    const userAnswer = option.charAt(0);
                     const isCorrect = checkAnswer(userAnswer, question.answer);
 
                     const buttons = document.querySelectorAll('.antworten-button');
@@ -129,13 +109,12 @@ fetch('http://localhost:3000/questions')
                         btn.disabled = true;
                     });
 
-                    // Wenn die Antwort korrekt ist, Kontostand aktualisieren
                     if (isCorrect) {
-                        accountBalance += prizes[questionCounter];  // Füge den Gewinn zum Kontostand hinzu
-                        document.getElementById('kontostand').textContent = `Kontostand: ${accountBalance} €`;  // Aktualisiere den Kontostand
-                        document.getElementById('nextButton').style.display = 'block'; // Zeige den "Next" Button
+                        accountBalance += prizes[questionCounter];
+                        document.getElementById('Balance').textContent = `Balance: ${accountBalance} €`;
+                        document.getElementById('nextButton').style.display = 'block';
                     } else {
-                        showGameOver();  // Zeige Game Over Bildschirm bei falscher Antwort
+                        showGameOver();
                     }
                 };
 
@@ -143,28 +122,25 @@ fetch('http://localhost:3000/questions')
             });
         }
 
-        // Nächste Frage laden
         document.getElementById('nextButton').onclick = () => {
             questionCounter++;
             if (questionCounter < selectedQuestions.length) {
                 loadQuestion(selectedQuestions[questionCounter]);
                 document.getElementById('nextButton').style.display = 'none';
             } else {
-                document.getElementById('frageText').textContent = "🎉 Quiz beendet!";
-                document.getElementById('antworten-container').innerHTML = '';
+                document.getElementById('questionPlaintext').textContent = "🎉 Quiz beendet!";
+                document.getElementById('answer-container').innerHTML = '';
                 document.getElementById('nextButton').style.display = 'none';
             }
 
-            // Aktualisiere den Schwierigkeitsgrad, wenn 3 Fragen pro Level beantwortet wurden
             if (questionCounter % 3 === 0) {
                 currentLevelIndex++;
             }
         };
 
-        // Beginne mit der ersten Frage
         loadQuestion(selectedQuestions[questionCounter]);
     })
     .catch(error => {
         console.error("Fehler beim Laden der Fragen:", error);
-        document.getElementById('frageText').textContent = "❌ Fehler beim Laden der Fragen.";
+        document.getElementById('questionPlaintext').textContent = "❌ Fehler beim Laden der Fragen.";
     });
