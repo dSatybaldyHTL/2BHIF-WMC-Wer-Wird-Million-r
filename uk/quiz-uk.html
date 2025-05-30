@@ -9,13 +9,17 @@
     <link rel="icon" href="logo-uk.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <style>
+        #answer-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
         #answer-container button {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            width: 300px;
+            padding: 12px;
             font-size: 16px;
-            margin-left: 120px;
+            width: 250px;
         }
         #nextButton {
             margin-top: 20px;
@@ -46,7 +50,7 @@
         <li><a href="index-en-uk.html#contents">Contents</a></li>
         <li><a href="index-en-uk.html#about">About Us</a></li>
         <li><a href="index-en-uk.html#team">Team</a></li>
-        <li><a href="index-en-uk.html#game">Spiel</a></li>
+        <li><a href="index-en-uk.html#game">Game</a></li>
     </ul>
 </nav>
 
@@ -56,10 +60,9 @@
     <div id="Balance">Balance: 0 €</div>
     <h2 id="questionPlaintext" class="question-Plaintext">Loading question...</h2>
     <div id="answer-container" class="answer-container"></div>
-    <button id="nextButton" class="next-button" style="display:none;">Next question</button>
+    <button id="nextButton" class="next-button">Next question</button>
 </div>
 
-<!-- Hier wird der Game Over-Bereich dynamisch hinzugefügt -->
 <script src="../JS-Code/index.js"></script>
 </body>
 </html>

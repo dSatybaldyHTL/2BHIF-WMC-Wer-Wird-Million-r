@@ -16,15 +16,13 @@ function restartQuiz() {
     currentLevelIndex = 0;
 
     const endScreen = document.getElementById('endGameContainer');
-    if (endScreen) {
-        endScreen.remove();
-    }
+    if (endScreen) endScreen.remove();
 
     fetchQuestions();
 }
 
 function goToHomepage() {
-    window.location.href = "index-en-uk.html";
+    window.location.href = "index-de.html";
 }
 
 function showEndScreen(messageTop, messageBody) {
@@ -39,8 +37,8 @@ function showEndScreen(messageTop, messageBody) {
         endGameContainer.style.marginTop = "20px";
         endGameContainer.innerHTML = `
             <p>${messageBody}</p>
-            <button id="restartButton" style="padding: 10px 20px; font-size: 18px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Nochmal spielen</button>
-            <button id="homepageButton" style="padding: 10px 20px; font-size: 18px; background-color: #f44336; color: white; border: none; cursor: pointer;">Zur Hauptseite</button>
+            <button id="restartButton" style="padding: 10px 20px; font-size: 18px; background-color: #4CAF50; color: white; border: none;">Nochmal spielen</button>
+            <button id="homepageButton" style="padding: 10px 20px; font-size: 18px; background-color: #f44336; color: white; border: none;">Zur Hauptseite</button>
         `;
         document.body.appendChild(endGameContainer);
 
@@ -56,12 +54,13 @@ function showGameOver() {
 function fetchQuestions() {
     fetch('http://localhost:3000/questions')
         .then(response => {
-            if (!response.ok) {
-                throw new Error('Netzwerkfehler beim Laden der Fragen');
-            }
+            if (!response.ok) throw new Error('Fehler beim Laden der Fragen');
             return response.json();
         })
         .then(questions => {
+            const levels = ['sehr leicht', 'leicht', 'mittelschwer', 'schwer', 'sehr schwer'];
+            const prizes = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000];
+
             const questionsByLevel = {
                 'sehr leicht': [],
                 'leicht': [],
@@ -70,27 +69,16 @@ function fetchQuestions() {
                 'sehr schwer': []
             };
 
-            questions.forEach(question => {
-                questionsByLevel[question.level].push(question);
-            });
+            questions.forEach(q => questionsByLevel[q.level].push(q));
 
             const selectedQuestions = [];
-            Object.keys(questionsByLevel).forEach(level => {
-                const levelQuestions = questionsByLevel[level];
-                shuffleArray(levelQuestions);
-                selectedQuestions.push(...levelQuestions.slice(0, 3));
+            levels.forEach(level => {
+                shuffleArray(questionsByLevel[level]);
+                selectedQuestions.push(...questionsByLevel[level].slice(0, 3));
             });
 
             let questionCounter = 0;
             let currentLevelIndex = 0;
-            const levels = ['sehr leicht', 'leicht', 'mittelschwer', 'schwer', 'sehr schwer'];
-
-            const prizes = [
-                100, 200, 300, 500, 1000, 2000, 4000,
-                8000, 16000, 32000, 64000, 125000, 250000,
-                500000, 1000000
-            ];
-
             let accountBalance = 0;
 
             function loadQuestion(question) {
@@ -101,7 +89,8 @@ function fetchQuestions() {
                 const antwortenContainer = document.getElementById('answer-container');
                 antwortenContainer.innerHTML = '';
 
-                question.options.forEach(option => {
+                const sortedOptions = question.options.sort((a, b) => a.charAt(0).localeCompare(b.charAt(0)));
+                sortedOptions.forEach(option => {
                     const button = document.createElement('button');
                     button.textContent = option;
                     button.classList.add('antworten-button');
@@ -144,9 +133,7 @@ function fetchQuestions() {
                     showEndScreen("🎉 Quiz beendet!", "Du hast das Spiel erfolgreich abgeschlossen!");
                 }
 
-                if (questionCounter % 3 === 0) {
-                    currentLevelIndex++;
-                }
+                if (questionCounter % 3 === 0) currentLevelIndex++;
             };
 
             loadQuestion(selectedQuestions[questionCounter]);
