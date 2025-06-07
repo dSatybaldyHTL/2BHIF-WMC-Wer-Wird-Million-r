@@ -9,11 +9,28 @@ function shuffleArray(array) {
     }
 }
 
+function updatePrizeList(currentIndex) {
+    const prizeItems = document.querySelectorAll('#prizeList li');
+    prizeItems.forEach((item, index) => {
+        if (index === currentIndex) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+}
+
+function resetPrizeList() {
+    const prizeItems = document.querySelectorAll('#prizeList li');
+    prizeItems.forEach(item => item.classList.remove('active'));
+}
+
 function restartQuiz() {
     accountBalance = 0;
-    document.getElementById('Balance').textContent = `Balance: 0 €`;
+    document.getElementById('Balance').textContent = `Kontostand: 0 €`;
     questionCounter = 0;
     currentLevelIndex = 0;
+    resetPrizeList();
 
     const endScreen = document.getElementById('endGameContainer');
     if (endScreen) endScreen.remove();
@@ -59,7 +76,7 @@ function fetchQuestions() {
         })
         .then(questions => {
             const levels = ['sehr leicht', 'leicht', 'mittelschwer', 'schwer', 'sehr schwer'];
-            const prizes = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000];
+            const prizes = [50, 100, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 500000, 750000, 1000000];
 
             const questionsByLevel = {
                 'sehr leicht': [],
@@ -77,19 +94,22 @@ function fetchQuestions() {
                 selectedQuestions.push(...questionsByLevel[level].slice(0, 3));
             });
 
-            let questionCounter = 0;
-            let currentLevelIndex = 0;
-            let accountBalance = 0;
+            // Globale Variablen für Quizstatus
+            questionCounter = 0;
+            currentLevelIndex = 0;
+            accountBalance = 0;
 
             function loadQuestion(question) {
                 document.getElementById('questionPlaintext').textContent = question.question;
-                document.getElementById('Difficulty').textContent = `Difficulty: ${levels[currentLevelIndex]}`;
-                document.getElementById('questionNumber').textContent = `Question ${questionCounter + 1} – Prize: ${prizes[questionCounter]} €`;
+                document.getElementById('Difficulty').textContent = `Schwierigkeit: ${levels[currentLevelIndex]}`;
+                document.getElementById('questionNumber').textContent = `Frage ${questionCounter + 1} – Gewinn: ${prizes[questionCounter]} €`;
 
                 const antwortenContainer = document.getElementById('answer-container');
                 antwortenContainer.innerHTML = '';
 
-                const sortedOptions = question.options.sort((a, b) => a.charAt(0).localeCompare(b.charAt(0)));
+                // Optionen alphabetisch sortieren
+                const sortedOptions = question.options.slice().sort((a, b) => a.charAt(0).localeCompare(b.charAt(0)));
+
                 sortedOptions.forEach(option => {
                     const button = document.createElement('button');
                     button.textContent = option;
@@ -113,9 +133,11 @@ function fetchQuestions() {
 
                         if (isCorrect) {
                             accountBalance += prizes[questionCounter];
-                            document.getElementById('Balance').textContent = `Balance: ${accountBalance} €`;
+                            document.getElementById('Balance').textContent = `Kontostand: ${accountBalance} €`;
+                            updatePrizeList(questionCounter);
                             document.getElementById('nextButton').style.display = 'block';
                         } else {
+                            resetPrizeList();
                             showGameOver();
                         }
                     };
@@ -136,6 +158,7 @@ function fetchQuestions() {
                 if (questionCounter % 3 === 0) currentLevelIndex++;
             };
 
+            // Starte das Quiz mit der ersten Frage
             loadQuestion(selectedQuestions[questionCounter]);
         })
         .catch(error => {
@@ -143,6 +166,11 @@ function fetchQuestions() {
             document.getElementById('questionPlaintext').textContent = "❌ Fehler beim Laden der Fragen.";
         });
 }
+
+// Globale Variablen initialisieren
+let questionCounter = 0;
+let currentLevelIndex = 0;
+let accountBalance = 0;
 
 // Starte das Quiz beim Laden der Seite
 fetchQuestions();

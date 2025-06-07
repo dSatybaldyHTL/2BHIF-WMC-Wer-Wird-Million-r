@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Who Wants to Be a Millionaire</title>
-    <link rel="stylesheet" href="quiz-de.css">
-    <link rel="stylesheet" href="stylesheet-de.css">
-    <link rel="icon" href="logo-wwm.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="quiz-de.css" />
+    <link rel="stylesheet" href="stylesheet-de.css" />
+    <link rel="icon" href="logo-wwm.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <style>
         #answer-container {
             display: grid;
@@ -37,12 +37,66 @@
             padding: 10px 20px;
             font-size: 16px;
         }
+
+        /* Wrapper für Quiz und Gewinnstruktur */
+        #quiz-wrapper {
+            display: flex;
+            justify-content: flex-start; /* Quiz links, Gewinnstruktur rechts */
+            gap: 40px;
+            margin: 50px 50px 0 50px;
+        }
+
+        /* Quiz Container: mehr nach rechts mit margin-left */
+        .quiz-container {
+            max-width: 600px;
+            margin-left: 400px; /* Hier mehr Abstand links, dadurch rückt die Box nach rechts */
+        }
+
+        /* Gewinnstruktur Box */
+        #prize-structure {
+            width: 260px;
+            font-family: inherit;
+            background-color: rgba(0, 70, 140, 0.85);
+            border: 2px solid #00468c;
+            border-radius: 8px;
+            padding: 15px 20px;
+            box-shadow: 0 0 10px rgba(0, 70, 140, 0.5);
+            margin-top: 60px;
+            color: white;
+            height: auto;
+            user-select: none;
+        }
+        #prize-structure h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+        }
+        #prizeList {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+            color: white;
+        }
+        #prizeList li {
+            padding: 7px 0;
+            font-size: 15px;
+            cursor: default;
+        }
+        #prizeList li.active {
+            font-weight: bold;
+            border-left: 4px solid #ffff00;
+            padding-left: 6px;
+            background-color: rgba(255, 255, 0, 0.3);
+            color: black;
+        }
     </style>
 </head>
 <body style="background-image: url('quiz-de-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
 <nav class="navbar">
     <div class="navbar-logo" onclick="window.location.href='index-de.html';">
-        <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image">
+        <img src="logo-wwm.png" alt="Logo" height="165" width="165" class="rotating-image" />
         <p class="navbar-title"><strong>Wer wird Millionär</strong></p>
     </div>
     <ul class="navbar-menu">
@@ -54,15 +108,38 @@
     </ul>
 </nav>
 
-<div class="quiz-container">
-    <div id="Difficulty">Schwierigkeit: Sehr einfach</div>
-    <div id="questionNumber"></div>
-    <div id="Balance">Kontostand: 0 €</div>
-    <h2 id="questionPlaintext" class="question-Plaintext">Frage wird geladen...</h2>
-    <div id="answer-container" class="answer-container"></div>
-    <button id="nextButton" class="next-button">Nächste Frage</button>
+<div id="quiz-wrapper">
+    <div class="quiz-container">
+        <div id="Difficulty">Schwierigkeit: Sehr einfach</div>
+        <div id="questionNumber"></div>
+        <div id="Balance">Kontostand: 0 €</div>
+        <h2 id="questionPlaintext" class="question-Plaintext">Frage wird geladen...</h2>
+        <div id="answer-container" class="answer-container"></div>
+        <button id="nextButton" class="next-button">Nächste Frage</button>
+    </div>
+
+    <div id="prize-structure">
+        <h3>Gewinnstruktur</h3>
+        <ul id="prizeList">
+            <li data-index="0">1. Frage – 50 €</li>
+            <li data-index="1">2. Frage – 100 €</li>
+            <li data-index="2">3. Frage – 200 €</li>
+            <li data-index="3">4. Frage – 500 €</li>
+            <li data-index="4">5. Frage – 1.000 €</li>
+            <li data-index="5">6. Frage – 2.000 €</li>
+            <li data-index="6">7. Frage – 4.000 €</li>
+            <li data-index="7">8. Frage – 8.000 €</li>
+            <li data-index="8">9. Frage – 16.000 €</li>
+            <li data-index="9">10. Frage – 32.000 €</li>
+            <li data-index="10">11. Frage – 64.000 €</li>
+            <li data-index="11">12. Frage – 125.000 €</li>
+            <li data-index="12">13. Frage – 500.000 €</li>
+            <li data-index="13">14. Frage – 750.000 €</li>
+            <li data-index="14">15. Frage – 1.000.000 €</li>
+        </ul>
+    </div>
 </div>
 
-<script src="../JS-Code/index.js"></script> <!-- JS-Datei hier einbinden -->
+<script src="../JS-Code/index.js"></script>
 </body>
 </html>
