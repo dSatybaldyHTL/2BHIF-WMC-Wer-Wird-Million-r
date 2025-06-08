@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +37,56 @@
             padding: 10px 20px;
             font-size: 16px;
         }
+
+        /* Layout and Prize Structure Styling */
+        #quiz-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            gap: 40px;
+            margin: 50px 50px 0 50px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin-left: 400px;
+        }
+        #prize-structure {
+            width: 260px;
+            font-family: inherit;
+            background-color: rgba(0, 70, 140, 0.85);
+            border: 2px solid #00468c;
+            border-radius: 8px;
+            padding: 15px 20px;
+            box-shadow: 0 0 10px rgba(0, 70, 140, 0.5);
+            margin-top: 60px;
+            color: white;
+            height: auto;
+            user-select: none;
+        }
+        #prize-structure h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+        }
+        #prizeList {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+            color: white;
+        }
+        #prizeList li {
+            padding: 7px 0;
+            font-size: 15px;
+            cursor: default;
+        }
+        #prizeList li.active {
+            font-weight: bold;
+            border-left: 4px solid #ffff00;
+            padding-left: 6px;
+            background-color: rgba(255, 255, 0, 0.3);
+            color: black;
+        }
     </style>
 </head>
 <body style="background-image: url('quiz-uk-background.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
@@ -54,13 +104,36 @@
     </ul>
 </nav>
 
-<div class="quiz-container">
-    <div id="Difficulty">Difficulty: Very easy</div>
-    <div id="questionNumber"></div>
-    <div id="Balance">Balance: 0 €</div>
-    <h2 id="questionPlaintext" class="question-Plaintext">Loading question...</h2>
-    <div id="answer-container" class="answer-container"></div>
-    <button id="nextButton" class="next-button">Next question</button>
+<div id="quiz-wrapper">
+    <div class="quiz-container">
+        <div id="Difficulty">Difficulty: Very easy</div>
+        <div id="questionNumber"></div>
+        <div id="Balance">Balance: €0</div>
+        <h2 id="questionPlaintext" class="question-Plaintext">Loading question...</h2>
+        <div id="answer-container" class="answer-container"></div>
+        <button id="nextButton" class="next-button">Next question</button>
+    </div>
+
+    <div id="prize-structure">
+        <h3>Win-Structure</h3>
+        <ul id="prizeList">
+            <li data-index="0">Question 1 – €100</li>
+            <li data-index="1">Question 2 – €200</li>
+            <li data-index="2">Question 3 – €300</li>
+            <li data-index="3">Question 4 – €500</li>
+            <li data-index="4">Question 5 – €1,000</li>
+            <li data-index="5">Question 6 – €2,000</li>
+            <li data-index="6">Question 7 – €4,000</li>
+            <li data-index="7">Question 8 – €8,000</li>
+            <li data-index="8">Question 9 – €16,000</li>
+            <li data-index="9">Question 10 – €32,000</li>
+            <li data-index="10">Question 11 – €64,000</li>
+            <li data-index="11">Question 12 – €125,000</li>
+            <li data-index="12">Question 13 – €250,000</li>
+            <li data-index="13">Question 14 – €500,000</li>
+            <li data-index="14">Question 15 – €1,000,000</li>
+        </ul>
+    </div>
 </div>
 
 <script src="../JS-Code/index.js"></script>
