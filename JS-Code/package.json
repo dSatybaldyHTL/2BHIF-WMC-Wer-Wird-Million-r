@@ -100,6 +100,36 @@
     },
     {
       "level": "leicht",
+      "question": "Welche Maßeinheit wird verwendet, um die Leistung eines Autos anzugeben?",
+      "options": ["A: Volt", "B: Newton", "C: PS", "D: Dezibel"],
+      "answer": "C"
+    },
+    {
+      "level": "leicht",
+      "question": "Welches Element hat im Periodensystem das Symbol „O“?",
+      "options": ["A: Gold", "B: Osmium", "C: Sauerstoff", "D: Eisen"],
+      "answer": "C"
+    },
+    {
+      "level": "leicht",
+      "question": "Welches dieser Geräte ist kein Haushaltsgerät?",
+      "options": ["A: Toaster", "B: Staubsauger", "C: Mikroskop", "D: Wasserkocher"],
+      "answer": "C"
+    },
+    {
+      "level": "leicht",
+      "question": "Was ist typisch für eine E-Mail-Adresse?",
+      "options": ["A: Fragezeichen", "B: Komma", "C: Klammer", "D: At-Zeichen"],
+      "answer": "D"
+    },
+    {
+      "level": "leicht",
+      "question": "Wie nennt man eine Zahl, die durch zwei ohne Rest teilbar ist?",
+      "options": ["A: Primzahl", "B: Ungerade Zahl", "C: Gerade Zahl", "D: Dezimalzahl"],
+      "answer": "C"
+    },
+    {
+      "level": "leicht",
       "question": "Wie nennt man eine besonders schnelle Internetverbindung?",
       "options": ["A: DSL", "B: GPS", "C: HTML", "D: VGA"],
       "answer": "A"
@@ -145,6 +175,36 @@
       "question": "Welcher deutsche Philosoph prägte den Begriff des „Übermenschen“?",
       "options": ["A: Hegel", "B: Kant", "C: Nietzsche", "D: Schopenhauer"],
       "answer": "C"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Wie lautet der chemische Name von Kochsalz?",
+      "options": ["A: Kaliumchlorid", "B: Magnesiumoxid", "C: Natriumchlorid", "D: Calciumcarbonat"],
+      "answer": "C"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Wer komponierte die Oper „Die Zauberflöte“?",
+      "options": ["A: Ludwig van Beethoven", "B: Franz Schubert", "C: Wolfgang Amadeus Mozart", "D: Johann Sebastian Bach"],
+      "answer": "C"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Welche Stadt war im Mittelalter bekannt als das „Tor zur Welt“ der Hanse?",
+      "options": ["A: Köln", "B: Bremen", "C: Hamburg", "D: Lübeck"],
+      "answer": "D"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Welches Land ist flächenmäßig das größte der Welt?",
+      "options": ["A: China", "B: Kanada", "C: Russland", "D: USA"],
+      "answer": "C"
+    },
+    {
+      "level": "mittelschwer",
+      "question": "Welcher berühmte Roman beginnt mit dem Satz: „Alle glücklichen Familien gleichen einander“?",
+      "options": ["A: Anna Karenina", "B: Krieg und Frieden", "C: Madame Bovary", "D: Stolz und Vorurteil"],
+      "answer": "A"
     },
     {
       "level": "mittelschwer",
@@ -196,6 +256,36 @@
     },
     {
       "level": "schwer",
+      "question": "Welcher Komponist gilt als Begründer der Zwölftonmusik?",
+      "options": ["A: Richard Strauss", "B: Arnold Schönberg", "C: Igor Strawinsky", "D: Alban Berg"],
+      "answer": "B"
+    },
+    {
+      "level": "schwer",
+      "question": "Welches Element hat die Ordnungszahl 92?",
+      "options": ["A: Uran", "B: Plutonium", "C: Thorium", "D: Radium"],
+      "answer": "A"
+    },
+    {
+      "level": "schwer",
+      "question": "Was ist kein Werk von Thomas Mann?",
+      "options": ["A: Der Tod in Venedig", "B: Buddenbrooks", "C: Die Blechtrommel", "D: Der Zauberberg"],
+      "answer": "C"
+    },
+    {
+      "level": "schwer",
+      "question": "Wie heißt die Hauptstadt von Kasachstan seit 2019?",
+      "options": ["A: Almaty", "B: Astana", "C: Nur-Sultan", "D: Taschkent"],
+      "answer": "C"
+    },
+    {
+      "level": "schwer",
+      "question": "Welches Land trat 2007 als letztes der Eurozone bei (Stand 2023)?",
+      "options": ["A: Slowenien", "B: Kroatien", "C: Bulgarien", "D: Estland"],
+      "answer": "B"
+    },
+    {
+      "level": "schwer",
       "question": "Was bezeichnet man in der Musik als 'Fuge'?",
       "options": ["A: Eine Tonleiter", "B: Ein schneller Rhythmus", "C: Ein polyphones Kompositionsprinzip", "D: Ein Orchesterstück"],
       "answer": "C"
@@ -229,6 +319,36 @@
       "question": "Wie heißt die mathematische Folge, in der jede Zahl die Summe der beiden vorhergehenden ist?",
       "options": ["A: Pascalsche Folge", "B: Fibonacci-Folge", "C: Eulersche Reihe", "D: Archimedes-Zahl"],
       "answer": "B"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welche Sprache gilt als die am weitesten verbreitete Turksprachenvarietät?",
+      "options": ["A: Usbekisch", "B: Aserbaidschanisch", "C: Kasachisch", "D: Türkisch"],
+      "answer": "D"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welcher Physiker entwickelte das Gedankenexperiment vom „Dämon“, das die Gesetze der Thermodynamik infrage stellen sollte?",
+      "options": ["A: James Clerk Maxwell", "B: Niels Bohr", "C: Werner Heisenberg", "D: Enrico Fermi"],
+      "answer": "A"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welche antike Stadt wurde bei einem Vulkanausbruch im Jahr 79 n. Chr. zerstört?",
+      "options": ["A: Karthago", "B: Troja", "C: Pompeji", "D: Alexandria"],
+      "answer": "C"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welche Oper beginnt mit einer Ouvertüre, die als „Gefangenenchor“ bekannt ist?",
+      "options": ["A: Fidelio", "B: Nabucco", "C: Don Giovanni", "D: Der fliegende Holländer"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr schwer",
+      "question": "Welcher dieser Begriffe stammt aus der Astronomie und bezeichnet eine hypothetische Grenze, hinter der nichts mehr entkommen kann?",
+      "options": ["A: Weißer Zwerg", "B: Singularität", "C: Ereignishorizont", "D: Neutronenstern"],
+      "answer": "C"
     },
     {
       "level": "sehr schwer",
