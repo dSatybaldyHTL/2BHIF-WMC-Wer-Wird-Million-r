@@ -8,6 +8,37 @@
       "answer": "D"
     },
     {
+
+      "level": "sehr leicht",
+      "question": "Welcher Planet ist der Erde am nächsten?",
+      "options": ["A: Mars", "B: Merkur", "C: Venus", "D: Jupiter"],
+      "answer": "C"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Was zeigt ein Thermometer an?",
+      "options": ["A: Gewicht", "B: Geschwindigkeit", "C: Temperatur", "D: Höhe"],
+      "answer": "C"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Welches dieser Lebensmittel ist eine Frucht?",
+      "options": ["A: Karotte", "B: Apfel", "C: Spinat", "D: Sellerie"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Wie viele Beine hat eine Spinne?",
+      "options": ["A: Sechs", "B: Acht", "C: Zehn", "D: Zwölf"],
+      "answer": "B"
+    },
+    {
+      "level": "sehr leicht",
+      "question": "Was benötigt man, um einen Brief zu verschicken?",
+      "options": ["A: Kleber", "B: Büroklammer", "C: Briefmarke", "D: Lineal"],
+      "answer": "C"
+    },
+    {
       "level": "sehr leicht",
       "question": "Welche dieser Städte ist nicht Hauptstadt eines Landes?",
       "options": ["A: Paris", "B: Madrid", "C: Zürich", "D: Rom"],
