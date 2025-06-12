@@ -10,8 +10,38 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "How many countries make up the UK?",
             answers: ["2", "3", "4", "5"],
             correct: 2
+        },
+        {
+            question: "Which river flows through London?",
+            answers: ["Thames", "Severn", "Mersey", "Tyne"],
+            correct: 0
+        },
+        {
+            question: "Who is the current monarch of the UK (2024)?",
+            answers: ["Charles III", "Elizabeth II", "William V", "George VI"],
+            correct: 0
+        },
+        {
+            question: "Which city hosted the 2012 Summer Olympics?",
+            answers: ["London", "Edinburgh", "Cardiff", "Belfast"],
+            correct: 0
+        },
+        {
+            question: "What is the national animal of Scotland?",
+            answers: ["Unicorn", "Lion", "Dragon", "Wolf"],
+            correct: 0
+        },
+        {
+            question: "Which UK country is famous for its leeks and daffodils?",
+            answers: ["Wales", "England", "Scotland", "Northern Ireland"],
+            correct: 0
+        },
+        {
+            question: "What is the largest lake in the UK?",
+            answers: ["Lough Neagh", "Loch Ness", "Lake Windermere", "Loch Lomond"],
+            correct: 0
         }
-        // Add more questions as needed
+        // Weitere Fragen können hier ergänzt werden
     ];
 
     let current = 0;
