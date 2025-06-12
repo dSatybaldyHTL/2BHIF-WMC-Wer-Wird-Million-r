@@ -1,6 +1,6 @@
 // quiz-uk.js
 document.addEventListener('DOMContentLoaded', () => {
-    const questions = [
+    let questions = [
         {
             question: "What is the capital of the United Kingdom?",
             answers: ["London", "Manchester", "Birmingham", "Liverpool"],
@@ -77,6 +77,29 @@ document.addEventListener('DOMContentLoaded', () => {
             correct: 0
         }
     ];
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Shuffle questions
+    questions = shuffleArray(questions);
+
+    // Shuffle answers in each question and update the correct index
+    questions = questions.map(q => {
+        const originalAnswers = q.answers.map((a, i) => ({ text: a, index: i }));
+        const shuffledAnswers = shuffleArray(originalAnswers);
+        const newCorrectIndex = shuffledAnswers.findIndex(ans => ans.index === q.correct);
+        return {
+            question: q.question,
+            answers: shuffledAnswers.map(ans => ans.text),
+            correct: newCorrectIndex
+        };
+    });
 
     let current = 0;
     let balance = 0;
