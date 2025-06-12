@@ -40,8 +40,42 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "Welches Fest ist weltweit als deutsches Volksfest bekannt?",
             answers: ["Oktoberfest", "Karneval", "Weihnachtsmarkt", "Maifest"],
             correct: 0
+        },
+        {
+            question: "Wie heißt die deutsche Nationalhymne?",
+            answers: ["Deutschlandlied", "Ode an die Freude", "Die Gedanken sind frei", "Lorelei"],
+            correct: 0
+        },
+        {
+            question: "Welche Stadt ist für ihren Dom und Karneval berühmt?",
+            answers: ["Köln", "Dresden", "Frankfurt", "Stuttgart"],
+            correct: 0
+        },
+        {
+            question: "Welcher deutsche Dichter schrieb 'Faust'?",
+            answers: ["Goethe", "Schiller", "Heine", "Lessing"],
+            correct: 0
+        },
+        {
+            question: "Wie heißt das größte Volksfest in München?",
+            answers: ["Oktoberfest", "Frühlingsfest", "Weihnachtsmarkt", "Cannstatter Wasen"],
+            correct: 0
+        },
+        {
+            question: "Welches Meer liegt im Norden Deutschlands?",
+            answers: ["Nordsee", "Ostsee", "Mittelmeer", "Schwarzes Meer"],
+            correct: 0
+        },
+        {
+            question: "Welche Farbe hat die deutsche Flagge oben?",
+            answers: ["Schwarz", "Rot", "Gold", "Blau"],
+            correct: 0
+        },
+        {
+            question: "Wie heißt das berühmte Tor in Berlin?",
+            answers: ["Brandenburger Tor", "Holstentor", "Isartor", "Karlstor"],
+            correct: 0
         }
-        // Weitere Fragen können hier ergänzt werden
     ];
 
     let current = 0;
@@ -73,11 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkAnswer(idx) {
         const q = questions[current];
         if (idx === q.correct) {
-            balance += prizeSteps[current];
-            balanceEl.textContent = `Kontostand: €${balance}`;
+            balance = prizeSteps[current];
+            balanceEl.textContent = `Balance: £${balance.toLocaleString('en-GB')}`;
             nextButton.style.display = 'inline-block';
         } else {
-            questionEl.textContent = "Falsche Antwort! Spiel beendet.";
+            questionEl.textContent = `Wrong answer! Game over.\nYour winnings: £${balance.toLocaleString('en-GB')}`;
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
         }
