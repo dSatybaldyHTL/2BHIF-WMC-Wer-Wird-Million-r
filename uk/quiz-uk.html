@@ -87,6 +87,43 @@
             background: rgba(255, 213, 0, 0.68);
             color: black;
         }
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .lang-dropdown:hover .lang-dropdown-content {
+            display: block;
+        }
+
+        .lang-dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0 -620px 0 0;
+            font-family: Montserrat, sans-serif;
+        }
     </style>
 </head>
 <body style="background-image: url('quiz-uk-background.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
@@ -102,6 +139,13 @@
         <li><a href="index-en-uk.html#team">Team</a></li>
         <li><a href="index-en-uk.html#game">Game</a></li>
     </ul>
+    <div class="lang-dropdown">
+        <button class="lang-btn">Version</button>
+        <div class="lang-dropdown-content">
+            <a href="../uk/quiz-uk.html">Englisch</a>
+            <a href="../de/quiz-de.html">Deutsch</a>
+        </div>
+    </div>
 </nav>
 
 <div id="quiz-wrapper">
@@ -117,21 +161,21 @@
     <div id="prize-structure">
         <h3>Win-Structure</h3>
         <ul id="prizeList">
-            <li data-index="0">Question 1 – £100</li>
-            <li data-index="1">Question 2 – £200</li>
-            <li data-index="2">Question 3 – £300</li>
+            <li data-index="0">Question 1 – £50</li>
+            <li data-index="1">Question 2 – £100</li>
+            <li data-index="2">Question 3 – £200</li>
             <li data-index="3">Question 4 – £500</li>
-            <li data-index="4">Question 5 – £1,000</li>
-            <li data-index="5">Question 6 – £2,000</li>
-            <li data-index="6">Question 7 – £4,000</li>
-            <li data-index="7">Question 8 – £8,000</li>
-            <li data-index="8">Question 9 – £16,000</li>
-            <li data-index="9">Question 10 – £32,000</li>
-            <li data-index="10">Question 11 – £64,000</li>
-            <li data-index="11">Question 12 – £125,000</li>
-            <li data-index="12">Question 13 – £250,000</li>
-            <li data-index="13">Question 14 – £500,000</li>
-            <li data-index="14">Question 15 – £1,000,000</li>
+            <li data-index="4">Question 5 – £1.000</li>
+            <li data-index="5">Question 6 – £2.000</li>
+            <li data-index="6">Question 7 – £4.000</li>
+            <li data-index="7">Question 8 – £8.000</li>
+            <li data-index="8">Question 9 – £16.000</li>
+            <li data-index="9">Question 10 – £32.000</li>
+            <li data-index="10">Question 11 – £64.000</li>
+            <li data-index="11">Question 12 – £125.000</li>
+            <li data-index="12">Question 13 – £500.000</li>
+            <li data-index="13">Question 14 – £750.000</li>
+            <li data-index="14">Question 15 – £1.000.000</li>
         </ul>
     </div>
 </div>
