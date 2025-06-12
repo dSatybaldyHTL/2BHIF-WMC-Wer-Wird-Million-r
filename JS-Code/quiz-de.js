@@ -2,85 +2,95 @@
 document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
-            question: "Was ist die Hauptstadt von Deutschland?",
-            answers: ["Berlin", "München", "Hamburg", "Köln"],
-            correct: 0
+            question: "Welcher dieser Begriffe stammt ursprünglich aus der Fotografie und bedeutet heute „besonders beliebt“?",
+            answers: ["Zoom", "Klick", "Schnappschuss", "Highlight"],
+            correct: 3
         },
         {
-            question: "Wie viele Bundesländer hat Deutschland?",
-            answers: ["14", "15", "16", "17"],
+            question: "Welche dieser Städte ist nicht Hauptstadt eines Landes?",
+            answers: ["Paris", "Madrid", "Zürich", "Rom"],
             correct: 2
         },
         {
-            question: "Welcher Fluss fließt durch Köln?",
-            answers: ["Rhein", "Elbe", "Donau", "Main"],
+            question: "Was ist die Hauptzutat von traditionellem Pesto Genovese?",
+            answers: ["Tomaten", "Basilikum", "Paprika", "Thymian"],
+            correct: 1
+        },
+        {
+            question: "Welche Maßeinheit steht für elektrische Spannung?",
+            answers: ["Ampere", "Volt", "Ohm", "Watt"],
+            correct: 1
+        },
+        {
+            question: "Wer ist der Erfinder der Relativitätstheorie?",
+            answers: ["Stephen Hawking", "Galileo Galilei", "Albert Einstein", "Isaac Newton"],
+            correct: 2
+        },
+        {
+            question: "Wofür steht das „D“ im Kürzel „DVD“?",
+            answers: ["Digital", "Direct", "Disk", "Data"],
             correct: 0
         },
         {
-            question: "Wer ist der aktuelle Bundeskanzler (2024)?",
-            answers: ["Olaf Scholz", "Angela Merkel", "Frank-Walter Steinmeier", "Armin Laschet"],
+            question: "Wie nennt man eine besonders schnelle Internetverbindung?",
+            answers: ["DSL", "GPS", "HTML", "VGA"],
             correct: 0
         },
         {
-            question: "Welches Tier ist das Wappentier Deutschlands?",
-            answers: ["Adler", "Löwe", "Bär", "Wolf"],
+            question: "Welche Band veröffentlichte das Album „The Dark Side of the Moon“?",
+            answers: ["Queen", "Pink Floyd", "The Beatles", "Nirvana"],
+            correct: 1
+        },
+        {
+            question: "Was ist ein Synonym für das Wort „kurios“?",
+            answers: ["Langweilig", "Merkwürdig", "Fröhlich", "Laut"],
+            correct: 1
+        },
+        {
+            question: "Welcher Planet besitzt ein ausgeprägtes Ringsystem?",
+            answers: ["Mars", "Neptun", "Saturn", "Venus"],
+            correct: 2
+        },
+        {
+            question: "Welcher deutsche Philosoph prägte den Begriff des „Übermenschen“?",
+            answers: ["Hegel", "Kant", "Nietzsche", "Schopenhauer"],
+            correct: 2
+        },
+        {
+            question: "Was bedeutet „Carpe Diem“ aus dem Lateinischen übersetzt?",
+            answers: ["Genieße den Abend", "Nutze den Tag", "Fürchte den Morgen", "Ergreife die Stunde"],
+            correct: 1
+        },
+        {
+            question: "Wie heißt der kleine Bruder von Mario im Nintendo-Universum?",
+            answers: ["Luigi", "Yoshi", "Bowser", "Wario"],
             correct: 0
         },
         {
-            question: "Welches Bundesland ist flächenmäßig das größte?",
-            answers: ["Bayern", "Nordrhein-Westfalen", "Niedersachsen", "Baden-Württemberg"],
+            question: "In welcher Sportart gibt es einen „Schmetterball“?",
+            answers: ["Volleyball", "Handball", "Basketball", "Tischtennis"],
             correct: 0
         },
         {
-            question: "Welcher See ist der größte in Deutschland?",
-            answers: ["Bodensee", "Chiemsee", "Starnberger See", "Steinhuder Meer"],
-            correct: 0
-        },
-        {
-            question: "Welches Fest ist weltweit als deutsches Volksfest bekannt?",
-            answers: ["Oktoberfest", "Karneval", "Weihnachtsmarkt", "Maifest"],
-            correct: 0
-        },
-        {
-            question: "Wie heißt die deutsche Nationalhymne?",
-            answers: ["Deutschlandlied", "Ode an die Freude", "Die Gedanken sind frei", "Lorelei"],
-            correct: 0
-        },
-        {
-            question: "Welche Stadt ist für ihren Dom und Karneval berühmt?",
-            answers: ["Köln", "Dresden", "Frankfurt", "Stuttgart"],
-            correct: 0
-        },
-        {
-            question: "Welcher deutsche Dichter schrieb 'Faust'?",
-            answers: ["Goethe", "Schiller", "Heine", "Lessing"],
-            correct: 0
-        },
-        {
-            question: "Wie heißt das größte Volksfest in München?",
-            answers: ["Oktoberfest", "Frühlingsfest", "Weihnachtsmarkt", "Cannstatter Wasen"],
-            correct: 0
-        },
-        {
-            question: "Welches Meer liegt im Norden Deutschlands?",
-            answers: ["Nordsee", "Ostsee", "Mittelmeer", "Schwarzes Meer"],
-            correct: 0
-        },
-        {
-            question: "Welche Farbe hat die deutsche Flagge oben?",
-            answers: ["Schwarz", "Rot", "Gold", "Blau"],
-            correct: 0
-        },
-        {
-            question: "Wie heißt das berühmte Tor in Berlin?",
-            answers: ["Brandenburger Tor", "Holstentor", "Isartor", "Karlstor"],
+            question: "Was ist das chemische Symbol von Gold?",
+            answers: ["Au", "Ag", "Go", "Gd"],
             correct: 0
         }
     ];
 
+    // Shuffle function (Fisher-Yates)
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    shuffle(questions); // Fragen mischen
+
     let current = 0;
     let balance = 0;
-    const prizeSteps = [50, 100, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 500000, 750000, 1000000];
+    const prizeSteps = [50, 100, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000];
 
     const questionEl = document.getElementById('questionPlaintext');
     const answerContainer = document.getElementById('answer-container');
@@ -111,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             balanceEl.textContent = `Balance: £${balance.toLocaleString('en-GB')}`;
             nextButton.style.display = 'inline-block';
         } else {
-            questionEl.textContent = `Wrong answer! Game over.\nYour winnings: £${balance.toLocaleString('en-GB')}`;
+            questionEl.textContent = `Falsche Antwort! Spiel vorbei.\nGewinn: £${balance.toLocaleString('en-GB')}`;
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
         }
