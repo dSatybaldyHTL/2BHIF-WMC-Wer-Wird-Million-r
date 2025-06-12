@@ -40,8 +40,42 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "What is the largest lake in the UK?",
             answers: ["Lough Neagh", "Loch Ness", "Lake Windermere", "Loch Lomond"],
             correct: 0
+        },
+        {
+            question: "Which is the oldest university in the UK?",
+            answers: ["Oxford", "Cambridge", "Edinburgh", "St Andrews"],
+            correct: 0
+        },
+        {
+            question: "What is the currency of the UK?",
+            answers: ["Pound Sterling", "Euro", "Dollar", "Franc"],
+            correct: 0
+        },
+        {
+            question: "Which UK city is known as the 'Steel City'?",
+            answers: ["Sheffield", "Birmingham", "Glasgow", "Leeds"],
+            correct: 0
+        },
+        {
+            question: "Which famous prehistoric monument is located in Wiltshire?",
+            answers: ["Stonehenge", "Hadrian's Wall", "Tower of London", "Windsor Castle"],
+            correct: 0
+        },
+        {
+            question: "Who wrote 'Hamlet'?",
+            answers: ["William Shakespeare", "Charles Dickens", "Jane Austen", "J.K. Rowling"],
+            correct: 0
+        },
+        {
+            question: "Which UK city is famous for The Beatles?",
+            answers: ["Liverpool", "London", "Manchester", "Bristol"],
+            correct: 0
+        },
+        {
+            question: "What is the highest mountain in the UK?",
+            answers: ["Ben Nevis", "Snowdon", "Scafell Pike", "Slieve Donard"],
+            correct: 0
         }
-        // Weitere Fragen können hier ergänzt werden
     ];
 
     let current = 0;
@@ -73,11 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkAnswer(idx) {
         const q = questions[current];
         if (idx === q.correct) {
-            balance += prizeSteps[current];
-            balanceEl.textContent = `Balance: £${balance}`;
+            balance = prizeSteps[current];
+            balanceEl.textContent = `Balance: £${balance.toLocaleString('en-GB')}`;
             nextButton.style.display = 'inline-block';
         } else {
-            questionEl.textContent = "Wrong answer! Game over.";
+            questionEl.textContent = `Wrong answer! Game over.\nYour winnings: £${balance.toLocaleString('en-GB')}`;
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
         }
