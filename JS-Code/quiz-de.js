@@ -118,10 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const q = questions[current];
         if (idx === q.correct) {
             balance = prizeSteps[current];
-            balanceEl.textContent = `Balance: £${balance.toLocaleString('en-GB')}`;
+            balanceEl.textContent = `Balance: €${balance.toLocaleString('en-GB')}`;
             nextButton.style.display = 'inline-block';
         } else {
-            questionEl.textContent = `Falsche Antwort! Spiel vorbei.\nGewinn: £${balance.toLocaleString('en-GB')}`;
+            questionEl.textContent = `Falsche Antwort! Spiel vorbei.\nGewinn: €${balance.toLocaleString('en-GB')}`;
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
         }
