@@ -865,3 +865,22 @@ body {
     outline: none;
 }
 
+#answer-container button {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-family: Montserrat, sans-serif;
+    border: 2px solid #fddd78;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#answer-container button:hover {
+    background: #fddd78;
+    color: #000;
+    transform: scale(1.05);
+}
