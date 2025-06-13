@@ -114,16 +114,31 @@ document.addEventListener('DOMContentLoaded', () => {
         updatePrizeList();
     }
 
+    function showEndButtons() {
+        // Restart-Button
+        const restartBtn = document.createElement('button');
+        restartBtn.textContent = 'Restart';
+        restartBtn.onclick = () => location.reload();
+        answerContainer.appendChild(restartBtn);
+
+        // Home-Button
+        const homeBtn = document.createElement('button');
+        homeBtn.textContent = 'Home';
+        homeBtn.onclick = () => window.location.href = 'index.html'; // ggf. Pfad anpassen
+        answerContainer.appendChild(homeBtn);
+    }
+
     function checkAnswer(idx) {
         const q = questions[current];
         if (idx === q.correct) {
             balance = prizeSteps[current];
-            balanceEl.textContent = `Balance: €${balance.toLocaleString('en-GB')}`;
+            balanceEl.textContent = `Kontostand: €${balance.toLocaleString('de-DE')}`;
             nextButton.style.display = 'inline-block';
         } else {
-            questionEl.textContent = `Falsche Antwort! Spiel vorbei.\nGewinn: €${balance.toLocaleString('en-GB')}`;
+            questionEl.textContent = `Falsche Antwort! Spiel vorbei.\nGewinn: €${balance.toLocaleString('de-DE')}`;
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
+            showEndButtons();
         }
     }
 
@@ -141,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             questionEl.textContent = "Herzlichen Glückwunsch! Du hast das Quiz beendet.";
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
+            showEndButtons();
         }
     };
 
