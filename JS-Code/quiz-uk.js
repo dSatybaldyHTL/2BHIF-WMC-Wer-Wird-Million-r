@@ -127,6 +127,20 @@ document.addEventListener('DOMContentLoaded', () => {
         updatePrizeList();
     }
 
+    function showEndButtons() {
+        // Restart-Button
+        const restartBtn = document.createElement('button');
+        restartBtn.textContent = 'Restart';
+        restartBtn.onclick = () => location.reload();
+        answerContainer.appendChild(restartBtn);
+
+        // Home-Button
+        const homeBtn = document.createElement('button');
+        homeBtn.textContent = 'Home';
+        homeBtn.onclick = () => window.location.href = 'index-en-uk.html'; // ggf. Pfad anpassen
+        answerContainer.appendChild(homeBtn);
+    }
+
     function checkAnswer(idx) {
         const q = questions[current];
         if (idx === q.correct) {
@@ -137,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             questionEl.textContent = `Wrong answer! Game over.\nYour winnings: £${balance.toLocaleString('en-GB')}`;
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
+            showEndButtons();
         }
     }
 
@@ -154,6 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             questionEl.textContent = "Congratulations! You finished the quiz.";
             answerContainer.innerHTML = '';
             nextButton.style.display = 'none';
+            showEndButtons();
         }
     };
 

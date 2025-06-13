@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Home-Button
         const homeBtn = document.createElement('button');
         homeBtn.textContent = 'Home';
-        homeBtn.onclick = () => window.location.href = 'index.html'; // ggf. Pfad anpassen
+        homeBtn.onclick = () => window.location.href = 'index-de.html'; // ggf. Pfad anpassen
         answerContainer.appendChild(homeBtn);
     }
 
